@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Google Sheets Data Display</title>
     <style>
         table {
@@ -28,51 +28,96 @@
     <div id="sheetsData"></div>
 
     <script>
-        // Function to fetch and parse the Google Sheets data
-        async function fetchSheetsData() {
+        // IE-compatible function to fetch and parse the Google Sheets data
+        function fetchSheetsData() {
+            var xhr = new XMLHttpRequest();
+            var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv';
+            
+            xhr.open('GET', sheetUrl, true);
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            // Parse CSV data
+                            var data = xhr.responseText;
+                            var rows = data.split('\n');
+                            var parsedRows = [];
+                            
+                            for (var i = 0; i < rows.length; i++) {
+                                // Handle possible commas within quoted fields
+                                var row = rows[i].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+                                // Remove quotes from fields if present
+                                for (var j = 0; j < row.length; j++) {
+                                    if (row[j].charAt(0) === '"' && row[j].charAt(row[j].length - 1) === '"') {
+                                        row[j] = row[j].substr(1, row[j].length - 2);
+                                    }
+                                }
+                                parsedRows.push(row);
+                            }
+
+                            var headers = parsedRows[0];
+                            var content = parsedRows.slice(1);
+
+                            // Create table
+                            var tableHtml = '<table><thead><tr>';
+                            for (var i = 0; i < headers.length; i++) {
+                                tableHtml += '<th>' + headers[i] + '</th>';
+                            }
+                            tableHtml += '</tr></thead><tbody>';
+
+                            for (var i = 0; i < content.length; i++) {
+                                tableHtml += '<tr>';
+                                for (var j = 0; j < content[i].length; j++) {
+                                    tableHtml += '<td>' + content[i][j] + '</td>';
+                                }
+                                tableHtml += '</tr>';
+                            }
+
+                            tableHtml += '</tbody></table>';
+
+                            // Display the table
+                            document.getElementById('sheetsData').innerHTML = tableHtml;
+
+                            // Make data available globally for parsing
+                            window.sheetsData = parsedRows;
+                        } catch (error) {
+                            document.getElementById('sheetsData').innerHTML = 'Error parsing data: ' + error.message;
+                        }
+                    } else {
+                        document.getElementById('sheetsData').innerHTML = 'Error loading data. Status: ' + xhr.status;
+                    }
+                }
+            };
+
+            xhr.onerror = function() {
+                document.getElementById('sheetsData').innerHTML = 'Error loading data. Please check your connection.';
+            };
+
             try {
-                // Using the published sheet URL
-                const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv';
-                
-                const response = await fetch(sheetUrl);
-                const data = await response.text();
-                
-                // Parse CSV data
-                const rows = data.split('\n').map(row => row.split(','));
-                const headers = rows[0];
-                const content = rows.slice(1);
-
-                // Create table
-                let tableHtml = '<table><thead><tr>';
-                headers.forEach(header => {
-                    tableHtml += `<th>${header}</th>`;
-                });
-                tableHtml += '</tr></thead><tbody>';
-
-                content.forEach(row => {
-                    tableHtml += '<tr>';
-                    row.forEach(cell => {
-                        tableHtml += `<td>${cell}</td>`;
-                    });
-                    tableHtml += '</tr>';
-                });
-
-                tableHtml += '</tbody></table>';
-
-                // Display the table
-                document.getElementById('sheetsData').innerHTML = tableHtml;
-
-                // Make data available globally for parsing
-                window.sheetsData = rows;
-                console.log('Raw data available in window.sheetsData');
+                xhr.send();
             } catch (error) {
-                console.error('Error fetching sheet data:', error);
-                document.getElementById('sheetsData').innerHTML = 'Error loading data. Please check console for details.';
+                document.getElementById('sheetsData').innerHTML = 'Error sending request: ' + error.message;
+            }
+        }
+
+        // Helper function for IE compatibility
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload !== 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                };
             }
         }
 
         // Load data when page loads
-        window.addEventListener('load', fetchSheetsData);
+        addLoadEvent(fetchSheetsData);
     </script>
 </body>
 </html>
