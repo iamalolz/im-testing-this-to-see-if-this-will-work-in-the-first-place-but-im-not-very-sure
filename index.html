@@ -3,48 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Viewer</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
+    <title>Google Sheets API Example</title>
 </head>
 <body>
-    <h1>CSV Data Viewer</h1>
-    <table id="csvTable"></table>
+    <h1>Google Sheets Data</h1>
+    <table border="1" id="sheetTable">
+        <thead>
+            <tr id="tableHeader"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
 
     <script>
-        // Google Drive direct link to your CSV file
-        const csvUrl = "https://docs.google.com/uc?export=download&id=1yi03e0ObaScAIaIXG9cW8ze3B-xbRutewFScjk6syUI";
+        const sheetId = "2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF";
+        const apiKey = "AIzaSyDqA6EDcze7lJGp_y0lASGqihdDFKf5u20"; // bad practice but the api key is restricted to my website and google sheets only so it really doesn't matter
+        const sheetName = "Sheet1"; 
+        const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}?key=${apiKey}`;
 
-        // Function to fetch and display CSV data
-        async function displayCSV() {
+        async function fetchSheetData() {
             try {
-                const response = await fetch(csvUrl);
-                const data = await response.text();
-                const rows = data.split("\n").map(row => row.split(","));
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                const rows = data.values;
 
-                // Generate table headers
-                const table = document.getElementById("csvTable");
-                const headerRow = document.createElement("tr");
+                // Display table headers
+                const headerRow = document.getElementById("tableHeader");
                 rows[0].forEach(header => {
                     const th = document.createElement("th");
                     th.textContent = header;
                     headerRow.appendChild(th);
                 });
-                table.appendChild(headerRow);
 
-                // Generate table rows
+                // Display table data
+                const tableBody = document.getElementById("tableBody");
                 rows.slice(1).forEach(row => {
                     const tr = document.createElement("tr");
                     row.forEach(cell => {
@@ -52,15 +43,14 @@
                         td.textContent = cell;
                         tr.appendChild(td);
                     });
-                    table.appendChild(tr);
+                    tableBody.appendChild(tr);
                 });
             } catch (error) {
-                console.error("Error fetching or displaying the CSV file:", error);
+                console.error("Error fetching data:", error);
             }
         }
 
-        // Call the function to display CSV data
-        displayCSV();
+        fetchSheetData();
     </script>
 </body>
 </html>
