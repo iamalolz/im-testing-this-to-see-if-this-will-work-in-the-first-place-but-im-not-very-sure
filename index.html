@@ -3,54 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Sheets API Example</title>
+    <title>Google Sheets Data Display</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <h1>Google Sheets Data</h1>
-    <table border="1" id="sheetTable">
-        <thead>
-            <tr id="tableHeader"></tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
+    <div id="sheetsData"></div>
 
     <script>
-        const sheetId = "2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF";
-        const apiKey = "AIzaSyDqA6EDcze7lJGp_y0lASGqihdDFKf5u20"; // bad practice but the api key is restricted to my website and google sheets only so it really doesn't matter lol
-        const sheetName = "Sheet1"; 
-        const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}?key=${apiKey}`;
-
-        async function fetchSheetData() {
+        // Function to fetch and parse the Google Sheets data
+        async function fetchSheetsData() {
             try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-                const rows = data.values;
+                // Using the published sheet URL
+                const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv';
+                
+                const response = await fetch(sheetUrl);
+                const data = await response.text();
+                
+                // Parse CSV data
+                const rows = data.split('\n').map(row => row.split(','));
+                const headers = rows[0];
+                const content = rows.slice(1);
 
-                // Display table headers
-                const headerRow = document.getElementById("tableHeader");
-                rows[0].forEach(header => {
-                    const th = document.createElement("th");
-                    th.textContent = header;
-                    headerRow.appendChild(th);
+                // Create table
+                let tableHtml = '<table><thead><tr>';
+                headers.forEach(header => {
+                    tableHtml += `<th>${header}</th>`;
                 });
+                tableHtml += '</tr></thead><tbody>';
 
-                // Display table data
-                const tableBody = document.getElementById("tableBody");
-                rows.slice(1).forEach(row => {
-                    const tr = document.createElement("tr");
+                content.forEach(row => {
+                    tableHtml += '<tr>';
                     row.forEach(cell => {
-                        const td = document.createElement("td");
-                        td.textContent = cell;
-                        tr.appendChild(td);
+                        tableHtml += `<td>${cell}</td>`;
                     });
-                    tableBody.appendChild(tr);
+                    tableHtml += '</tr>';
                 });
+
+                tableHtml += '</tbody></table>';
+
+                // Display the table
+                document.getElementById('sheetsData').innerHTML = tableHtml;
+
+                // Make data available globally for parsing
+                window.sheetsData = rows;
+                console.log('Raw data available in window.sheetsData');
             } catch (error) {
-                console.error("Error fetching data:", error);
+                console.error('Error fetching sheet data:', error);
+                document.getElementById('sheetsData').innerHTML = 'Error loading data. Please check console for details.';
             }
         }
 
-        fetchSheetData();
+        // Load data when page loads
+        window.addEventListener('load', fetchSheetsData);
     </script>
 </body>
 </html>
