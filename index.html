@@ -21,33 +21,67 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+        #lastUpdate {
+            color: #666;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        #refreshControls {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Google Sheets Data</h1>
+    <div id="refreshControls">
+        Refresh Interval: 
+        <select id="refreshInterval" onchange="updateRefreshInterval()">
+            <option value="0">Manual Only</option>
+            <option value="5000">5 seconds</option>
+            <option value="10000">10 seconds</option>
+            <option value="30000" selected>30 seconds</option>
+            <option value="60000">1 minute</option>
+        </select>
+        <button onclick="fetchSheetsData()">Refresh Now</button>
+    </div>
+    <div id="lastUpdate"></div>
     <div id="sheetsData"></div>
 
     <script>
-        // IE-compatible function to fetch and parse the Google Sheets data
+        var refreshTimer = null;
+
+        function updateLastRefreshTime() {
+            var now = new Date();
+            var timeStr = now.toLocaleTimeString();
+            document.getElementById('lastUpdate').innerHTML = 'Last updated: ' + timeStr;
+        }
+
+        function updateRefreshInterval() {
+            var interval = parseInt(document.getElementById('refreshInterval').value);
+            if (refreshTimer) {
+                clearInterval(refreshTimer);
+            }
+            if (interval > 0) {
+                refreshTimer = setInterval(fetchSheetsData, interval);
+            }
+        }
+
         function fetchSheetsData() {
             var xhr = new XMLHttpRequest();
             var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv';
             
-            xhr.open('GET', sheetUrl, true);
+            xhr.open('GET', sheetUrl + '&_=' + new Date().getTime(), true); // Cache busting
             
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
                         try {
-                            // Parse CSV data
                             var data = xhr.responseText;
                             var rows = data.split('\n');
                             var parsedRows = [];
                             
                             for (var i = 0; i < rows.length; i++) {
-                                // Handle possible commas within quoted fields
                                 var row = rows[i].match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
-                                // Remove quotes from fields if present
                                 for (var j = 0; j < row.length; j++) {
                                     if (row[j].charAt(0) === '"' && row[j].charAt(row[j].length - 1) === '"') {
                                         row[j] = row[j].substr(1, row[j].length - 2);
@@ -59,7 +93,6 @@
                             var headers = parsedRows[0];
                             var content = parsedRows.slice(1);
 
-                            // Create table
                             var tableHtml = '<table><thead><tr>';
                             for (var i = 0; i < headers.length; i++) {
                                 tableHtml += '<th>' + headers[i] + '</th>';
@@ -76,11 +109,9 @@
 
                             tableHtml += '</tbody></table>';
 
-                            // Display the table
                             document.getElementById('sheetsData').innerHTML = tableHtml;
-
-                            // Make data available globally for parsing
                             window.sheetsData = parsedRows;
+                            updateLastRefreshTime();
                         } catch (error) {
                             document.getElementById('sheetsData').innerHTML = 'Error parsing data: ' + error.message;
                         }
@@ -101,7 +132,6 @@
             }
         }
 
-        // Helper function for IE compatibility
         function addLoadEvent(func) {
             var oldonload = window.onload;
             if (typeof window.onload !== 'function') {
@@ -116,8 +146,11 @@
             }
         }
 
-        // Load data when page loads
-        addLoadEvent(fetchSheetsData);
+        // Initialize on page load
+        addLoadEvent(function() {
+            fetchSheetsData();
+            updateRefreshInterval(); // Start the refresh timer
+        });
     </script>
 </body>
 </html>
