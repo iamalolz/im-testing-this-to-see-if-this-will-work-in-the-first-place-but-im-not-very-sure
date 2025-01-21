@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Barebones Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CSV Viewer</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Barebones Website!</h1>
-    <p>This is a basic static site hosted on GitHub Pages.</p>
+    <h1>CSV Data Viewer</h1>
+    <table id="csvTable"></table>
+
+    <script>
+        // Google Drive direct link to your CSV file
+        const csvUrl = "https://docs.google.com/uc?export=download&id=1yi03e0ObaScAIaIXG9cW8ze3B-xbRutewFScjk6syUI";
+
+        // Function to fetch and display CSV data
+        async function displayCSV() {
+            try {
+                const response = await fetch(csvUrl);
+                const data = await response.text();
+                const rows = data.split("\n").map(row => row.split(","));
+
+                // Generate table headers
+                const table = document.getElementById("csvTable");
+                const headerRow = document.createElement("tr");
+                rows[0].forEach(header => {
+                    const th = document.createElement("th");
+                    th.textContent = header;
+                    headerRow.appendChild(th);
+                });
+                table.appendChild(headerRow);
+
+                // Generate table rows
+                rows.slice(1).forEach(row => {
+                    const tr = document.createElement("tr");
+                    row.forEach(cell => {
+                        const td = document.createElement("td");
+                        td.textContent = cell;
+                        tr.appendChild(td);
+                    });
+                    table.appendChild(tr);
+                });
+            } catch (error) {
+                console.error("Error fetching or displaying the CSV file:", error);
+            }
+        }
+
+        // Call the function to display CSV data
+        displayCSV();
+    </script>
 </body>
 </html>
