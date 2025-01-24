@@ -4,49 +4,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Live Bus Tracker</title>
     <style>
-        /* Modern IE-Compatible Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 15px;
             background: #f0f4f8;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .bus-card {
+        .service-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             margin: 15px 0;
             padding: 15px;
-            position: relative;
         }
-        .bus-number {
-            font-size: 20px;
+        .service-header {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .service-number {
+            font-size: 22px;
             color: #2c3e50;
-            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .operator {
+            float: right;
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        .bus-entry {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
         }
         .arrival-time {
-            font-size: 24px;
             color: #3498db;
-            margin: 10px 0;
-        }
-        .details-row {
-            margin: 10px 0;
-            color: #7f8c8d;
+            font-size: 18px;
+            margin: 5px 0;
         }
         .progress-container {
             height: 6px;
             background: #ecf0f1;
             border-radius: 3px;
-            margin: 15px 0;
+            margin: 10px 0;
         }
         .progress-bar {
             height: 100%;
             background: #3498db;
             border-radius: 3px;
+        }
+        .bus-details {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin: 5px 0;
         }
         .refresh-controls {
             position: fixed;
@@ -71,7 +82,7 @@
         <h1>🚌 Live Bus Tracker</h1>
         <div id="lastUpdate" class="update-time"></div>
     </div>
-    <div id="busContainer"></div>
+    <div id="serviceContainer"></div>
 
     <div class="refresh-controls">
         <select id="refreshInterval" onchange="updateRefreshInterval()">
@@ -82,7 +93,6 @@
     </div>
 
     <script>
-        // IE-Compatible Functions
         var refreshTimer = null;
 
         function loadData() {
@@ -120,7 +130,7 @@
                 data.push(parseRow(rows[i]));
             }
 
-            renderBusCards(headers, data);
+            renderServiceCards(headers, data);
         }
 
         function parseRow(row) {
@@ -144,32 +154,51 @@
             return cells;
         }
 
-        function renderBusCards(headers, data) {
-            var container = document.getElementById('busContainer');
+        function renderServiceCards(headers, data) {
+            var container = document.getElementById('serviceContainer');
             container.innerHTML = '';
 
             data.forEach(function(row) {
-                var card = document.createElement('div');
-                card.className = 'bus-card';
+                var serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
                 
-                var busNumber = row[headers.indexOf('Bus Number')] || 'N/A';
-                var arrival = row[headers.indexOf('1st Bus Arrival')] || '?';
-                var load = row[headers.indexOf('1st Bus Load')] || 'Normal';
-                var monitored = row[headers.indexOf('1st Bus Monitored')] || 'No';
-                var type = row[headers.indexOf('1st Bus Type')] || 'Standard';
+                var serviceNumber = row[headers.indexOf('ServiceNo')] || 'N/A';
+                var operator = row[headers.indexOf('Operator')] || 'Unknown Operator';
+                
+                var buses = [
+                    { prefix: '1st', arrival: '1st Bus Arrival' },
+                    { prefix: '2nd', arrival: '2nd Bus Arrival' },
+                    { prefix: '3rd', arrival: '3rd Bus Arrival' }
+                ];
 
-                card.innerHTML = [
-                    '<div class="bus-number">🚌 Bus ' + busNumber + '</div>',
-                    '<div class="arrival-time">' + arrival + ' min</div>',
-                    '<div class="progress-container">',
-                        '<div class="progress-bar" style="width:' + Math.min(100, (30 - arrival) * 3.33) + '%"></div>',
+                var busEntries = [];
+                buses.forEach(function(bus) {
+                    var arrival = row[headers.indexOf(bus.arrival)];
+                    if (!arrival || arrival === '') return; // Skip missing buses
+                    
+                    busEntries.push([
+                        '<div class="bus-entry">',
+                            '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrival + ' min</div>',
+                            '<div class="progress-container">',
+                                '<div class="progress-bar" style="width:' + Math.min(100, (30 - arrival) * 3.33) + '%"></div>',
+                            '</div>',
+                            '<div class="bus-details">',
+                                'Load: ' + (row[headers.indexOf(bus.prefix + ' Bus Load')] || 'Normal') + ' | ',
+                                'Type: ' + (row[headers.indexOf(bus.prefix + ' Bus Type')] || 'Standard'),
+                            '</div>',
+                        '</div>'
+                    ].join(''));
+                });
+
+                serviceCard.innerHTML = [
+                    '<div class="service-header">',
+                        '<span class="service-number">Service ' + serviceNumber + '</span>',
+                        '<span class="operator">' + operator + '</span>',
                     '</div>',
-                    '<div class="details-row">👥 Load: ' + load + '</div>',
-                    '<div class="details-row">📍 Monitored: ' + monitored + '</div>',
-                    '<div class="details-row">🛣 Type: ' + type + '</div>'
+                    busEntries.join('')
                 ].join('');
 
-                container.appendChild(card);
+                container.appendChild(serviceCard);
             });
         }
 
@@ -186,8 +215,8 @@
         }
 
         function showError(message) {
-            var container = document.getElementById('busContainer');
-            container.innerHTML = '<div class="bus-card" style="color: red; text-align: center">' + message + '</div>';
+            var container = document.getElementById('serviceContainer');
+            container.innerHTML = '<div class="service-card" style="color: red; text-align: center">' + message + '</div>';
         }
 
         // Initial Setup
