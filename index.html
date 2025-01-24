@@ -1,177 +1,293 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bus Arrival Data</title>
     <title>Bus Arrival Times</title>
-    <style>
-        /* Basic styling compatible with old IE */
-        .table-container {
-            display: none;
-            margin: 20px 0;
-        }
+<style>
         table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+        .bus-table {
+border-collapse: collapse;
+width: 100%;
+margin: 20px 0;
+}
         th, td {
-            border: 1px solid #ddd;
-            padding: 4px;
-            text-align: left;
-        }
+        .bus-table th, .bus-table td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
         th {
-            background-color: #eee;
+        .bus-table th {
+background-color: #f2f2f2;
+}
+        .busTable {
+            margin-bottom: 40px;
         }
-        .mode-toggle {
+        .tableTitle {
+        .table-title {
+font-size: 18px;
             margin: 10px 0;
-        }
-    </style>
+            margin: 15px 0;
+}
+</style>
 </head>
 <body>
-    <h1>Bus Arrival Times</h1>
-    <div class="mode-toggle">
-        View Mode: 
-        <a href="#" onclick="switchMode('modern')">Modern</a> | 
-        <a href="#" onclick="switchMode('legacy')">Legacy</a>
-    </div>
-    <div id="dataContainer"></div>
+<h1>Bus Arrival Times</h1>
+<div id="refreshControls">
+        Refresh Interval: 
+        <select id="refreshInterval" onchange="updateRefreshInterval()">
+            <option value="0">Manual Only</option>
+            <option value="5000">5 seconds</option>
+            <option value="10000">10 seconds</option>
+            <option value="30000" selected>30 seconds</option>
+            <option value="60000">1 minute</option>
+        </select>
+        <button onclick="fetchSheetsData()">Refresh Now</button>
+        <button onclick="loadData()">Refresh Data</button>
+</div>
+    <div id="lastUpdate"></div>
+    <div id="sheetsData"></div>
+    <div id="tablesContainer"></div>
 
-    <script>
-        // IE-safe compatibility detection
-        var isLegacyMode = document.documentMode < 11 || typeof document.documentMode === 'undefined';
-
-        // Storage for raw data
-        var rawData = {
-            headers: [],
-            rows: []
-        };
-
-        function switchMode(mode) {
-            isLegacyMode = (mode === 'legacy');
-            renderTables();
-            return false; // Prevent link navigation
-        }
-
+<script>
+        var refreshTimer = null;
+        // IE-compatible XMLHttpRequest implementation
         function loadData() {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'YOUR_GOOGLE_SHEETS_CSV_URL', true);
+            xhr.open('GET', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_' + new Date().getTime(), true);
             
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
-                        processCSV(xhr.responseText);
-                        renderTables();
+                        processData(xhr.responseText);
                     } else {
-                        showError('Data load failed');
+                        showError('Failed to load data: ' + xhr.status);
                     }
                 }
             };
+            
             xhr.send();
         }
 
-        function processCSV(csv) {
+        function parseCSVRow(row) {
+        function processData(csv) {
             var rows = csv.split(/\r?\n/);
-            rawData.headers = parseRow(rows[0]);
-            rawData.rows = [];
+            if (rows.length < 2) {
+                showError('Not enough data rows');
+                return;
+            }
+
+            var headers = parseRow(rows[0]);
+            var dataRows = [];
             
             for (var i = 1; i < rows.length; i++) {
                 if (rows[i].trim()) {
-                    rawData.rows.push(parseRow(rows[i]));
+                    dataRows.push(parseRow(rows[i]));
                 }
             }
+
+            buildTables(headers, dataRows);
         }
 
         function parseRow(row) {
-            var cells = [];
-            var current = '';
-            var inQuotes = false;
-            
-            for (var i = 0; i < row.length; i++) {
-                var char = row[i];
-                if (char === '"') {
-                    inQuotes = !inQuotes;
-                } else if (char === ',' && !inQuotes) {
+var cells = [];
+var current = '';
+var inQuotes = false;
+@@ -56,142 +79,82 @@ <h1>Bus Arrival Times</h1>
+if (char === '"') {
+inQuotes = !inQuotes;
+} else if (char === ',' && !inQuotes) {
+                    cells.push(current.replace(/^\s+|\s+$/g, '')); // trim
                     cells.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
-                }
-            }
+current = '';
+} else {
+current += char;
+}
+}
+            cells.push(current.replace(/^\s+|\s+$/g, '')); // trim
             cells.push(current.trim());
-            return cells;
+return cells;
+}
+
+        function updateLastRefreshTime() {
+            var now = new Date();
+            document.getElementById('lastUpdate').innerHTML = 'Last updated: ' + now.toLocaleTimeString();
         }
 
-        function renderTables() {
-            var container = document.getElementById('dataContainer');
+        function updateRefreshInterval() {
+            var interval = parseInt(document.getElementById('refreshInterval').value, 10);
+            if (refreshTimer !== null) {
+                clearInterval(refreshTimer);
+            }
+            if (interval > 0) {
+                refreshTimer = setInterval(fetchSheetsData, interval);
+            }
+        }
+
+        function generateBusTable(busNumber, headers, allRows) {
+            var prefix = busNumber + ' Bus ';
+            var tableHtml = '<div class="busTable">';
+            tableHtml += '<div class="tableTitle">' + busNumber + ' Bus Details</div>';
+            tableHtml += '<table><thead><tr>';
+            
+            var displayHeaders = ['Bus Number', 'Feature', 'Load', 'Monitored', 'Type', 'Operator', 'Arrival'];
+        function buildTables(headers, data) {
+            var container = document.getElementById('tablesContainer');
             container.innerHTML = '';
-            
-            if (isLegacyMode) {
-                container.innerHTML = buildLegacyTable();
-            } else {
-                container.innerHTML = buildModernTables();
-            }
-        }
 
-        function buildModernTables() {
-            var html = '';
+            for (var h = 0; h < displayHeaders.length; h++) {
+                tableHtml += '<th>' + displayHeaders[h] + '</th>';
+            }
+            tableHtml += '</tr></thead><tbody>';
+
+            for (var r = 1; r < allRows.length; r++) {
+                var row = allRows[r];
+                tableHtml += '<tr>';
+            // Create tables for 1st, 2nd, 3rd buses
             for (var busNum = 1; busNum <= 3; busNum++) {
-                html += '<div class="table-container"><h3>Bus ' + busNum + '</h3><table>';
-                html += '<tr><th>Bus #</th><th>Feature</th><th>Load</th><th>Monitored</th><th>Type</th><th>Operator</th><th>Arrival</th></tr>';
-                
-                for (var r = 0; r < rawData.rows.length; r++) {
-                    var row = rawData.rows[r];
-                    html += '<tr>';
-                    html += '<td>' + getCell(row, 'Bus Number') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Feature') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Load') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Monitored') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Type') + '</td>';
-                    html += '<td>' + getCell(row, 'Bus Operator') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Arrival') + '</td>';
-                    html += '</tr>';
+                var tableHtml = '<div class="table-title">Bus ' + busNum + '</div>';
+                tableHtml += '<table class="bus-table"><thead><tr>';
+
+                // Bus Number
+                tableHtml += '<td>' + (row[indexOfHeader(headers, 'Bus Number')] || '-') + '</td>';
+                // Define columns for each table
+                var columns = [
+                    'Bus Number',
+                    'Feature', 
+                    'Load', 
+                    'Monitored', 
+                    'Type',
+                    'Operator',
+                    'Arrival'
+                ];
+
+                // Feature, Load, Monitored, Type
+                var fields = ['Feature', 'Load', 'Monitored', 'Type'];
+                for (var f = 0; f < fields.length; f++) {
+                    var header = prefix + fields[f];
+                    var value = row[indexOfHeader(headers, header)] || '-';
+                    tableHtml += '<td>' + value + '</td>';
+                // Create headers
+                for (var c = 0; c < columns.length; c++) {
+                    tableHtml += '<th>' + columns[c] + '</th>';
+}
+                tableHtml += '</tr></thead><tbody>';
+
+                // Operator
+                tableHtml += '<td>' + (row[indexOfHeader(headers, 'Bus Operator')] || '-') + '</td>';
+                // Populate rows
+                for (var r = 0; r < data.length; r++) {
+                    var row = data[r];
+                    tableHtml += '<tr>';
+                    
+                    // Bus Number
+                    tableHtml += '<td>' + (row[headers.indexOf('Bus Number')] || '-') + '</td>';
+                    
+                    // Feature, Load, Monitored, Type
+                    for (var field of ['Feature', 'Load', 'Monitored', 'Type']) {
+                        var headerName = busNum + getSuffix(busNum) + ' Bus ' + field;
+                        tableHtml += '<td>' + (row[headers.indexOf(headerName)] || '-') + '</td>';
+                    }
+                    
+                    // Operator
+                    tableHtml += '<td>' + (row[headers.indexOf('Bus Operator')] || '-') + '</td>';
+                    
+                    // Arrival
+                    var arrivalHeader = busNum + getSuffix(busNum) + ' Bus Arrival';
+                    tableHtml += '<td>' + (row[headers.indexOf(arrivalHeader)] || '-') + '</td>';
+                    
+                    tableHtml += '</tr>';
                 }
-                
-                html += '</table></div>';
+
+                // Arrival
+                var arrivalHeader = busNumber + ' Bus Arrival';
+                tableHtml += '<td>' + (row[indexOfHeader(headers, arrivalHeader)] || '-') + '</td>';
+
+                tableHtml += '</tr>';
+                tableHtml += '</tbody></table>';
+                container.innerHTML += tableHtml;
+}
+
+            tableHtml += '</tbody></table></div>';
+            return tableHtml;
+}
+
+        function indexOfHeader(headers, search) {
+            for (var i = 0; i < headers.length; i++) {
+                if (headers[i] === search) return i;
             }
-            return html;
-        }
-
-        function buildLegacyTable() {
-            var html = '<div class="table-container"><table>';
-            html += '<tr><th>Bus #</th><th>Feature 1</th><th>Arrival 1</th><th>Feature 2</th><th>Arrival 2</th><th>Feature 3</th><th>Arrival 3</th></tr>';
-            
-            for (var r = 0; r < rawData.rows.length; r++) {
-                var row = rawData.rows[r];
-                html += '<tr>';
-                html += '<td>' + getCell(row, 'Bus Number') + '</td>';
-                
-                for (var busNum = 1; busNum <= 3; busNum++) {
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Feature') + '</td>';
-                    html += '<td>' + getCell(row, busNum + getSuffix(busNum) + ' Bus Arrival') + '</td>';
-                }
-                
-                html += '</tr>';
-            }
-            
-            html += '</table></div>';
-            return html;
-        }
-
-        function getCell(row, header) {
-            var index = rawData.headers.indexOf(header);
-            return (index >= 0 && row[index]) ? row[index] : '-';
-        }
-
+            return -1;
         function getSuffix(num) {
             return num === 1 ? 'st' : num === 2 ? 'nd' : 'rd';
-        }
+}
 
-        function showError(msg) {
-            document.getElementById('dataContainer').innerHTML = 
-                '<div style="color:red; padding:10px;">' + msg + '</div>';
-        }
+        function fetchSheetsData() {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_=' + new Date().getTime();
 
+            xhr.open('GET', url, true);
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            var data = xhr.responseText.split('\n');
+                            var cleanData = [];
+                            
+                            // Remove empty rows
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].replace(/^\s+|\s+$/g, '') !== '') {
+                                    cleanData.push(data[i]);
+                                }
+                            }
+                            
+                            if (cleanData.length === 0) return;
+                            
+                            var headers = parseCSVRow(cleanData[0]);
+                            var allRows = [headers];
+                            
+                            for (var j = 1; j < cleanData.length; j++) {
+                                allRows.push(parseCSVRow(cleanData[j]));
+                            }
+
+                            var output = '';
+                            var busNumbers = ['1st', '2nd', '3rd'];
+                            
+                            for (var b = 0; b < busNumbers.length; b++) {
+                                output += generateBusTable(busNumbers[b], headers, allRows);
+                            }
+
+                            document.getElementById('sheetsData').innerHTML = output;
+                            updateLastRefreshTime();
+                        } catch (error) {
+                            document.getElementById('sheetsData').innerHTML = 'Error processing data';
+                        }
+                    } else {
+                        document.getElementById('sheetsData').innerHTML = 'Error loading data';
+                    }
+                }
+            };
+
+            xhr.send();
+        function showError(message) {
+            var container = document.getElementById('tablesContainer');
+            container.innerHTML = '<div style="color: red;">' + message + '</div>';
+}
+
+        // IE-safe event attachment
+        if (window.attachEvent) {
+            window.attachEvent('onload', function() {
+                fetchSheetsData();
+                updateRefreshInterval();
+            });
+        } else {
+            window.onload = function() {
+                fetchSheetsData();
+                updateRefreshInterval();
+            };
+        }
         // Initial load
         loadData();
-    </script>
+</script>
 </body>
 </html>
