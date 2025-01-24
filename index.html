@@ -206,7 +206,11 @@
                 var busEntries = [];
                 for (var b = 0; b < buses.length; b++) {
                     var bus = buses[b];
-                    var arrivalText = bus.arrival === '-' ? '-' : bus.arrival + ' min';
+                    /* NEW: Handle both "-" and "Arriving" without "min" */
+                    var arrivalText = (bus.arrival === '-' || bus.arrival === 'Arriving') 
+                        ? bus.arrival 
+                        : bus.arrival + ' min';
+
                     var progressWidth, progressColor;
 
                     if (bus.arrival === '-') {
