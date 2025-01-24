@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bus Arrival Data</title>
     <style>
@@ -17,9 +16,6 @@
         }
         th {
             background-color: #f2f2f2;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
         }
         .busTable {
             margin-bottom: 40px;
@@ -60,13 +56,13 @@
                 if (char === '"') {
                     inQuotes = !inQuotes;
                 } else if (char === ',' && !inQuotes) {
-                    cells.push(current.trim());
+                    cells.push(current.replace(/^\s+|\s+$/g, '')); // trim
                     current = '';
                 } else {
                     current += char;
                 }
             }
-            cells.push(current.trim());
+            cells.push(current.replace(/^\s+|\s+$/g, '')); // trim
             return cells;
         }
 
@@ -76,9 +72,13 @@
         }
 
         function updateRefreshInterval() {
-            var interval = parseInt(document.getElementById('refreshInterval').value);
-            if (refreshTimer) clearInterval(refreshTimer);
-            if (interval > 0) refreshTimer = setInterval(fetchSheetsData, interval);
+            var interval = parseInt(document.getElementById('refreshInterval').value, 10);
+            if (refreshTimer !== null) {
+                clearInterval(refreshTimer);
+            }
+            if (interval > 0) {
+                refreshTimer = setInterval(fetchSheetsData, interval);
+            }
         }
 
         function generateBusTable(busNumber, headers, allRows) {
@@ -87,7 +87,6 @@
             tableHtml += '<div class="tableTitle">' + busNumber + ' Bus Details</div>';
             tableHtml += '<table><thead><tr>';
             
-            // Fixed columns for all tables
             var displayHeaders = ['Bus Number', 'Feature', 'Load', 'Monitored', 'Type', 'Operator', 'Arrival'];
             
             for (var h = 0; h < displayHeaders.length; h++) {
@@ -100,19 +99,22 @@
                 tableHtml += '<tr>';
                 
                 // Bus Number
-                tableHtml += '<td>' + (row[headers.indexOf('Bus Number')] || '-') + '</td>';
+                tableHtml += '<td>' + (row[indexOfHeader(headers, 'Bus Number')] || '-') + '</td>';
                 
                 // Feature, Load, Monitored, Type
-                for (var field of ['Feature', 'Load', 'Monitored', 'Type']) {
-                    var header = prefix + field;
-                    tableHtml += '<td>' + (row[headers.indexOf(header)] || '-') + '</td>';
+                var fields = ['Feature', 'Load', 'Monitored', 'Type'];
+                for (var f = 0; f < fields.length; f++) {
+                    var header = prefix + fields[f];
+                    var value = row[indexOfHeader(headers, header)] || '-';
+                    tableHtml += '<td>' + value + '</td>';
                 }
                 
                 // Operator
-                tableHtml += '<td>' + (row[headers.indexOf('Bus Operator')] || '-') + '</td>';
+                tableHtml += '<td>' + (row[indexOfHeader(headers, 'Bus Operator')] || '-') + '</td>';
                 
                 // Arrival
-                tableHtml += '<td>' + (row[headers.indexOf(busNumber + ' Bus Arrival')] || '-') + '</td>';
+                var arrivalHeader = busNumber + ' Bus Arrival';
+                tableHtml += '<td>' + (row[indexOfHeader(headers, arrivalHeader)] || '-') + '</td>';
 
                 tableHtml += '</tr>';
             }
@@ -121,35 +123,56 @@
             return tableHtml;
         }
 
+        function indexOfHeader(headers, search) {
+            for (var i = 0; i < headers.length; i++) {
+                if (headers[i] === search) return i;
+            }
+            return -1;
+        }
+
         function fetchSheetsData() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_=' + new Date().getTime(), true);
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_=' + new Date().getTime();
 
+            xhr.open('GET', url, true);
+            
             xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    try {
-                        var data = xhr.responseText.split('\n').filter(function(row) {
-                            return row.trim() !== '';
-                        });
-                        
-                        var headers = parseCSVRow(data[0]);
-                        var allRows = [headers];
-                        
-                        for (var i = 1; i < data.length; i++) {
-                            allRows.push(parseCSVRow(data[i]));
-                        }
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            var data = xhr.responseText.split('\n');
+                            var cleanData = [];
+                            
+                            // Remove empty rows
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].replace(/^\s+|\s+$/g, '') !== '') {
+                                    cleanData.push(data[i]);
+                                }
+                            }
+                            
+                            if (cleanData.length === 0) return;
+                            
+                            var headers = parseCSVRow(cleanData[0]);
+                            var allRows = [headers];
+                            
+                            for (var j = 1; j < cleanData.length; j++) {
+                                allRows.push(parseCSVRow(cleanData[j]));
+                            }
 
-                        var output = '';
-                        var busNumbers = ['1st', '2nd', '3rd'];
-                        
-                        for (var b = 0; b < busNumbers.length; b++) {
-                            output += generateBusTable(busNumbers[b], headers, allRows);
-                        }
+                            var output = '';
+                            var busNumbers = ['1st', '2nd', '3rd'];
+                            
+                            for (var b = 0; b < busNumbers.length; b++) {
+                                output += generateBusTable(busNumbers[b], headers, allRows);
+                            }
 
-                        document.getElementById('sheetsData').innerHTML = output;
-                        updateLastRefreshTime();
-                    } catch (error) {
-                        document.getElementById('sheetsData').innerHTML = 'Error processing data: ' + error.message;
+                            document.getElementById('sheetsData').innerHTML = output;
+                            updateLastRefreshTime();
+                        } catch (error) {
+                            document.getElementById('sheetsData').innerHTML = 'Error processing data';
+                        }
+                    } else {
+                        document.getElementById('sheetsData').innerHTML = 'Error loading data';
                     }
                 }
             };
@@ -157,17 +180,18 @@
             xhr.send();
         }
 
-        // IE-safe event listener
-        function addLoadEvent(func) {
-            var oldonload = window.onload;
-            window.onload = typeof window.onload === 'function' ? 
-                function() { oldonload(); func(); } : func;
+        // IE-safe event attachment
+        if (window.attachEvent) {
+            window.attachEvent('onload', function() {
+                fetchSheetsData();
+                updateRefreshInterval();
+            });
+        } else {
+            window.onload = function() {
+                fetchSheetsData();
+                updateRefreshInterval();
+            };
         }
-
-        addLoadEvent(function() {
-            fetchSheetsData();
-            updateRefreshInterval();
-        });
     </script>
 </body>
 </html>
