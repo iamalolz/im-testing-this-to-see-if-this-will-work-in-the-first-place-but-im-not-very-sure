@@ -93,6 +93,16 @@
     </div>
 
     <script>
+        // IE Compatibility Polyfill
+        if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function(obj, start) {
+                for (var i = (start || 0); i < this.length; i++) {
+                    if (this[i] === obj) return i;
+                }
+                return -1;
+            };
+        }
+
         var refreshTimer = null;
 
         function loadData() {
@@ -114,20 +124,22 @@
         }
 
         function processData(csv) {
-            var rows = csv.split(/\r?\n/).filter(function(row) {
-                return row.trim() !== '';
-            });
+            var rows = csv.split(/\r?\n/);
+            var cleanRows = [];
+            for (var i = 0; i < rows.length; i++) {
+                if (rows[i].trim() !== '') cleanRows.push(rows[i]);
+            }
             
-            if (rows.length < 2) {
+            if (cleanRows.length < 2) {
                 showError('Not enough data');
                 return;
             }
 
-            var headers = parseRow(rows[0]);
+            var headers = parseRow(cleanRows[0]);
             var data = [];
             
-            for (var i = 1; i < rows.length; i++) {
-                data.push(parseRow(rows[i]));
+            for (var i = 1; i < cleanRows.length; i++) {
+                data.push(parseRow(cleanRows[i]));
             }
 
             renderServiceCards(headers, data);
@@ -158,37 +170,50 @@
             var container = document.getElementById('serviceContainer');
             container.innerHTML = '';
 
-            data.forEach(function(row) {
+            // Get header indexes once
+            var busNumberIndex = headers.indexOf('Bus Number');
+            var operatorIndex = headers.indexOf('Bus Operator');
+            
+            for (var i = 0; i < data.length; i++) {
+                var row = data[i];
                 var serviceCard = document.createElement('div');
                 serviceCard.className = 'service-card';
                 
-                var serviceNumber = row[headers.indexOf('ServiceNo')] || 'N/A';
-                var operator = row[headers.indexOf('Operator')] || 'Unknown Operator';
+                var serviceNumber = row[busNumberIndex] || 'N/A';
+                var operator = row[operatorIndex] || 'Unknown Operator';
                 
-                var buses = [
-                    { prefix: '1st', arrival: '1st Bus Arrival' },
-                    { prefix: '2nd', arrival: '2nd Bus Arrival' },
-                    { prefix: '3rd', arrival: '3rd Bus Arrival' }
-                ];
+                var buses = [];
+                for (var busNum = 1; busNum <= 3; busNum++) {
+                    var prefix = busNum + (busNum === 1 ? 'st' : busNum === 2 ? 'nd' : 'rd');
+                    var arrival = row[headers.indexOf(prefix + ' Bus Arrival')];
+                    if (!arrival || arrival === '') continue;
+
+                    buses.push({
+                        prefix: prefix,
+                        arrival: arrival,
+                        load: row[headers.indexOf(prefix + ' Bus Load')],
+                        monitored: row[headers.indexOf(prefix + ' Bus Monitored')],
+                        type: row[headers.indexOf(prefix + ' Bus Type')]
+                    });
+                }
 
                 var busEntries = [];
-                buses.forEach(function(bus) {
-                    var arrival = row[headers.indexOf(bus.arrival)];
-                    if (!arrival || arrival === '') return; // Skip missing buses
-                    
-                    busEntries.push([
-                        '<div class="bus-entry">',
-                            '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrival + ' min</div>',
-                            '<div class="progress-container">',
-                                '<div class="progress-bar" style="width:' + Math.min(100, (30 - arrival) * 3.33) + '%"></div>',
-                            '</div>',
-                            '<div class="bus-details">',
-                                'Load: ' + (row[headers.indexOf(bus.prefix + ' Bus Load')] || 'Normal') + ' | ',
-                                'Type: ' + (row[headers.indexOf(bus.prefix + ' Bus Type')] || 'Standard'),
-                            '</div>',
+                for (var b = 0; b < buses.length; b++) {
+                    var bus = buses[b];
+                    busEntries.push(
+                        '<div class="bus-entry">' +
+                            '<div class="arrival-time">' + bus.prefix + ' Bus: ' + bus.arrival + ' min</div>' +
+                            '<div class="progress-container">' +
+                                '<div class="progress-bar" style="width:' + Math.min(100, (30 - parseInt(bus.arrival || 0)) * 3.33) + '%"></div>' +
+                            '</div>' +
+                            '<div class="bus-details">' +
+                                'Load: ' + (bus.load || 'Normal') + ' | ' +
+                                'Monitored: ' + (bus.monitored || 'No') + ' | ' +
+                                'Type: ' + (bus.type || 'Standard') +
+                            '</div>' +
                         '</div>'
-                    ].join(''));
-                });
+                    );
+                }
 
                 serviceCard.innerHTML = [
                     '<div class="service-header">',
@@ -199,7 +224,7 @@
                 ].join('');
 
                 container.appendChild(serviceCard);
-            });
+            }
         }
 
         function updateLastRefreshTime() {
