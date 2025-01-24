@@ -2,73 +2,93 @@
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bus Arrival Times</title>
+    <title>Live Bus Tracker</title>
     <style>
-        /* Unified CSS for all IE versions */
-        .bus-table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
+        /* Modern IE-Compatible Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #f0f4f8;
         }
-        .bus-table th, .bus-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .bus-table th {
-            background-color: #f2f2f2;
-        }
-        .table-title {
-            font-size: 18px;
+        .bus-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             margin: 15px 0;
+            padding: 15px;
+            position: relative;
         }
-        #refreshControls {
+        .bus-number {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .arrival-time {
+            font-size: 24px;
+            color: #3498db;
             margin: 10px 0;
         }
-        .error-message {
-            color: red;
+        .details-row {
+            margin: 10px 0;
+            color: #7f8c8d;
+        }
+        .progress-container {
+            height: 6px;
+            background: #ecf0f1;
+            border-radius: 3px;
+            margin: 15px 0;
+        }
+        .progress-bar {
+            height: 100%;
+            background: #3498db;
+            border-radius: 3px;
+        }
+        .refresh-controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .update-time {
+            color: #95a5a6;
+            font-size: 12px;
+            text-align: center;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Bus Arrival Times</h1>
-    <div id="refreshControls">
-        Refresh Interval: 
-        <select id="refreshInterval" onchange="updateRefreshInterval()">
-            <option value="0">Manual Only</option>
-            <option value="5000">5</option>
-            <option value="10000">10</option>
-            <option value="30000" selected>30</option>
-            <option value="60000">60</option>
-        </select> seconds
-        <button onclick="loadData()">Refresh Now</button>
+    <div class="header">
+        <h1>🚌 Live Bus Tracker</h1>
+        <div id="lastUpdate" class="update-time"></div>
     </div>
-    <div id="lastUpdate"></div>
-    <div id="tablesContainer"></div>
+    <div id="busContainer"></div>
+
+    <div class="refresh-controls">
+        <select id="refreshInterval" onchange="updateRefreshInterval()">
+            <option value="30000" selected>🔄 30 Second Refresh</option>
+            <option value="60000">⏱ 1 Minute Refresh</option>
+            <option value="0">⏸ Pause Updates</option>
+        </select>
+    </div>
 
     <script>
-        // IE Compatibility Polyfills
-        if (!Array.prototype.indexOf) {
-            Array.prototype.indexOf = function(obj, start) {
-                for (var i = (start || 0); i < this.length; i++) {
-                    if (this[i] === obj) return i;
-                }
-                return -1;
-            };
-        }
-
-        if (!String.prototype.trim) {
-            String.prototype.trim = function() {
-                return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
-            };
-        }
-
+        // IE-Compatible Functions
         var refreshTimer = null;
 
         function loadData() {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
             var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_=' + new Date().getTime();
-
+            
             xhr.open('GET', url, true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
@@ -76,7 +96,7 @@
                         processData(xhr.responseText);
                         updateLastRefreshTime();
                     } else {
-                        showError('Load failed: ' + xhr.status);
+                        showError('Failed to load data');
                     }
                 }
             };
@@ -84,22 +104,23 @@
         }
 
         function processData(csv) {
-            var rows = csv.split(/\r?\n/);
+            var rows = csv.split(/\r?\n/).filter(function(row) {
+                return row.trim() !== '';
+            });
+            
             if (rows.length < 2) {
-                showError('Insufficient data');
+                showError('Not enough data');
                 return;
             }
 
             var headers = parseRow(rows[0]);
-            var dataRows = [];
+            var data = [];
             
             for (var i = 1; i < rows.length; i++) {
-                if (rows[i].trim()) {
-                    dataRows.push(parseRow(rows[i]));
-                }
+                data.push(parseRow(rows[i]));
             }
 
-            buildTables(headers, dataRows);
+            renderBusCards(headers, data);
         }
 
         function parseRow(row) {
@@ -123,57 +144,39 @@
             return cells;
         }
 
-        function buildTables(headers, data) {
-            var container = document.getElementById('tablesContainer');
+        function renderBusCards(headers, data) {
+            var container = document.getElementById('busContainer');
             container.innerHTML = '';
 
-            for (var busNum = 1; busNum <= 3; busNum++) {
-                var tableHtml = '<div class="table-title">' + busNum + getSuffix(busNum) + ' Bus</div>';
-                tableHtml += '<table class="bus-table"><thead><tr>';
+            data.forEach(function(row) {
+                var card = document.createElement('div');
+                card.className = 'bus-card';
                 
-                var columns = ['Bus Number','Feature','Load','Monitored','Type','Operator','Arrival'];
-                
-                for (var c = 0; c < columns.length; c++) {
-                    tableHtml += '<th>' + columns[c] + '</th>';
-                }
-                tableHtml += '</tr></thead><tbody>';
-                
-                for (var r = 0; r < data.length; r++) {
-                    var row = data[r];
-                    tableHtml += '<tr>';
-                    
-                    tableHtml += '<td>' + (valueOrDash(row[headers.indexOf('Bus Number')])) + '</td>';
-                    
-                    var fields = ['Feature','Load','Monitored','Type'];
-                    for (var f = 0; f < fields.length; f++) {
-                        var header = busNum + getSuffix(busNum) + ' Bus ' + fields[f];
-                        tableHtml += '<td>' + valueOrDash(row[headers.indexOf(header)]) + '</td>';
-                    }
-                    
-                    tableHtml += '<td>' + valueOrDash(row[headers.indexOf('Bus Operator')]) + '</td>';
-                    
-                    var arrivalHeader = busNum + getSuffix(busNum) + ' Bus Arrival';
-                    tableHtml += '<td>' + valueOrDash(row[headers.indexOf(arrivalHeader)]) + '</td>';
-                    
-                    tableHtml += '</tr>';
-                }
-                
-                tableHtml += '</tbody></table>';
-                container.innerHTML += tableHtml;
-            }
-        }
+                var busNumber = row[headers.indexOf('Bus Number')] || 'N/A';
+                var arrival = row[headers.indexOf('1st Bus Arrival')] || '?';
+                var load = row[headers.indexOf('1st Bus Load')] || 'Normal';
+                var monitored = row[headers.indexOf('1st Bus Monitored')] || 'No';
+                var type = row[headers.indexOf('1st Bus Type')] || 'Standard';
 
-        function valueOrDash(value) {
-            return (typeof value !== 'undefined' && value !== '') ? value : '-';
-        }
+                card.innerHTML = [
+                    '<div class="bus-number">🚌 Bus ' + busNumber + '</div>',
+                    '<div class="arrival-time">' + arrival + ' min</div>',
+                    '<div class="progress-container">',
+                        '<div class="progress-bar" style="width:' + Math.min(100, (30 - arrival) * 3.33) + '%"></div>',
+                    '</div>',
+                    '<div class="details-row">👥 Load: ' + load + '</div>',
+                    '<div class="details-row">📍 Monitored: ' + monitored + '</div>',
+                    '<div class="details-row">🛣 Type: ' + type + '</div>'
+                ].join('');
 
-        function getSuffix(num) {
-            return num === 1 ? 'st' : num === 2 ? 'nd' : 'rd';
+                container.appendChild(card);
+            });
         }
 
         function updateLastRefreshTime() {
             var now = new Date();
-            document.getElementById('lastUpdate').innerHTML = 'Last updated: ' + now.toLocaleTimeString();
+            document.getElementById('lastUpdate').innerHTML = 
+                'Last Updated: ' + now.toLocaleTimeString();
         }
 
         function updateRefreshInterval() {
@@ -183,11 +186,11 @@
         }
 
         function showError(message) {
-            var container = document.getElementById('tablesContainer');
-            container.innerHTML = '<div class="error-message">' + message + '</div>';
+            var container = document.getElementById('busContainer');
+            container.innerHTML = '<div class="bus-card" style="color: red; text-align: center">' + message + '</div>';
         }
 
-        // Initial setup
+        // Initial Setup
         if (window.attachEvent) {
             window.attachEvent('onload', function() {
                 loadData();
