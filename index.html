@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Google Sheets Data Display</title>
+    <title>Bus Arrival Data</title>
     <style>
         table {
             border-collapse: collapse;
@@ -21,18 +21,17 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        #lastUpdate {
-            color: #666;
-            font-size: 12px;
-            margin: 10px 0;
+        .busTable {
+            margin-bottom: 40px;
         }
-        #refreshControls {
+        .tableTitle {
+            font-size: 18px;
             margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Google Sheets Data</h1>
+    <h1>Bus Arrival Times</h1>
     <div id="refreshControls">
         Refresh Interval: 
         <select id="refreshInterval" onchange="updateRefreshInterval()">
@@ -67,99 +66,102 @@
                     current += char;
                 }
             }
-            cells.push(current.trim()); // Add last cell
-            
+            cells.push(current.trim());
             return cells;
         }
 
         function updateLastRefreshTime() {
             var now = new Date();
-            var timeStr = now.toLocaleTimeString();
-            document.getElementById('lastUpdate').innerHTML = 'Last updated: ' + timeStr;
+            document.getElementById('lastUpdate').innerHTML = 'Last updated: ' + now.toLocaleTimeString();
         }
 
         function updateRefreshInterval() {
             var interval = parseInt(document.getElementById('refreshInterval').value);
-            if (refreshTimer) {
-                clearInterval(refreshTimer);
+            if (refreshTimer) clearInterval(refreshTimer);
+            if (interval > 0) refreshTimer = setInterval(fetchSheetsData, interval);
+        }
+
+        function generateBusTable(busNumber, headers, allRows) {
+            var prefix = busNumber + ' Bus ';
+            var tableHtml = '<div class="busTable">';
+            tableHtml += '<div class="tableTitle">' + busNumber + ' Bus Details</div>';
+            tableHtml += '<table><thead><tr>';
+            
+            // Fixed columns for all tables
+            var displayHeaders = ['Bus Number', 'Feature', 'Load', 'Monitored', 'Type', 'Operator', 'Arrival'];
+            
+            for (var h = 0; h < displayHeaders.length; h++) {
+                tableHtml += '<th>' + displayHeaders[h] + '</th>';
             }
-            if (interval > 0) {
-                refreshTimer = setInterval(fetchSheetsData, interval);
+            tableHtml += '</tr></thead><tbody>';
+
+            for (var r = 1; r < allRows.length; r++) {
+                var row = allRows[r];
+                tableHtml += '<tr>';
+                
+                // Bus Number
+                tableHtml += '<td>' + (row[headers.indexOf('Bus Number')] || '-') + '</td>';
+                
+                // Feature, Load, Monitored, Type
+                for (var field of ['Feature', 'Load', 'Monitored', 'Type']) {
+                    var header = prefix + field;
+                    tableHtml += '<td>' + (row[headers.indexOf(header)] || '-') + '</td>';
+                }
+                
+                // Operator
+                tableHtml += '<td>' + (row[headers.indexOf('Bus Operator')] || '-') + '</td>';
+                
+                // Arrival
+                tableHtml += '<td>' + (row[headers.indexOf(busNumber + ' Bus Arrival')] || '-') + '</td>';
+
+                tableHtml += '</tr>';
             }
+
+            tableHtml += '</tbody></table></div>';
+            return tableHtml;
         }
 
         function fetchSheetsData() {
             var xhr = new XMLHttpRequest();
-            var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv';
-            
-            xhr.open('GET', sheetUrl + '&_=' + new Date().getTime(), true);
-            
+            xhr.open('GET', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtEvUyEWLCq8T0rFNBAEXi3HeQsLrR9PFmLbtRV4j8_lFKjF7D0St0QBFfpEx61XlWBUx0jQB0pgdF/pub?output=csv&_=' + new Date().getTime(), true);
+
             xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        try {
-                            var data = xhr.responseText;
-                            var rows = data.split('\n').filter(function(row) {
-                                return row.trim() !== '';
-                            });
-                            
-                            var parsedRows = [];
-                            var headers = [];
-                            
-                            if (rows.length > 0) {
-                                headers = parseCSVRow(rows[0]);
-                                parsedRows.push(headers);
-                                
-                                for (var i = 1; i < rows.length; i++) {
-                                    var parsed = parseCSVRow(rows[i]);
-                                    parsedRows.push(parsed);
-                                }
-                            }
-
-                            var tableHtml = '<table><thead><tr>';
-                            for (var h = 0; h < headers.length; h++) {
-                                tableHtml += '<th>' + headers[h] + '</th>';
-                            }
-                            tableHtml += '</tr></thead><tbody>';
-
-                            for (var i = 1; i < parsedRows.length; i++) {
-                                tableHtml += '<tr>';
-                                for (var j = 0; j < headers.length; j++) {
-                                    var cellContent = parsedRows[i][j] || '';
-                                    tableHtml += '<td>' + cellContent + '</td>';
-                                }
-                                tableHtml += '</tr>';
-                            }
-
-                            tableHtml += '</tbody></table>';
-                            document.getElementById('sheetsData').innerHTML = tableHtml;
-                            updateLastRefreshTime();
-                        } catch (error) {
-                            document.getElementById('sheetsData').innerHTML = 'Error parsing data: ' + error.message;
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    try {
+                        var data = xhr.responseText.split('\n').filter(function(row) {
+                            return row.trim() !== '';
+                        });
+                        
+                        var headers = parseCSVRow(data[0]);
+                        var allRows = [headers];
+                        
+                        for (var i = 1; i < data.length; i++) {
+                            allRows.push(parseCSVRow(data[i]));
                         }
-                    } else {
-                        document.getElementById('sheetsData').innerHTML = 'Error loading data. Status: ' + xhr.status;
+
+                        var output = '';
+                        var busNumbers = ['1st', '2nd', '3rd'];
+                        
+                        for (var b = 0; b < busNumbers.length; b++) {
+                            output += generateBusTable(busNumbers[b], headers, allRows);
+                        }
+
+                        document.getElementById('sheetsData').innerHTML = output;
+                        updateLastRefreshTime();
+                    } catch (error) {
+                        document.getElementById('sheetsData').innerHTML = 'Error processing data: ' + error.message;
                     }
                 }
-            };
-
-            xhr.onerror = function() {
-                document.getElementById('sheetsData').innerHTML = 'Error loading data. Please check your connection.';
             };
 
             xhr.send();
         }
 
+        // IE-safe event listener
         function addLoadEvent(func) {
             var oldonload = window.onload;
-            if (typeof window.onload !== 'function') {
-                window.onload = func;
-            } else {
-                window.onload = function() {
-                    oldonload();
-                    func();
-                };
-            }
+            window.onload = typeof window.onload === 'function' ? 
+                function() { oldonload(); func(); } : func;
         }
 
         addLoadEvent(function() {
