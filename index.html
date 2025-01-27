@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
     <title>Live Bus Tracker</title>
     <style>
         body {
@@ -93,7 +93,7 @@
     </div>
 
     <script>
-        // IE Compatibility Polyfill
+        // IE Compatibility Polyfills
         if (!Array.prototype.indexOf) {
             Array.prototype.indexOf = function(obj, start) {
                 for (var i = (start || 0); i < this.length; i++) {
@@ -102,19 +102,32 @@
                 return -1;
             };
         }
+        
+        if (!window.JSON) {
+            window.JSON = {
+                parse: function(s) {
+                    return eval('(' + s + ')');
+                }
+            };
+        }
 
         var refreshTimer = null;
 
         function loadData() {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-            var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwACHKdtQt8Nk_FeLhwchkZoAXNfhL9WS4WlUbeJea-VCR7V_3jwO8TbQSX6wvVKtZQJyIvbNMD0C/pub?output=csv&_=' + new Date().getTime();
+            var url = 'data/output.json?_=' + new Date().getTime();
             
             xhr.open('GET', url, true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
-                        processData(xhr.responseText);
-                        updateLastRefreshTime();
+                        try {
+                            var data = JSON.parse(xhr.responseText);
+                            renderServiceCards(data);
+                            updateLastRefreshTime();
+                        } catch (e) {
+                            showError('Error parsing data');
+                        }
                     } else {
                         showError('Failed to load data');
                     }
@@ -123,90 +136,44 @@
             xhr.send();
         }
 
-        function processData(csv) {
-            var rows = csv.split(/\r?\n/);
-            var cleanRows = [];
-            for (var i = 0; i < rows.length; i++) {
-                if (rows[i].trim() !== '') cleanRows.push(rows[i]);
-            }
-            
-            if (cleanRows.length < 2) {
-                showError('Not enough data');
-                return;
-            }
-
-            var headers = parseRow(cleanRows[0]);
-            var data = [];
-            
-            for (var i = 1; i < cleanRows.length; i++) {
-                data.push(parseRow(cleanRows[i]));
-            }
-
-            renderServiceCards(headers, data);
-        }
-
-        function parseRow(row) {
-            var cells = [];
-            var current = '';
-            var inQuotes = false;
-            
-            for (var i = 0; i < row.length; i++) {
-                var char = row[i];
-                
-                if (char === '"') {
-                    inQuotes = !inQuotes;
-                } else if (char === ',' && !inQuotes) {
-                    cells.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
-                }
-            }
-            cells.push(current.trim());
-            return cells;
-        }
-
-        function renderServiceCards(headers, data) {
+        function renderServiceCards(services) {
             var container = document.getElementById('serviceContainer');
             container.innerHTML = '';
 
-            var busNumberIndex = headers.indexOf('Bus Number');
-            var operatorIndex = headers.indexOf('Bus Operator');
-            
-            for (var i = 0; i < data.length; i++) {
-                var row = data[i];
+            for (var i = 0; i < services.length; i++) {
+                var service = services[i];
                 var serviceCard = document.createElement('div');
                 serviceCard.className = 'service-card';
                 
-                var serviceNumber = row[busNumberIndex] || 'N/A';
-                var operator = row[operatorIndex] || 'Unknown Operator';
+                var serviceNumber = service['Bus Number'] || 'N/A';
+                var operator = service['Bus Operator'] || 'Unknown Operator';
                 
                 var buses = [];
-                for (var busNum = 1; busNum <= 3; busNum++) {
-                    var prefix = busNum + (busNum === 1 ? 'st' : busNum === 2 ? 'nd' : 'rd');
-                    var arrivalHeader = prefix + ' Bus Arrival';
-                    var arrivalIndex = headers.indexOf(arrivalHeader);
-                    var arrival = arrivalIndex !== -1 ? row[arrivalIndex] : '-';
+                var prefixes = ['1st', '2nd', '3rd'];
+                
+                for (var p = 0; p < prefixes.length; p++) {
+                    var prefix = prefixes[p];
+                    var arrivalKey = prefix + ' Bus Arrival';
+                    var arrival = service[arrivalKey] || '-';
                     
-                    if (arrival === '') continue;
+                    if (arrival === '' || arrival === '-') continue;
 
-                    var loadIndex = headers.indexOf(prefix + ' Bus Load');
-                    var monitoredIndex = headers.indexOf(prefix + ' Bus Monitored');
-                    var typeIndex = headers.indexOf(prefix + ' Bus Type');
+                    var loadKey = prefix + ' Bus Load';
+                    var monitoredKey = prefix + ' Bus Monitored';
+                    var typeKey = prefix + ' Bus Type';
                     
                     buses.push({
                         prefix: prefix,
                         arrival: arrival,
-                        load: loadIndex !== -1 ? row[loadIndex] : '-',
-                        monitored: monitoredIndex !== -1 ? row[monitoredIndex] : '-',
-                        type: typeIndex !== -1 ? row[typeIndex] : '-'
+                        load: service[loadKey] || '-',
+                        monitored: service[monitoredKey] || '-',
+                        type: service[typeKey] || '-'
                     });
                 }
 
                 var busEntries = [];
                 for (var b = 0; b < buses.length; b++) {
                     var bus = buses[b];
-                    /* NEW: Handle both "-" and "Arriving" without "min" */
                     var arrivalText = (bus.arrival === '-' || bus.arrival === 'Arriving') 
                         ? bus.arrival 
                         : bus.arrival + ' min';
