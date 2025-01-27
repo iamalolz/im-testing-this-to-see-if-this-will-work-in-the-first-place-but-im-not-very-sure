@@ -15,9 +15,9 @@
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"6",
-    "2nd Bus Arrival":"16",
-    "3rd Bus Arrival":"30"
+    "1st Bus Arrival":"5",
+    "2nd Bus Arrival":"15",
+    "3rd Bus Arrival":"29"
   },
   {
     "BusStopCode":"12101",
@@ -36,8 +36,8 @@
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
     "1st Bus Arrival":"10",
-    "2nd Bus Arrival":"24",
-    "3rd Bus Arrival":"29"
+    "2nd Bus Arrival":"23",
+    "3rd Bus Arrival":"28"
   },
   {
     "BusStopCode":"12101",
@@ -55,9 +55,9 @@
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"11",
-    "2nd Bus Arrival":"17",
-    "3rd Bus Arrival":"31"
+    "1st Bus Arrival":"10",
+    "2nd Bus Arrival":"16",
+    "3rd Bus Arrival":"30"
   },
   {
     "BusStopCode":"12101",
@@ -68,16 +68,16 @@
     "1st Bus Type":"DD",
     "2nd Bus Feature":"WAB",
     "2nd Bus Load":"SEA",
-    "2nd Bus Monitored":"1",
+    "2nd Bus Monitored":"0",
     "2nd Bus Type":"DD",
     "3rd Bus Feature":"WAB",
     "3rd Bus Load":"SEA",
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"DD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"Arriving",
-    "2nd Bus Arrival":"16",
-    "3rd Bus Arrival":"25"
+    "1st Bus Arrival":"16",
+    "2nd Bus Arrival":"25",
+    "3rd Bus Arrival":"36"
   },
   {
     "BusStopCode":"12101",
@@ -96,8 +96,8 @@
     "3rd Bus Type":"BD",
     "Bus Operator":"SMRT",
     "1st Bus Arrival":"5",
-    "2nd Bus Arrival":"8",
-    "3rd Bus Arrival":"26"
+    "2nd Bus Arrival":"7",
+    "3rd Bus Arrival":"25"
   },
   {
     "BusStopCode":"12101",
@@ -115,9 +115,9 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"1",
-    "2nd Bus Arrival":"8",
-    "3rd Bus Arrival":"19"
+    "1st Bus Arrival":"Arriving",
+    "2nd Bus Arrival":"7",
+    "3rd Bus Arrival":"18"
   },
   {
     "BusStopCode":"12101",
@@ -137,6 +137,6 @@
     "Bus Operator":"SBST",
     "1st Bus Arrival":"12",
     "2nd Bus Arrival":"27",
-    "3rd Bus Arrival":"41"
+    "3rd Bus Arrival":"40"
   }
 ]
