@@ -58,6 +58,43 @@
             color: #7f8c8d;
             font-size: 14px;
             margin: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .status-indicator {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .load-sea {
+            background-color: #2ecc71;
+        }
+        .load-sda {
+            background-color: #f1c40f;
+        }
+        .load-lsd {
+            background-color: #e74c3c;
+        }
+        .feature-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #34495e;
+            color: white;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .schedule-indicator {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #95a5a6;
+            color: white;
+            font-size: 12px;
         }
         .refresh-controls {
             position: fixed;
@@ -75,26 +112,11 @@
             text-align: center;
             margin: 10px 0;
         }
-        .legend {
-            background: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 8px;
-            font-size: 12px;
-            color: #7f8c8d;
-        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>🚌 Live Bus Tracker</h1>
-        <div class="legend">
-            <strong>Legend:</strong><br>
-            Load: 💺 SEA (Seats Available) | 🧍 SDA (Standing Available) | 👥 LSD (Limited Standing)<br>
-            Monitored: 📅 Schedule-based | 📍 Live location-based<br>
-            Feature: ♿ WAB (Wheelchair Accessible)<br>
-            Type: 🚌 SD (Single Deck) | 🚋 DD (Double Deck) | 🚎 BD (Bendy)
-        </div>
         <div id="lastUpdate" class="update-time"></div>
     </div>
     <div id="serviceContainer"></div>
@@ -126,32 +148,33 @@
             };
         }
 
-        function getLoadEmoji(load) {
-            if (!load || load === '-') return '❓';
+        function getLoadClass(load) {
+            if (!load || load === '-') return '';
             switch(load.toUpperCase()) {
-                case 'SEA': return '💺';
-                case 'SDA': return '🧍';
-                case 'LSD': return '👥';
-                default: return '❓';
+                case 'SEA': return 'load-sea';
+                case 'SDA': return 'load-sda';
+                case 'LSD': return 'load-lsd';
+                default: return '';
             }
         }
 
-        function getMonitoredEmoji(monitored) {
-            if (!monitored || monitored === '-') return '❓';
-            return monitored === '0' ? '📅' : '📍';
-        }
-
-        function getFeatureEmoji(feature) {
-            return feature === 'WAB' ? '♿' : '';
+        function getLoadText(load) {
+            if (!load || load === '-') return 'Unknown';
+            switch(load.toUpperCase()) {
+                case 'SEA': return 'Seats Available';
+                case 'SDA': return 'Standing Available';
+                case 'LSD': return 'Limited Standing';
+                default: return load;
+            }
         }
 
         function getTypeEmoji(type) {
-            if (!type || type === '-') return '❓';
+            if (!type || type === '-') return '🚌';
             switch(type.toUpperCase()) {
                 case 'SD': return '🚌';
-                case 'DD': return '🚋';
+                case 'DD': return '🚍';  // Changed to a more appropriate double decker emoji
                 case 'BD': return '🚎';
-                default: return '❓';
+                default: return '🚌';
             }
         }
 
@@ -235,22 +258,24 @@
                         progressColor = '#3498db';
                     }
 
-                    var loadEmoji = getLoadEmoji(bus.load);
-                    var monitoredEmoji = getMonitoredEmoji(bus.monitored);
+                    var loadClass = getLoadClass(bus.load);
+                    var loadText = getLoadText(bus.load);
                     var typeEmoji = getTypeEmoji(bus.type);
-                    var featureEmoji = getFeatureEmoji(bus.feature);
+                    var isScheduled = bus.monitored === '0';
+                    var isWheelchairAccessible = bus.feature === 'WAB';
 
                     busEntries.push(
                         '<div class="bus-entry">' +
-                            '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrivalText + '</div>' +
+                            '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrivalText +
+                            (isScheduled ? ' <span class="schedule-indicator">Scheduled</span>' : '') +
+                            '</div>' +
                             '<div class="progress-container">' +
                                 '<div class="progress-bar" style="width:' + progressWidth + '; background-color: ' + progressColor + ';"></div>' +
                             '</div>' +
                             '<div class="bus-details">' +
-                                loadEmoji + ' Load: ' + (bus.load === '-' ? 'N/A' : bus.load) + ' | ' +
-                                monitoredEmoji + ' Monitored: ' + (bus.monitored === '1' ? 'Live' : 'Scheduled') + ' | ' +
-                                typeEmoji + ' Type: ' + (bus.type === '-' ? 'N/A' : bus.type) +
-                                (featureEmoji ? ' | ' + featureEmoji + ' WAB' : '') +
+                                typeEmoji + ' ' +
+                                '<span class="status-indicator ' + loadClass + '">' + loadText + '</span>' +
+                                (isWheelchairAccessible ? '<span class="feature-badge">♿ Wheelchair Accessible</span>' : '') +
                             '</div>' +
                         '</div>'
                     );
