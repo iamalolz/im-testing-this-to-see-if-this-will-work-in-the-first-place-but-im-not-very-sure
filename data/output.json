@@ -15,9 +15,9 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"SD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"18",
+    "1st Bus Arrival":"17",
     "2nd Bus Arrival":"32",
-    "3rd Bus Arrival":"43"
+    "3rd Bus Arrival":"42"
   },
   {
     "BusStopCode":"12101",
@@ -31,13 +31,13 @@
     "2nd Bus Monitored":"1",
     "2nd Bus Type":"SD",
     "3rd Bus Feature":"WAB",
-    "3rd Bus Load":"SDA",
+    "3rd Bus Load":"SEA",
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
     "1st Bus Arrival":"3",
-    "2nd Bus Arrival":"18",
-    "3rd Bus Arrival":"28"
+    "2nd Bus Arrival":"17",
+    "3rd Bus Arrival":"27"
   },
   {
     "BusStopCode":"12101",
@@ -51,11 +51,11 @@
     "2nd Bus Monitored":"1",
     "2nd Bus Type":"SD",
     "3rd Bus Feature":"WAB",
-    "3rd Bus Load":"SEA",
+    "3rd Bus Load":"SDA",
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"2",
+    "1st Bus Arrival":"1",
     "2nd Bus Arrival":"11",
     "3rd Bus Arrival":"27"
   },
@@ -76,7 +76,7 @@
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
     "1st Bus Arrival":"5",
-    "2nd Bus Arrival":"19",
+    "2nd Bus Arrival":"18",
     "3rd Bus Arrival":"29"
   },
   {
@@ -95,7 +95,7 @@
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"DD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"3",
+    "1st Bus Arrival":"2",
     "2nd Bus Arrival":"13",
     "3rd Bus Arrival":"25"
   },
@@ -116,7 +116,7 @@
     "3rd Bus Type":"-",
     "Bus Operator":"SBST",
     "1st Bus Arrival":"12",
-    "2nd Bus Arrival":"29",
+    "2nd Bus Arrival":"28",
     "3rd Bus Arrival":"-"
   },
   {
@@ -135,7 +135,7 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"1",
+    "1st Bus Arrival":"Arriving",
     "2nd Bus Arrival":"17",
     "3rd Bus Arrival":"30"
   }
