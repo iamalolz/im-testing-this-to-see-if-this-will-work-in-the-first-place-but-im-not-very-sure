@@ -75,11 +75,26 @@
             text-align: center;
             margin: 10px 0;
         }
+        .legend {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>🚌 Live Bus Tracker</h1>
+        <div class="legend">
+            <strong>Legend:</strong><br>
+            Load: 💺 SEA (Seats Available) | 🧍 SDA (Standing Available) | 👥 LSD (Limited Standing)<br>
+            Monitored: 📅 Schedule-based | 📍 Live location-based<br>
+            Feature: ♿ WAB (Wheelchair Accessible)<br>
+            Type: 🚌 SD (Single Deck) | 🚋 DD (Double Deck) | 🚎 BD (Bendy)
+        </div>
         <div id="lastUpdate" class="update-time"></div>
     </div>
     <div id="serviceContainer"></div>
@@ -109,6 +124,35 @@
                     return eval('(' + s + ')');
                 }
             };
+        }
+
+        function getLoadEmoji(load) {
+            if (!load || load === '-') return '❓';
+            switch(load.toUpperCase()) {
+                case 'SEA': return '💺';
+                case 'SDA': return '🧍';
+                case 'LSD': return '👥';
+                default: return '❓';
+            }
+        }
+
+        function getMonitoredEmoji(monitored) {
+            if (!monitored || monitored === '-') return '❓';
+            return monitored === '0' ? '📅' : '📍';
+        }
+
+        function getFeatureEmoji(feature) {
+            return feature === 'WAB' ? '♿' : '';
+        }
+
+        function getTypeEmoji(type) {
+            if (!type || type === '-') return '❓';
+            switch(type.toUpperCase()) {
+                case 'SD': return '🚌';
+                case 'DD': return '🚋';
+                case 'BD': return '🚎';
+                default: return '❓';
+            }
         }
 
         var refreshTimer = null;
@@ -161,13 +205,15 @@
                     var loadKey = prefix + ' Bus Load';
                     var monitoredKey = prefix + ' Bus Monitored';
                     var typeKey = prefix + ' Bus Type';
+                    var featureKey = prefix + ' Bus Feature';
                     
                     buses.push({
                         prefix: prefix,
                         arrival: arrival,
                         load: service[loadKey] || '-',
                         monitored: service[monitoredKey] || '-',
-                        type: service[typeKey] || '-'
+                        type: service[typeKey] || '-',
+                        feature: service[featureKey] || ''
                     });
                 }
 
@@ -189,6 +235,11 @@
                         progressColor = '#3498db';
                     }
 
+                    var loadEmoji = getLoadEmoji(bus.load);
+                    var monitoredEmoji = getMonitoredEmoji(bus.monitored);
+                    var typeEmoji = getTypeEmoji(bus.type);
+                    var featureEmoji = getFeatureEmoji(bus.feature);
+
                     busEntries.push(
                         '<div class="bus-entry">' +
                             '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrivalText + '</div>' +
@@ -196,9 +247,10 @@
                                 '<div class="progress-bar" style="width:' + progressWidth + '; background-color: ' + progressColor + ';"></div>' +
                             '</div>' +
                             '<div class="bus-details">' +
-                                'Load: ' + (bus.load === '-' ? 'N/A' : bus.load || 'Normal') + ' | ' +
-                                'Monitored: ' + (bus.monitored === '-' ? 'N/A' : bus.monitored || 'No') + ' | ' +
-                                'Type: ' + (bus.type === '-' ? 'N/A' : bus.type || 'Standard') +
+                                loadEmoji + ' Load: ' + (bus.load === '-' ? 'N/A' : bus.load) + ' | ' +
+                                monitoredEmoji + ' Monitored: ' + (bus.monitored === '1' ? 'Live' : 'Scheduled') + ' | ' +
+                                typeEmoji + ' Type: ' + (bus.type === '-' ? 'N/A' : bus.type) +
+                                (featureEmoji ? ' | ' + featureEmoji + ' WAB' : '') +
                             '</div>' +
                         '</div>'
                     );
