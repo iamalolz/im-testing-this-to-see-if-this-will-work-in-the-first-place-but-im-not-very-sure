@@ -283,7 +283,7 @@
 
                 serviceCard.innerHTML = [
                     '<div class="service-header">',
-                        '<span class="service-number">Service ' + serviceNumber + '</span>',
+                        '<a href="bus_route.html?bus=' + encodeURIComponent(serviceNumber) + '" class="service-number">Service ' + serviceNumber + '</a>',
                         '<span class="operator">' + operator + '</span>',
                     '</div>',
                     busEntries.join('')
