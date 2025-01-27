@@ -107,7 +107,7 @@
 
         function loadData() {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-            var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwACHKdtQt8Nk_FeLhwchkZoAXNfhL9WS4WlUbeJea-VCR7V_3jwO8TbQSX6wvVKtZQJyIvbNMD0C/pub?output=csv' + new Date().getTime();
+            var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwACHKdtQt8Nk_FeLhwchkZoAXNfhL9WS4WlUbeJea-VCR7V_3jwO8TbQSX6wvVKtZQJyIvbNMD0C/pub?output=csv&_=' + new Date().getTime();
             
             xhr.open('GET', url, true);
             xhr.onreadystatechange = function() {
