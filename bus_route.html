@@ -23,40 +23,51 @@
             margin-bottom: 15px;
             border: 1px solid #3498db;
             border-radius: 4px;
-            box-sizing: border-box;
         }
-        .directions-container {
-            overflow: hidden;
-            margin: 0 -10px;
+        /* IE7 Box sizing fix */
+        * {
+            *box-sizing: border-box;
         }
-        .direction-column {
-            float: left;
-            width: 48%;
-            margin: 0 1%;
+        .directions-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 15px;
+            margin: -15px;
+        }
+        .direction-cell {
+            width: 50%;
+            vertical-align: top;
+        }
+        .direction-group {
             background: white;
+            border: 1px solid #ddd;
+            *border: 2px solid #ddd; /* IE7 border fix */
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 15px;
+            margin-bottom: 15px;
         }
         .direction-header {
             color: white;
             background: #3498db;
             padding: 10px;
-            border-radius: 4px;
-            margin: -15px -15px 15px -15px;
+            border-radius: 4px 4px 0 0;
+            font-weight: bold;
         }
         .stop-entry {
-            margin: 10px 0;
+            margin: 10px;
             padding: 10px;
             background: #f8f9fa;
             border-radius: 6px;
             border-left: 4px solid #3498db;
+            *zoom: 1; /* IE7 hasLayout fix */
         }
         .stop-sequence {
             color: #3498db;
             font-weight: bold;
             margin-right: 10px;
             font-size: 18px;
+            *display: inline; /* IE7 inline-block fix */
+            *zoom: 1;
         }
         .operating-hours {
             color: #7f8c8d;
@@ -65,10 +76,14 @@
             padding-left: 5px;
             border-left: 2px solid #ecf0f1;
         }
-        .no-results {
-            color: #95a5a6;
-            text-align: center;
-            padding: 20px;
+        /* IE5/7 clearfix */
+        .clearfix {
+            *zoom: 1;
+        }
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
@@ -95,7 +110,8 @@
             searchText = searchText.toLowerCase();
             
             for (var i = 0; i < stops.length; i++) {
-                var stopText = stops[i].innerText.toLowerCase();
+                var stopText = stops[i].innerText || stops[i].textContent; // IE compatibility
+                stopText = stopText.toLowerCase();
                 stops[i].style.display = stopText.indexOf(searchText) > -1 ? '' : 'none';
             }
         }
@@ -107,16 +123,29 @@
                 return;
             }
 
-            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            var xhr;
+            try {
+                xhr = new XMLHttpRequest();
+            } catch(e) {
+                try {
+                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch(e) {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            }
+            
             xhr.open('GET', 'data/bus_routes.json?_=' + new Date().getTime(), true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
                         try {
-                            var allRoutes = JSON.parse(xhr.responseText);
-                            var filtered = allRoutes.filter(function(route) {
-                                return route['Bus Number'] === busNumber;
-                            });
+                            var allRoutes = eval('(' + xhr.responseText + ')'); // IE5/7 JSON parse
+                            var filtered = [];
+                            for (var i = 0; i < allRoutes.length; i++) {
+                                if (allRoutes[i]['Bus Number'] === busNumber) {
+                                    filtered.push(allRoutes[i]);
+                                }
+                            }
                             
                             if (filtered.length === 0) {
                                 document.getElementById('routeContainer').innerHTML = 'No route found for bus ' + busNumber;
@@ -150,7 +179,7 @@
             for (var dir in grouped) {
                 if (grouped.hasOwnProperty(dir)) {
                     grouped[dir].sort(function(a, b) {
-                        return a.StopSequence - b.StopSequence;
+                        return parseInt(a.StopSequence) - parseInt(b.StopSequence);
                     });
                 }
             }
@@ -160,33 +189,42 @@
                 '<table class="directions-table"><tr>'
             ];
             
-            // Create columns for each direction
-            var directions = Object.keys(grouped);
+            var directions = [];
+            for (var dir in grouped) {
+                if (grouped.hasOwnProperty(dir)) {
+                    directions.push(dir);
+                }
+            }
+            
             for (var d = 0; d < directions.length; d++) {
                 var direction = directions[d];
+                var stops = grouped[direction];
+                
                 html.push(
                     '<td class="direction-cell">',
                         '<div class="direction-group">',
-                            '<div class="direction-header">Direction ' + direction + '</div>',
-                            grouped[direction].map(function(stop) {
-                                return [
-                                    '<div class="stop-entry">',
-                                        '<div>',
-                                            '<span class="stop-sequence">' + stop.StopSequence + '</span>',
-                                            '<strong style="color:#2c3e50;">' + stop.Description + '</strong>',
-                                            '<div style="color:#7f8c8d; margin:5px 0;">' + stop.RoadName + '</div>',
-                                            '<div class="operating-hours">',
-                                                '<div>Weekdays: ' + stop['Weekday First Bus'] + ' - ' + stop['Weekday Last Bus'] + '</div>',
-                                                '<div>Saturday: ' + stop['Saturday First Bus'] + ' - ' + stop['Saturday Last Bus'] + '</div>',
-                                                '<div>Sunday: ' + stop['Sunday First Bus'] + ' - ' + stop['Sunday Last Bus'] + '</div>',
-                                            '</div>',
-                                        '</div>',
-                                    '</div>'
-                                ].join('');
-                            }).join(''),
-                        '</div>',
-                    '</td>'
+                            '<div class="direction-header">Direction ' + direction + '</div>'
                 );
+                
+                for (var s = 0; s < stops.length; s++) {
+                    var stop = stops[s];
+                    html.push(
+                        '<div class="stop-entry clearfix">',
+                            '<div>',
+                                '<span class="stop-sequence">' + stop.StopSequence + '</span>',
+                                '<strong style="color:#2c3e50;">' + stop.Description + '</strong>',
+                                '<div style="color:#7f8c8d; margin:5px 0;">' + stop.RoadName + '</div>',
+                                '<div class="operating-hours">',
+                                    '<div>Weekdays: ' + stop['Weekday First Bus'] + ' - ' + stop['Weekday Last Bus'] + '</div>',
+                                    '<div>Saturday: ' + stop['Saturday First Bus'] + ' - ' + stop['Saturday Last Bus'] + '</div>',
+                                    '<div>Sunday: ' + stop['Sunday First Bus'] + ' - ' + stop['Sunday Last Bus'] + '</div>',
+                                '</div>',
+                            '</div>',
+                        '</div>'
+                    );
+                }
+                
+                html.push('</div></td>');
             }
             
             html.push('</tr></table>');
@@ -198,11 +236,11 @@
             container.innerHTML = html.join('');
         }
 
-        // Initial load
+        // IE compatible event binding
         if (window.attachEvent) {
             window.attachEvent('onload', loadRouteData);
         } else {
-            window.onload = loadRouteData;
+            window.addEventListener('load', loadRouteData, false);
         }
     </script>
 </body>
