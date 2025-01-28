@@ -15,44 +15,69 @@
             margin-bottom: 20px;
             color: #3498db;
             text-decoration: none;
+            font-weight: bold;
         }
-        .direction-group {
+        .search-box {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .directions-container {
+            overflow: hidden;
+            margin: 0 -10px;
+        }
+        .direction-column {
+            float: left;
+            width: 48%;
+            margin: 0 1%;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin: 15px 0;
             padding: 15px;
         }
         .direction-header {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            color: white;
+            background: #3498db;
+            padding: 10px;
+            border-radius: 4px;
+            margin: -15px -15px 15px -15px;
         }
         .stop-entry {
             margin: 10px 0;
             padding: 10px;
             background: #f8f9fa;
             border-radius: 6px;
+            border-left: 4px solid #3498db;
         }
         .stop-sequence {
             color: #3498db;
             font-weight: bold;
             margin-right: 10px;
+            font-size: 18px;
         }
         .operating-hours {
             color: #7f8c8d;
             font-size: 14px;
             margin-top: 5px;
+            padding-left: 5px;
+            border-left: 2px solid #ecf0f1;
+        }
+        .no-results {
+            color: #95a5a6;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-link">← Back to Live Tracking</a>
+    <input type="text" class="search-box" placeholder="Search stops..." onkeyup="filterStops(this.value)">
     <div id="routeContainer"></div>
 
     <script>
-        // IE-compatible URL parameter parsing
         function getQueryParam(param) {
             var query = window.location.search.substring(1);
             var vars = query.split('&');
@@ -63,6 +88,16 @@
                 }
             }
             return null;
+        }
+
+        function filterStops(searchText) {
+            var stops = document.getElementsByClassName('stop-entry');
+            searchText = searchText.toLowerCase();
+            
+            for (var i = 0; i < stops.length; i++) {
+                var stopText = stops[i].innerText.toLowerCase();
+                stops[i].style.display = stopText.indexOf(searchText) > -1 ? '' : 'none';
+            }
         }
 
         function loadRouteData() {
@@ -121,26 +156,26 @@
             }
             
             var html = [
-                '<h1>🚌 Bus ' + busNumber + ' Route</h1>',
-                '<div class="update-time">Showing ' + routes.length + ' stops across ' + Object.keys(grouped).length + ' directions</div>'
+                '<h1 style="color:#2c3e50; margin-bottom:10px;">🚌 Bus ' + busNumber + ' Route</h1>',
+                '<div class="directions-container">'
             ];
             
             for (var direction in grouped) {
                 if (grouped.hasOwnProperty(direction)) {
                     html.push(
-                        '<div class="direction-group">',
-                            '<h2 class="direction-header">Direction ' + direction + '</h2>',
+                        '<div class="direction-column">',
+                            '<div class="direction-header">Direction ' + direction + '</div>',
                             grouped[direction].map(function(stop) {
                                 return [
                                     '<div class="stop-entry">',
                                         '<div>',
                                             '<span class="stop-sequence">' + stop.StopSequence + '</span>',
-                                            '<strong>' + stop.Description + '</strong>',
-                                            '<div>' + stop.RoadName + '</div>',
+                                            '<strong style="color:#2c3e50;">' + stop.Description + '</strong>',
+                                            '<div style="color:#7f8c8d; margin:5px 0;">' + stop.RoadName + '</div>',
                                             '<div class="operating-hours">',
-                                                'Weekdays: ' + stop['Weekday First Bus'] + ' - ' + stop['Weekday Last Bus'] + '<br>',
-                                                'Saturday: ' + stop['Saturday First Bus'] + ' - ' + stop['Saturday Last Bus'] + '<br>',
-                                                'Sunday: ' + stop['Sunday First Bus'] + ' - ' + stop['Sunday Last Bus'],
+                                                '<div>Weekdays: ' + stop['Weekday First Bus'] + ' - ' + stop['Weekday Last Bus'] + '</div>',
+                                                '<div>Saturday: ' + stop['Saturday First Bus'] + ' - ' + stop['Saturday Last Bus'] + '</div>',
+                                                '<div>Sunday: ' + stop['Sunday First Bus'] + ' - ' + stop['Sunday Last Bus'] + '</div>',
                                             '</div>',
                                         '</div>',
                                     '</div>'
@@ -151,6 +186,12 @@
                 }
             }
             
+            html.push('</div>');
+            
+            if (Object.keys(grouped).length === 0) {
+                html.push('<div class="no-results">No stops found for this bus</div>');
+            }
+
             container.innerHTML = html.join('');
         }
 
