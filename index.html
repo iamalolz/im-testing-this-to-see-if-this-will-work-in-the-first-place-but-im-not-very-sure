@@ -151,19 +151,19 @@
         function getLoadClass(load) {
             if (!load || load === '-') return '';
             switch(load.toUpperCase()) {
-                case 'Seats Available': return 'load-sea';
-                case 'Standing Available': return 'load-sda';
-                case 'Limited Standing': return 'load-lsd';
+                case 'SEATS AVAILABLE': return 'load-sea';
+                case 'STANDING AVAILABLE': return 'load-sda';
+                case 'LIMITED STANDING': return 'load-lsd';
                 default: return '';
             }
         }
-
+    
         function getLoadText(load) {
             if (!load || load === '-') return 'Unknown';
             switch(load.toUpperCase()) {
-                case 'Seats Available': return 'Seats Available';
-                case 'Standing Available': return 'Standing Available';
-                case 'Limited Standing': return 'Limited Standing';
+                case 'SEATS AVAILABLE': return 'Seats Available';
+                case 'STANDING AVAILABLE': return 'Standing Available';
+                case 'LIMITED STANDING': return 'Limited Standing';
                 default: return load;
             }
         }
