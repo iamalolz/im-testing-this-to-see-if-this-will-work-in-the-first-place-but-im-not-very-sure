@@ -15,8 +15,8 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"-",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"20",
-    "2nd Bus Arrival":"37",
+    "1st Bus Arrival":"19",
+    "2nd Bus Arrival":"33",
     "3rd Bus Arrival":"-"
   },
   {
@@ -35,9 +35,9 @@
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"3",
-    "2nd Bus Arrival":"8",
-    "3rd Bus Arrival":"19"
+    "1st Bus Arrival":"1",
+    "2nd Bus Arrival":"4",
+    "3rd Bus Arrival":"14"
   },
   {
     "BusStopCode":"12101",
@@ -55,8 +55,8 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"-",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"11",
-    "2nd Bus Arrival":"26",
+    "1st Bus Arrival":"7",
+    "2nd Bus Arrival":"22",
     "3rd Bus Arrival":"-"
   },
   {
@@ -75,9 +75,9 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"DD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"11",
-    "2nd Bus Arrival":"26",
-    "3rd Bus Arrival":"35"
+    "1st Bus Arrival":"7",
+    "2nd Bus Arrival":"23",
+    "3rd Bus Arrival":"32"
   },
   {
     "BusStopCode":"12101",
@@ -95,9 +95,9 @@
     "3rd Bus Monitored":"1",
     "3rd Bus Type":"SD",
     "Bus Operator":"SMRT",
-    "1st Bus Arrival":"5",
-    "2nd Bus Arrival":"36",
-    "3rd Bus Arrival":"43"
+    "1st Bus Arrival":"1",
+    "2nd Bus Arrival":"33",
+    "3rd Bus Arrival":"40"
   },
   {
     "BusStopCode":"12101",
@@ -109,15 +109,15 @@
     "2nd Bus Feature":"WAB",
     "2nd Bus Load":"SEA",
     "2nd Bus Monitored":"1",
-    "2nd Bus Type":"DD",
+    "2nd Bus Type":"SD",
     "3rd Bus Feature":"WAB",
     "3rd Bus Load":"SEA",
-    "3rd Bus Monitored":"1",
+    "3rd Bus Monitored":"0",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"1",
-    "2nd Bus Arrival":"9",
-    "3rd Bus Arrival":"20"
+    "1st Bus Arrival":"5",
+    "2nd Bus Arrival":"15",
+    "3rd Bus Arrival":"21"
   },
   {
     "BusStopCode":"12101",
@@ -135,8 +135,8 @@
     "3rd Bus Monitored":"0",
     "3rd Bus Type":"SD",
     "Bus Operator":"SBST",
-    "1st Bus Arrival":"2",
-    "2nd Bus Arrival":"24",
-    "3rd Bus Arrival":"31"
+    "1st Bus Arrival":"Arriving",
+    "2nd Bus Arrival":"20",
+    "3rd Bus Arrival":"30"
   }
 ]
