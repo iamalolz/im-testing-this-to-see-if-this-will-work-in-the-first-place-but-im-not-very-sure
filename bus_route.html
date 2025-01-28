@@ -17,14 +17,6 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .search-box {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #3498db;
-            border-radius: 4px;
-        }
-        /* IE7 Box sizing fix */
         * {
             *box-sizing: border-box;
         }
@@ -42,7 +34,7 @@
         .direction-group {
             background: white;
             border: 1px solid #ddd;
-            *border: 2px solid #ddd; /* IE7 border fix */
+            *border: 2px solid #ddd;
             border-radius: 8px;
             margin-bottom: 15px;
         }
@@ -59,14 +51,24 @@
             background: #f8f9fa;
             border-radius: 6px;
             border-left: 4px solid #3498db;
-            *zoom: 1; /* IE7 hasLayout fix */
+            *zoom: 1;
         }
         .stop-sequence {
             color: #3498db;
             font-weight: bold;
             margin-right: 10px;
             font-size: 18px;
-            *display: inline; /* IE7 inline-block fix */
+            *display: inline;
+            *zoom: 1;
+        }
+        .distance {
+            float: right;
+            color: #7f8c8d;
+            font-size: 14px;
+            padding: 4px 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            *display: inline;
             *zoom: 1;
         }
         .operating-hours {
@@ -76,7 +78,6 @@
             padding-left: 5px;
             border-left: 2px solid #ecf0f1;
         }
-        /* IE5/7 clearfix */
         .clearfix {
             *zoom: 1;
         }
@@ -89,7 +90,6 @@
 </head>
 <body>
     <a href="index.html" class="back-link">← Back to Live Tracking</a>
-    <input type="text" class="search-box" placeholder="Search stops..." onkeyup="filterStops(this.value)">
     <div id="routeContainer"></div>
 
     <script>
@@ -103,17 +103,6 @@
                 }
             }
             return null;
-        }
-
-        function filterStops(searchText) {
-            var stops = document.getElementsByClassName('stop-entry');
-            searchText = searchText.toLowerCase();
-            
-            for (var i = 0; i < stops.length; i++) {
-                var stopText = stops[i].innerText || stops[i].textContent; // IE compatibility
-                stopText = stopText.toLowerCase();
-                stops[i].style.display = stopText.indexOf(searchText) > -1 ? '' : 'none';
-            }
         }
 
         function loadRouteData() {
@@ -139,7 +128,7 @@
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
                         try {
-                            var allRoutes = eval('(' + xhr.responseText + ')'); // IE5/7 JSON parse
+                            var allRoutes = eval('(' + xhr.responseText + ')');
                             var filtered = [];
                             for (var i = 0; i < allRoutes.length; i++) {
                                 if (allRoutes[i]['Bus Number'] === busNumber) {
@@ -213,6 +202,7 @@
                             '<div>',
                                 '<span class="stop-sequence">' + stop.StopSequence + '</span>',
                                 '<strong style="color:#2c3e50;">' + stop.Description + '</strong>',
+                                '<span class="distance">' + stop.Distance + ' km</span>',
                                 '<div style="color:#7f8c8d; margin:5px 0;">' + stop.RoadName + '</div>',
                                 '<div class="operating-hours">',
                                     '<div>Weekdays: ' + stop['Weekday First Bus'] + ' - ' + stop['Weekday Last Bus'] + '</div>',
