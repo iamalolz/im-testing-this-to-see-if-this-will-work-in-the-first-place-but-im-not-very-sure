@@ -151,9 +151,9 @@
         function getLoadClass(load) {
             if (!load || load === '-') return '';
             switch(load.toUpperCase()) {
-                case 'SEA': return 'load-sea';
-                case 'SDA': return 'load-sda';
-                case 'LSD': return 'load-lsd';
+                case 'Seats Available': return 'load-sea';
+                case 'Standing Available': return 'load-sda';
+                case 'Limited Standing': return 'load-lsd';
                 default: return '';
             }
         }
@@ -161,9 +161,9 @@
         function getLoadText(load) {
             if (!load || load === '-') return 'Unknown';
             switch(load.toUpperCase()) {
-                case 'SEA': return 'Seats Available';
-                case 'SDA': return 'Standing Available';
-                case 'LSD': return 'Limited Standing';
+                case 'Seats Available': return 'Seats Available';
+                case 'Standing Available': return 'Standing Available';
+                case 'Limited Standing': return 'Limited Standing';
                 default: return load;
             }
         }
@@ -171,9 +171,9 @@
         function getTypeEmoji(type) {
             if (!type || type === '-') return '🚌';
             switch(type.toUpperCase()) {
-                case 'SD': return '🚌';
-                case 'DD': return '🚍';  // Changed to a more appropriate double decker emoji
-                case 'BD': return '🚎';
+                case 'Single Decker': return '🚌';
+                case 'Double Decker': return '🚍';  // Changed to a more appropriate double decker emoji
+                case 'Bendy': return '🚎';
                 default: return '🚌';
             }
         }
