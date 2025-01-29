@@ -10,6 +10,18 @@
             padding: 15px;
             background: #f0f4f8;
         }
+        .stop-info {
+            background: #dfe6e9;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            color: #2d3436;
+        }
+        .stop-detail {
+            display: inline-block;
+            margin-right: 25px;
+            font-size: 15px;
+        }
         .service-card {
             background: white;
             border-radius: 8px;
@@ -117,6 +129,11 @@
 <body>
     <div class="header">
         <h1>🚌 Live Bus Tracker</h1>
+        <div class="stop-info">
+            <span class="stop-detail">Stop Code: <strong id="busStopCode">-</strong></span>
+            <span class="stop-detail">Road: <strong id="roadName">-</strong></span>
+            <span class="stop-detail">Description: <span id="description">-</span></span>
+        </div>
         <div id="lastUpdate" class="update-time"></div>
     </div>
     <div id="serviceContainer"></div>
@@ -148,6 +165,15 @@
             };
         }
 
+        function updateStopInfo(services) {
+            if (services && services.length > 0) {
+                var firstService = services[0];
+                document.getElementById('busStopCode').innerText = firstService.BusStopCode || '-';
+                document.getElementById('roadName').innerText = firstService.RoadName || '-';
+                document.getElementById('description').innerText = firstService.Description || '-';
+            }
+        }
+
         function getLoadClass(load) {
             if (!load || load === '-') return '';
             switch(load.toUpperCase()) {
@@ -172,7 +198,7 @@
             if (!type || type === '-') return '🚌';
             switch(type.toUpperCase()) {
                 case 'SINGLE DECKER': return '🚌 Single Decker';
-                case 'DOUBLE DECKER': return '🚍 Double Decker';  // Changed to a more appropriate double decker emoji
+                case 'DOUBLE DECKER': return '🚍 Double Decker';
                 case 'BENDY': return '🚎 Bendy Bus';
                 default: return '🚌';
             }
@@ -190,6 +216,7 @@
                     if (xhr.status === 200) {
                         try {
                             var data = JSON.parse(xhr.responseText);
+                            updateStopInfo(data);
                             renderServiceCards(data);
                             updateLastRefreshTime();
                         } catch (e) {
