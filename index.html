@@ -130,9 +130,9 @@
     <div class="header">
         <h1>🚌 Live Bus Tracker</h1>
         <div class="stop-info">
-            <span class="stop-detail">Stop Code: <strong id="busStopCode">-</strong></span>
+            <span class="stop-detail">Bus Stop Code: <strong id="busStopCode">-</strong></span>
             <span class="stop-detail">Road: <strong id="roadName">-</strong></span>
-            <span class="stop-detail">Description: <span id="description">-</span></span>
+            <span class="stop-detail">Bus Stop Name: <span id="description">-</span></span>
         </div>
         <div id="lastUpdate" class="update-time"></div>
     </div>
@@ -140,7 +140,7 @@
 
     <div class="refresh-controls">
         <select id="refreshInterval" onchange="updateRefreshInterval()">
-            <option value="15000" selected>🔄 15 Second Refresh</option>
+            <option value="5000" selected>🔄 5 Second Refresh</option>
             <option value="60000">⏱ 1 Minute Refresh</option>
             <option value="0">⏸ Pause Updates</option>
         </select>
