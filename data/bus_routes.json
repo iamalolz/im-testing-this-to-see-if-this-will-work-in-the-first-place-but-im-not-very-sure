@@ -11,8 +11,7 @@
     "Bus Number":"154",
     "Description":"Boon Lay Int",
     "RoadName":"Jurong West Ctrl 3",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -26,8 +25,7 @@
     "Bus Number":"154",
     "Description":"SUMMERDALE",
     "RoadName":"Boon Lay Way",
-    "Distance":"0.9",
-    "Right_Distance":"0.9"
+    "Distance":"0.9"
   },
   {
     "Direction":"1",
@@ -41,8 +39,7 @@
     "Bus Number":"154",
     "Description":"Blk 200",
     "RoadName":"Boon Lay Way",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"1",
@@ -56,8 +53,7 @@
     "Bus Number":"154",
     "Description":"Opp Lakeside Stn",
     "RoadName":"Boon Lay Way",
-    "Distance":"1.7",
-    "Right_Distance":"1.7"
+    "Distance":"1.7"
   },
   {
     "Direction":"1",
@@ -71,8 +67,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 134D",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"2.4",
-    "Right_Distance":"2.4"
+    "Distance":"2.4"
   },
   {
     "Direction":"1",
@@ -86,8 +81,7 @@
     "Bus Number":"154",
     "Description":"Chinese Gdn",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"2.8",
-    "Right_Distance":"2.8"
+    "Distance":"2.8"
   },
   {
     "Direction":"1",
@@ -101,8 +95,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 322",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"1",
@@ -116,8 +109,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 115",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"1",
@@ -131,8 +123,7 @@
     "Bus Number":"154",
     "Description":"Opp Jurong Sec Sch",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"3.8",
-    "Right_Distance":"3.8"
+    "Distance":"3.8"
   },
   {
     "Direction":"1",
@@ -146,8 +137,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 138B",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"4",
-    "Right_Distance":"4"
+    "Distance":"4"
   },
   {
     "Direction":"1",
@@ -161,8 +151,7 @@
     "Bus Number":"154",
     "Description":"Aft Yuan Ching Rd",
     "RoadName":"Yung Ho Rd",
-    "Distance":"4.3",
-    "Right_Distance":"4.3"
+    "Distance":"4.3"
   },
   {
     "Direction":"1",
@@ -176,8 +165,7 @@
     "Bus Number":"154",
     "Description":"CISCO Recall",
     "RoadName":"Yung Ho Rd",
-    "Distance":"4.7",
-    "Right_Distance":"4.7"
+    "Distance":"4.7"
   },
   {
     "Direction":"1",
@@ -191,8 +179,7 @@
     "Bus Number":"154",
     "Description":"CORP PL",
     "RoadName":"Corporation Rd",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"1",
@@ -206,8 +193,7 @@
     "Bus Number":"154",
     "Description":"AFT CORP PL",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"1",
@@ -221,8 +207,7 @@
     "Bus Number":"154",
     "Description":"Aft Yuan Ching Rd",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"1",
@@ -236,8 +221,7 @@
     "Bus Number":"154",
     "Description":"Opp Carrier S'pore",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"7.4",
-    "Right_Distance":"7.4"
+    "Distance":"7.4"
   },
   {
     "Direction":"1",
@@ -251,8 +235,7 @@
     "Bus Number":"154",
     "Description":"Bef Jurong Town Hall Rd",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"8",
-    "Right_Distance":"8"
+    "Distance":"8"
   },
   {
     "Direction":"1",
@@ -266,8 +249,7 @@
     "Bus Number":"154",
     "Description":"Opp Cycle & Carriage",
     "RoadName":"AYE",
-    "Distance":"8.4",
-    "Right_Distance":"8.4"
+    "Distance":"8.4"
   },
   {
     "Direction":"1",
@@ -281,8 +263,7 @@
     "Bus Number":"154",
     "Description":"Opp The Infiniti",
     "RoadName":"AYE",
-    "Distance":"9.2",
-    "Right_Distance":"9.2"
+    "Distance":"9.2"
   },
   {
     "Direction":"1",
@@ -296,8 +277,7 @@
     "Bus Number":"154",
     "Description":"OPP NEWEST",
     "RoadName":"AYE",
-    "Distance":"9.7",
-    "Right_Distance":"9.7"
+    "Distance":"9.7"
   },
   {
     "Direction":"1",
@@ -311,8 +291,7 @@
     "Bus Number":"154",
     "Description":"Regent Pk",
     "RoadName":"Clementi Ave 6",
-    "Distance":"10.3",
-    "Right_Distance":"10.3"
+    "Distance":"10.3"
   },
   {
     "Direction":"1",
@@ -326,8 +305,7 @@
     "Bus Number":"154",
     "Description":"Blk 317",
     "RoadName":"C'wealth Ave West",
-    "Distance":"10.7",
-    "Right_Distance":"10.7"
+    "Distance":"10.7"
   },
   {
     "Direction":"1",
@@ -341,8 +319,7 @@
     "Bus Number":"154",
     "Description":"Clementi Stn Exit B",
     "RoadName":"C'wealth Ave West",
-    "Distance":"11",
-    "Right_Distance":"11"
+    "Distance":"11"
   },
   {
     "Direction":"1",
@@ -356,8 +333,7 @@
     "Bus Number":"154",
     "Description":"Blk 329",
     "RoadName":"C'wealth Ave West",
-    "Distance":"11.3",
-    "Right_Distance":"11.3"
+    "Distance":"11.3"
   },
   {
     "Direction":"1",
@@ -371,8 +347,7 @@
     "Bus Number":"154",
     "Description":"Blk 365",
     "RoadName":"C'wealth Ave West",
-    "Distance":"11.7",
-    "Right_Distance":"11.7"
+    "Distance":"11.7"
   },
   {
     "Direction":"1",
@@ -386,8 +361,7 @@
     "Bus Number":"154",
     "Description":"Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"12.2",
-    "Right_Distance":"12.2"
+    "Distance":"12.2"
   },
   {
     "Direction":"1",
@@ -401,8 +375,7 @@
     "Bus Number":"154",
     "Description":"Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"12.6",
-    "Right_Distance":"12.6"
+    "Distance":"12.6"
   },
   {
     "Direction":"1",
@@ -416,8 +389,7 @@
     "Bus Number":"154",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"13",
-    "Right_Distance":"13"
+    "Distance":"13"
   },
   {
     "Direction":"1",
@@ -431,8 +403,7 @@
     "Bus Number":"154",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"13.3",
-    "Right_Distance":"13.3"
+    "Distance":"13.3"
   },
   {
     "Direction":"1",
@@ -446,8 +417,7 @@
     "Bus Number":"154",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"13.8",
-    "Right_Distance":"13.8"
+    "Distance":"13.8"
   },
   {
     "Direction":"1",
@@ -461,8 +431,7 @@
     "Bus Number":"154",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"14.2",
-    "Right_Distance":"14.2"
+    "Distance":"14.2"
   },
   {
     "Direction":"1",
@@ -476,8 +445,7 @@
     "Bus Number":"154",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"14.6",
-    "Right_Distance":"14.6"
+    "Distance":"14.6"
   },
   {
     "Direction":"1",
@@ -491,8 +459,7 @@
     "Bus Number":"154",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"15",
-    "Right_Distance":"15"
+    "Distance":"15"
   },
   {
     "Direction":"1",
@@ -506,8 +473,7 @@
     "Bus Number":"154",
     "Description":"Opp King Albert Pk Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"15.6",
-    "Right_Distance":"15.6"
+    "Distance":"15.6"
   },
   {
     "Direction":"1",
@@ -521,8 +487,7 @@
     "Bus Number":"154",
     "Description":"Hua Guan Gdns",
     "RoadName":"Dunearn Rd",
-    "Distance":"15.8",
-    "Right_Distance":"15.8"
+    "Distance":"15.8"
   },
   {
     "Direction":"1",
@@ -536,8 +501,7 @@
     "Bus Number":"154",
     "Description":"Opp The Nexus",
     "RoadName":"Dunearn Rd",
-    "Distance":"16.2",
-    "Right_Distance":"16.2"
+    "Distance":"16.2"
   },
   {
     "Direction":"1",
@@ -551,8 +515,7 @@
     "Bus Number":"154",
     "Description":"Aft Swiss Club Rd",
     "RoadName":"Dunearn Rd",
-    "Distance":"16.7",
-    "Right_Distance":"16.7"
+    "Distance":"16.7"
   },
   {
     "Direction":"1",
@@ -566,8 +529,7 @@
     "Bus Number":"154",
     "Description":"Opp Sixth Ave Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"17.2",
-    "Right_Distance":"17.2"
+    "Distance":"17.2"
   },
   {
     "Direction":"1",
@@ -581,8 +543,7 @@
     "Bus Number":"154",
     "Description":"Aft Jln Naga Sari",
     "RoadName":"Dunearn Rd",
-    "Distance":"17.6",
-    "Right_Distance":"17.6"
+    "Distance":"17.6"
   },
   {
     "Direction":"1",
@@ -596,8 +557,7 @@
     "Bus Number":"154",
     "Description":"Natl JC",
     "RoadName":"Dunearn Rd",
-    "Distance":"18",
-    "Right_Distance":"18"
+    "Distance":"18"
   },
   {
     "Direction":"1",
@@ -611,8 +571,7 @@
     "Bus Number":"154",
     "Description":"Opp Tan Kah Kee Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"18.6",
-    "Right_Distance":"18.6"
+    "Distance":"18.6"
   },
   {
     "Direction":"1",
@@ -626,8 +585,7 @@
     "Bus Number":"154",
     "Description":"Opp Coronation Plaza",
     "RoadName":"Dunearn Rd",
-    "Distance":"19",
-    "Right_Distance":"19"
+    "Distance":"19"
   },
   {
     "Direction":"1",
@@ -641,8 +599,7 @@
     "Bus Number":"154",
     "Description":"Opp Botanic Gdns Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"19.7",
-    "Right_Distance":"19.7"
+    "Distance":"19.7"
   },
   {
     "Direction":"1",
@@ -656,8 +613,7 @@
     "Bus Number":"154",
     "Description":"Aft Kheam Hock Rd",
     "RoadName":"Dunearn Rd",
-    "Distance":"20.2",
-    "Right_Distance":"20.2"
+    "Distance":"20.2"
   },
   {
     "Direction":"1",
@@ -671,8 +627,7 @@
     "Bus Number":"154",
     "Description":"Aft Dunkirk Ave",
     "RoadName":"Dunearn Rd",
-    "Distance":"20.6",
-    "Right_Distance":"20.6"
+    "Distance":"20.6"
   },
   {
     "Direction":"1",
@@ -686,8 +641,7 @@
     "Bus Number":"154",
     "Description":"Raffles Town Club",
     "RoadName":"Whitley Rd",
-    "Distance":"20.9",
-    "Right_Distance":"20.9"
+    "Distance":"20.9"
   },
   {
     "Direction":"1",
@@ -701,8 +655,7 @@
     "Bus Number":"154",
     "Description":"Opp Catholic JC",
     "RoadName":"PIE",
-    "Distance":"22.4",
-    "Right_Distance":"22.4"
+    "Distance":"22.4"
   },
   {
     "Direction":"1",
@@ -716,8 +669,7 @@
     "Bus Number":"154",
     "Description":"Bef Thomson Flyover",
     "RoadName":"PIE",
-    "Distance":"22.8",
-    "Right_Distance":"22.8"
+    "Distance":"22.8"
   },
   {
     "Direction":"1",
@@ -731,8 +683,7 @@
     "Bus Number":"154",
     "Description":"Trellis Twrs",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"23.6",
-    "Right_Distance":"23.6"
+    "Distance":"23.6"
   },
   {
     "Direction":"1",
@@ -746,8 +697,7 @@
     "Bus Number":"154",
     "Description":"Aft Blk 195",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"25.5",
-    "Right_Distance":"25.5"
+    "Distance":"25.5"
   },
   {
     "Direction":"1",
@@ -761,8 +711,7 @@
     "Bus Number":"154",
     "Description":"St. Andrew'S Village",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"26.2",
-    "Right_Distance":"26.2"
+    "Distance":"26.2"
   },
   {
     "Direction":"1",
@@ -776,8 +725,7 @@
     "Bus Number":"154",
     "Description":"Aft Tai Thong Cres",
     "RoadName":"MacPherson Rd",
-    "Distance":"26.7",
-    "Right_Distance":"26.7"
+    "Distance":"26.7"
   },
   {
     "Direction":"1",
@@ -791,8 +739,7 @@
     "Bus Number":"154",
     "Description":"Bef Jln Wangi",
     "RoadName":"MacPherson Rd",
-    "Distance":"27.1",
-    "Right_Distance":"27.1"
+    "Distance":"27.1"
   },
   {
     "Direction":"1",
@@ -806,8 +753,7 @@
     "Bus Number":"154",
     "Description":"Opp Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"27.5",
-    "Right_Distance":"27.5"
+    "Distance":"27.5"
   },
   {
     "Direction":"1",
@@ -821,8 +767,7 @@
     "Bus Number":"154",
     "Description":"Aljunied Pk",
     "RoadName":"Aljunied Rd",
-    "Distance":"28",
-    "Right_Distance":"28"
+    "Distance":"28"
   },
   {
     "Direction":"1",
@@ -836,8 +781,7 @@
     "Bus Number":"154",
     "Description":"Aft Jln Anggerek",
     "RoadName":"Merpati Rd",
-    "Distance":"28.3",
-    "Right_Distance":"28.3"
+    "Distance":"28.3"
   },
   {
     "Direction":"1",
@@ -851,8 +795,7 @@
     "Bus Number":"154",
     "Description":"OPP MATTAR STN EXIT A",
     "RoadName":"Merpati Rd",
-    "Distance":"28.6",
-    "Right_Distance":"28.6"
+    "Distance":"28.6"
   },
   {
     "Direction":"1",
@@ -866,8 +809,7 @@
     "Bus Number":"154",
     "Description":"Blk 77",
     "RoadName":"Circuit Rd",
-    "Distance":"29",
-    "Right_Distance":"29"
+    "Distance":"29"
   },
   {
     "Direction":"1",
@@ -881,8 +823,7 @@
     "Bus Number":"154",
     "Description":"Blk 36",
     "RoadName":"Circuit Rd",
-    "Distance":"29.2",
-    "Right_Distance":"29.2"
+    "Distance":"29.2"
   },
   {
     "Direction":"1",
@@ -896,8 +837,7 @@
     "Bus Number":"154",
     "Description":"OPP BLK 66",
     "RoadName":"Circuit Rd",
-    "Distance":"29.4",
-    "Right_Distance":"29.4"
+    "Distance":"29.4"
   },
   {
     "Direction":"1",
@@ -911,8 +851,7 @@
     "Bus Number":"154",
     "Description":"Macpherson Stn Exit A",
     "RoadName":"Circuit Link",
-    "Distance":"29.6",
-    "Right_Distance":"29.6"
+    "Distance":"29.6"
   },
   {
     "Direction":"1",
@@ -926,8 +865,7 @@
     "Bus Number":"154",
     "Description":"Macpherson Stn Exit B",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"29.9",
-    "Right_Distance":"29.9"
+    "Distance":"29.9"
   },
   {
     "Direction":"1",
@@ -941,8 +879,7 @@
     "Bus Number":"154",
     "Description":"CISCO Ctr",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"30.3",
-    "Right_Distance":"30.3"
+    "Distance":"30.3"
   },
   {
     "Direction":"1",
@@ -956,8 +893,7 @@
     "Bus Number":"154",
     "Description":"Paya Lebar Stn Exit B",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"30.6",
-    "Right_Distance":"30.6"
+    "Distance":"30.6"
   },
   {
     "Direction":"1",
@@ -971,8 +907,7 @@
     "Bus Number":"154",
     "Description":"Aft Paya Lebar Quarter",
     "RoadName":"Sims Ave",
-    "Distance":"31.1",
-    "Right_Distance":"31.1"
+    "Distance":"31.1"
   },
   {
     "Direction":"1",
@@ -986,8 +921,7 @@
     "Bus Number":"154",
     "Description":"Blk 416",
     "RoadName":"Sims Ave",
-    "Distance":"31.3",
-    "Right_Distance":"31.3"
+    "Distance":"31.3"
   },
   {
     "Direction":"1",
@@ -1001,8 +935,7 @@
     "Bus Number":"154",
     "Description":"Eunos Int",
     "RoadName":"Eunos Rd 2",
-    "Distance":"32",
-    "Right_Distance":"32"
+    "Distance":"32"
   },
   {
     "Direction":"2",
@@ -1016,8 +949,7 @@
     "Bus Number":"61",
     "Description":"Eunos Int",
     "RoadName":"Eunos Rd 2",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -1031,8 +963,7 @@
     "Bus Number":"61",
     "Description":"Eunos Stn\/ Int",
     "RoadName":"Sims Ave",
-    "Distance":"0.5",
-    "Right_Distance":"0.5"
+    "Distance":"0.5"
   },
   {
     "Direction":"2",
@@ -1046,8 +977,7 @@
     "Bus Number":"61",
     "Description":"Eunos Stn",
     "RoadName":"Jln Eunos",
-    "Distance":"0.9",
-    "Right_Distance":"0.9"
+    "Distance":"0.9"
   },
   {
     "Direction":"2",
@@ -1061,8 +991,7 @@
     "Bus Number":"61",
     "Description":"Blk 17",
     "RoadName":"Jln Eunos",
-    "Distance":"1.2",
-    "Right_Distance":"1.2"
+    "Distance":"1.2"
   },
   {
     "Direction":"2",
@@ -1076,8 +1005,7 @@
     "Bus Number":"61",
     "Description":"Blk 322",
     "RoadName":"Jln Eunos",
-    "Distance":"1.7",
-    "Right_Distance":"1.7"
+    "Distance":"1.7"
   },
   {
     "Direction":"2",
@@ -1091,8 +1019,7 @@
     "Bus Number":"61",
     "Description":"Blk 311",
     "RoadName":"Eunos Link",
-    "Distance":"2",
-    "Right_Distance":"2"
+    "Distance":"2"
   },
   {
     "Direction":"2",
@@ -1106,8 +1033,7 @@
     "Bus Number":"61",
     "Description":"Blk 302",
     "RoadName":"Ubi Ave 2",
-    "Distance":"2.4",
-    "Right_Distance":"2.4"
+    "Distance":"2.4"
   },
   {
     "Direction":"2",
@@ -1121,8 +1047,7 @@
     "Bus Number":"61",
     "Description":"UBI STN EXIT A",
     "RoadName":"Ubi Ave 2",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"2",
@@ -1136,8 +1061,7 @@
     "Bus Number":"61",
     "Description":"Blk 3024",
     "RoadName":"Ubi Ave 2",
-    "Distance":"3",
-    "Right_Distance":"3"
+    "Distance":"3"
   },
   {
     "Direction":"2",
@@ -1151,8 +1075,7 @@
     "Bus Number":"61",
     "Description":"Blk 3026",
     "RoadName":"Ubi Ave 2",
-    "Distance":"3.3",
-    "Right_Distance":"3.3"
+    "Distance":"3.3"
   },
   {
     "Direction":"2",
@@ -1166,8 +1089,7 @@
     "Bus Number":"61",
     "Description":"Aztech Bldg",
     "RoadName":"Ubi Ave 2",
-    "Distance":"3.6",
-    "Right_Distance":"3.6"
+    "Distance":"3.6"
   },
   {
     "Direction":"2",
@@ -1181,8 +1103,7 @@
     "Bus Number":"61",
     "Description":"Opp Macpherson Stn Exit A",
     "RoadName":"Circuit Link",
-    "Distance":"3.9",
-    "Right_Distance":"3.9"
+    "Distance":"3.9"
   },
   {
     "Direction":"2",
@@ -1196,8 +1117,7 @@
     "Bus Number":"61",
     "Description":"OPP MACPHERSON STN EXIT D",
     "RoadName":"Circuit Rd",
-    "Distance":"4.1",
-    "Right_Distance":"4.1"
+    "Distance":"4.1"
   },
   {
     "Direction":"2",
@@ -1211,8 +1131,7 @@
     "Bus Number":"61",
     "Description":"Blk 90",
     "RoadName":"Pipit Rd",
-    "Distance":"4.5",
-    "Right_Distance":"4.5"
+    "Distance":"4.5"
   },
   {
     "Direction":"2",
@@ -1226,8 +1145,7 @@
     "Bus Number":"61",
     "Description":"Blk 79 FC",
     "RoadName":"Circuit Rd",
-    "Distance":"5",
-    "Right_Distance":"5"
+    "Distance":"5"
   },
   {
     "Direction":"2",
@@ -1241,8 +1159,7 @@
     "Bus Number":"61",
     "Description":"OPP MATTAR STN EXIT B",
     "RoadName":"Mattar Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"2",
@@ -1256,8 +1173,7 @@
     "Bus Number":"61",
     "Description":"Aft Grace Baptist Ch",
     "RoadName":"Mattar Rd",
-    "Distance":"5.7",
-    "Right_Distance":"5.7"
+    "Distance":"5.7"
   },
   {
     "Direction":"2",
@@ -1271,8 +1187,7 @@
     "Bus Number":"61",
     "Description":"Opp Canossa Catholic Pr",
     "RoadName":"Aljunied Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"2",
@@ -1286,8 +1201,7 @@
     "Bus Number":"61",
     "Description":"Opp Aljunied Pk",
     "RoadName":"Aljunied Rd",
-    "Distance":"6.3",
-    "Right_Distance":"6.3"
+    "Distance":"6.3"
   },
   {
     "Direction":"2",
@@ -1301,8 +1215,7 @@
     "Bus Number":"61",
     "Description":"Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"6.7",
-    "Right_Distance":"6.7"
+    "Distance":"6.7"
   },
   {
     "Direction":"2",
@@ -1316,8 +1229,7 @@
     "Bus Number":"61",
     "Description":"Gulab Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"7.1",
-    "Right_Distance":"7.1"
+    "Distance":"7.1"
   },
   {
     "Direction":"2",
@@ -1331,8 +1243,7 @@
     "Bus Number":"61",
     "Description":"Bef Siemens Ctr",
     "RoadName":"MacPherson Rd",
-    "Distance":"7.5",
-    "Right_Distance":"7.5"
+    "Distance":"7.5"
   },
   {
     "Direction":"2",
@@ -1346,8 +1257,7 @@
     "Bus Number":"61",
     "Description":"MOM Svcs Ctr",
     "RoadName":"Bendemeer Rd",
-    "Distance":"7.9",
-    "Right_Distance":"7.9"
+    "Distance":"7.9"
   },
   {
     "Direction":"2",
@@ -1361,8 +1271,7 @@
     "Bus Number":"61",
     "Description":"BLK 73\/GEYLANG BAHRU STN",
     "RoadName":"Geylang Bahru",
-    "Distance":"8.5",
-    "Right_Distance":"8.5"
+    "Distance":"8.5"
   },
   {
     "Direction":"2",
@@ -1376,8 +1285,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 66",
     "RoadName":"Kallang Bahru",
-    "Distance":"8.8",
-    "Right_Distance":"8.8"
+    "Distance":"8.8"
   },
   {
     "Direction":"2",
@@ -1391,8 +1299,7 @@
     "Bus Number":"61",
     "Description":"Blk 16",
     "RoadName":"Kallang Bahru",
-    "Distance":"9.3",
-    "Right_Distance":"9.3"
+    "Distance":"9.3"
   },
   {
     "Direction":"2",
@@ -1406,8 +1313,7 @@
     "Bus Number":"61",
     "Description":"BENDEMEER STN EXIT B",
     "RoadName":"Kallang Bahru",
-    "Distance":"9.8",
-    "Right_Distance":"9.8"
+    "Distance":"9.8"
   },
   {
     "Direction":"2",
@@ -1421,8 +1327,7 @@
     "Bus Number":"61",
     "Description":"Aft Kallang Bahru",
     "RoadName":"Lavender St",
-    "Distance":"10.1",
-    "Right_Distance":"10.1"
+    "Distance":"10.1"
   },
   {
     "Direction":"2",
@@ -1436,8 +1341,7 @@
     "Bus Number":"61",
     "Description":"Aperia\/Bef Kallang Rd",
     "RoadName":"Lavender St",
-    "Distance":"10.3",
-    "Right_Distance":"10.3"
+    "Distance":"10.3"
   },
   {
     "Direction":"2",
@@ -1451,8 +1355,7 @@
     "Bus Number":"61",
     "Description":"Bef Crawford Bridge",
     "RoadName":"Crawford St",
-    "Distance":"10.6",
-    "Right_Distance":"10.6"
+    "Distance":"10.6"
   },
   {
     "Direction":"2",
@@ -1466,8 +1369,7 @@
     "Bus Number":"61",
     "Description":"Blk 8",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"11",
-    "Right_Distance":"11"
+    "Distance":"11"
   },
   {
     "Direction":"2",
@@ -1481,8 +1383,7 @@
     "Bus Number":"61",
     "Description":"Bef Sultan Mque",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"11.5",
-    "Right_Distance":"11.5"
+    "Distance":"11.5"
   },
   {
     "Direction":"2",
@@ -1496,8 +1397,7 @@
     "Bus Number":"61",
     "Description":"Bugis Stn\/Parkview Sq",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"11.9",
-    "Right_Distance":"11.9"
+    "Distance":"11.9"
   },
   {
     "Direction":"2",
@@ -1511,8 +1411,7 @@
     "Bus Number":"61",
     "Description":"Bugis Cube",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"12.2",
-    "Right_Distance":"12.2"
+    "Distance":"12.2"
   },
   {
     "Direction":"2",
@@ -1526,8 +1425,7 @@
     "Bus Number":"61",
     "Description":"Opp Natl Lib",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"12.4",
-    "Right_Distance":"12.4"
+    "Distance":"12.4"
   },
   {
     "Direction":"2",
@@ -1541,8 +1439,7 @@
     "Bus Number":"61",
     "Description":"City Hall Stn Exit B",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"12.9",
-    "Right_Distance":"12.9"
+    "Distance":"12.9"
   },
   {
     "Direction":"2",
@@ -1556,8 +1453,7 @@
     "Bus Number":"61",
     "Description":"Opp The Treasury",
     "RoadName":"Nth Bridge Rd",
-    "Distance":"13.2",
-    "Right_Distance":"13.2"
+    "Distance":"13.2"
   },
   {
     "Direction":"2",
@@ -1571,8 +1467,7 @@
     "Bus Number":"61",
     "Description":"Boat Quay",
     "RoadName":"Sth Bridge Rd",
-    "Distance":"13.6",
-    "Right_Distance":"13.6"
+    "Distance":"13.6"
   },
   {
     "Direction":"2",
@@ -1586,8 +1481,7 @@
     "Bus Number":"61",
     "Description":"Opp Hong Lim Cplx",
     "RoadName":"Sth Bridge Rd",
-    "Distance":"14",
-    "Right_Distance":"14"
+    "Distance":"14"
   },
   {
     "Direction":"2",
@@ -1601,8 +1495,7 @@
     "Bus Number":"61",
     "Description":"Opp Sri Mariamman Tp",
     "RoadName":"Sth Bridge Rd",
-    "Distance":"14.3",
-    "Right_Distance":"14.3"
+    "Distance":"14.3"
   },
   {
     "Direction":"2",
@@ -1616,8 +1509,7 @@
     "Bus Number":"61",
     "Description":"OPP MAXWELL STN EXIT 3",
     "RoadName":"Neil Rd",
-    "Distance":"14.7",
-    "Right_Distance":"14.7"
+    "Distance":"14.7"
   },
   {
     "Direction":"2",
@@ -1631,8 +1523,7 @@
     "Bus Number":"61",
     "Description":"Bef The Pinnacle@Duxton",
     "RoadName":"Neil Rd",
-    "Distance":"14.9",
-    "Right_Distance":"14.9"
+    "Distance":"14.9"
   },
   {
     "Direction":"2",
@@ -1646,8 +1537,7 @@
     "Bus Number":"61",
     "Description":"Blk 3",
     "RoadName":"Neil Rd",
-    "Distance":"15.3",
-    "Right_Distance":"15.3"
+    "Distance":"15.3"
   },
   {
     "Direction":"2",
@@ -1661,8 +1551,7 @@
     "Bus Number":"61",
     "Description":"BEF KAMPONG BAHRU TER",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"15.7",
-    "Right_Distance":"15.7"
+    "Distance":"15.7"
   },
   {
     "Direction":"2",
@@ -1676,8 +1565,7 @@
     "Bus Number":"61",
     "Description":"Melati Blk 2",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"16.3",
-    "Right_Distance":"16.3"
+    "Distance":"16.3"
   },
   {
     "Direction":"2",
@@ -1691,8 +1579,7 @@
     "Bus Number":"61",
     "Description":"Opp Ch of St. Teresa",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"16.6",
-    "Right_Distance":"16.6"
+    "Distance":"16.6"
   },
   {
     "Direction":"2",
@@ -1706,8 +1593,7 @@
     "Bus Number":"61",
     "Description":"Keppel DP Blk 519",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"17",
-    "Right_Distance":"17"
+    "Distance":"17"
   },
   {
     "Direction":"2",
@@ -1721,8 +1607,7 @@
     "Bus Number":"61",
     "Description":"Opp Mt Faber Lodge",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"17.4",
-    "Right_Distance":"17.4"
+    "Distance":"17.4"
   },
   {
     "Direction":"2",
@@ -1736,8 +1621,7 @@
     "Bus Number":"61",
     "Description":"HarbourFront Stn\/Vivocity",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"2",
@@ -1751,8 +1635,7 @@
     "Bus Number":"61",
     "Description":"Opp HarbourFront Int",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"18.4",
-    "Right_Distance":"18.4"
+    "Distance":"18.4"
   },
   {
     "Direction":"2",
@@ -1766,8 +1649,7 @@
     "Bus Number":"61",
     "Description":"Caribbean at Keppel Bay",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"2",
@@ -1781,8 +1663,7 @@
     "Bus Number":"61",
     "Description":"Opp Chr Community Chapel",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"19.3",
-    "Right_Distance":"19.3"
+    "Distance":"19.3"
   },
   {
     "Direction":"2",
@@ -1796,8 +1677,7 @@
     "Bus Number":"61",
     "Description":"Telok Blangah Stn",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"19.7",
-    "Right_Distance":"19.7"
+    "Distance":"19.7"
   },
   {
     "Direction":"2",
@@ -1811,8 +1691,7 @@
     "Bus Number":"61",
     "Description":"Opp Yeo's Bldg",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"2",
@@ -1826,8 +1705,7 @@
     "Bus Number":"61",
     "Description":"Alexandra Retail Ctr",
     "RoadName":"Alexandra Rd",
-    "Distance":"20.8",
-    "Right_Distance":"20.8"
+    "Distance":"20.8"
   },
   {
     "Direction":"2",
@@ -1841,8 +1719,7 @@
     "Bus Number":"61",
     "Description":"Alexandra Pt",
     "RoadName":"Alexandra Rd",
-    "Distance":"21.1",
-    "Right_Distance":"21.1"
+    "Distance":"21.1"
   },
   {
     "Direction":"2",
@@ -1856,8 +1733,7 @@
     "Bus Number":"61",
     "Description":"Aft Hortpark",
     "RoadName":"Alexandra Rd",
-    "Distance":"21.6",
-    "Right_Distance":"21.6"
+    "Distance":"21.6"
   },
   {
     "Direction":"2",
@@ -1871,8 +1747,7 @@
     "Bus Number":"61",
     "Description":"Alexandra Hosp",
     "RoadName":"Alexandra Rd",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"2",
@@ -1886,8 +1761,7 @@
     "Bus Number":"61",
     "Description":"Aft Queenstown NPC HQ",
     "RoadName":"Queensway",
-    "Distance":"22.7",
-    "Right_Distance":"22.7"
+    "Distance":"22.7"
   },
   {
     "Direction":"2",
@@ -1901,8 +1775,7 @@
     "Bus Number":"61",
     "Description":"Opp Queen's Cl",
     "RoadName":"Queensway",
-    "Distance":"23",
-    "Right_Distance":"23"
+    "Distance":"23"
   },
   {
     "Direction":"2",
@@ -1916,8 +1789,7 @@
     "Bus Number":"61",
     "Description":"Blk 58",
     "RoadName":"C'wealth Dr",
-    "Distance":"23.9",
-    "Right_Distance":"23.9"
+    "Distance":"23.9"
   },
   {
     "Direction":"2",
@@ -1931,8 +1803,7 @@
     "Bus Number":"61",
     "Description":"Blk 72",
     "RoadName":"C'wealth Dr",
-    "Distance":"24.2",
-    "Right_Distance":"24.2"
+    "Distance":"24.2"
   },
   {
     "Direction":"2",
@@ -1946,8 +1817,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 7B",
     "RoadName":"C'wealth Ave",
-    "Distance":"24.9",
-    "Right_Distance":"24.9"
+    "Distance":"24.9"
   },
   {
     "Direction":"2",
@@ -1961,8 +1831,7 @@
     "Bus Number":"61",
     "Description":"Holland V Stn\/Blk12",
     "RoadName":"Holland Ave",
-    "Distance":"25.4",
-    "Right_Distance":"25.4"
+    "Distance":"25.4"
   },
   {
     "Direction":"2",
@@ -1976,8 +1845,7 @@
     "Bus Number":"61",
     "Description":"Holland Village",
     "RoadName":"Holland Rd",
-    "Distance":"25.9",
-    "Right_Distance":"25.9"
+    "Distance":"25.9"
   },
   {
     "Direction":"2",
@@ -1991,8 +1859,7 @@
     "Bus Number":"61",
     "Description":"Aft East Sussex Lane",
     "RoadName":"Holland Rd",
-    "Distance":"26.5",
-    "Right_Distance":"26.5"
+    "Distance":"26.5"
   },
   {
     "Direction":"2",
@@ -2006,8 +1873,7 @@
     "Bus Number":"61",
     "Description":"Aft Tan Boon Chong Ave",
     "RoadName":"Holland Rd",
-    "Distance":"26.8",
-    "Right_Distance":"26.8"
+    "Distance":"26.8"
   },
   {
     "Direction":"2",
@@ -2021,8 +1887,7 @@
     "Bus Number":"61",
     "Description":"Cold Storage Jelita",
     "RoadName":"Holland Rd",
-    "Distance":"27.2",
-    "Right_Distance":"27.2"
+    "Distance":"27.2"
   },
   {
     "Direction":"2",
@@ -2036,8 +1901,7 @@
     "Bus Number":"61",
     "Description":"Bef Moonbeam Wk",
     "RoadName":"Holland Rd",
-    "Distance":"27.6",
-    "Right_Distance":"27.6"
+    "Distance":"27.6"
   },
   {
     "Direction":"2",
@@ -2051,8 +1915,7 @@
     "Bus Number":"61",
     "Description":"Pandan Valley Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"28",
-    "Right_Distance":"28"
+    "Distance":"28"
   },
   {
     "Direction":"2",
@@ -2066,8 +1929,7 @@
     "Bus Number":"61",
     "Description":"Aft Pandan Valley",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"28.4",
-    "Right_Distance":"28.4"
+    "Distance":"28.4"
   },
   {
     "Direction":"2",
@@ -2081,8 +1943,7 @@
     "Bus Number":"61",
     "Description":"Pine Gr Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"28.7",
-    "Right_Distance":"28.7"
+    "Distance":"28.7"
   },
   {
     "Direction":"2",
@@ -2096,8 +1957,7 @@
     "Bus Number":"61",
     "Description":"Bef Clementi Rd",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"28.9",
-    "Right_Distance":"28.9"
+    "Distance":"28.9"
   },
   {
     "Direction":"2",
@@ -2111,8 +1971,7 @@
     "Bus Number":"61",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"29.4",
-    "Right_Distance":"29.4"
+    "Distance":"29.4"
   },
   {
     "Direction":"2",
@@ -2126,8 +1985,7 @@
     "Bus Number":"61",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"29.7",
-    "Right_Distance":"29.7"
+    "Distance":"29.7"
   },
   {
     "Direction":"2",
@@ -2141,8 +1999,7 @@
     "Bus Number":"61",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"30.2",
-    "Right_Distance":"30.2"
+    "Distance":"30.2"
   },
   {
     "Direction":"2",
@@ -2156,8 +2013,7 @@
     "Bus Number":"61",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"30.6",
-    "Right_Distance":"30.6"
+    "Distance":"30.6"
   },
   {
     "Direction":"2",
@@ -2171,8 +2027,7 @@
     "Bus Number":"61",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"31",
-    "Right_Distance":"31"
+    "Distance":"31"
   },
   {
     "Direction":"2",
@@ -2186,8 +2041,7 @@
     "Bus Number":"61",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"31.4",
-    "Right_Distance":"31.4"
+    "Distance":"31.4"
   },
   {
     "Direction":"2",
@@ -2201,8 +2055,7 @@
     "Bus Number":"61",
     "Description":"Pei Hwa Presby Pr Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"31.8",
-    "Right_Distance":"31.8"
+    "Distance":"31.8"
   },
   {
     "Direction":"2",
@@ -2216,8 +2069,7 @@
     "Bus Number":"61",
     "Description":"Beauty World Stn Exit C",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"32.1",
-    "Right_Distance":"32.1"
+    "Distance":"32.1"
   },
   {
     "Direction":"2",
@@ -2231,8 +2083,7 @@
     "Bus Number":"61",
     "Description":"Blk 18",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"32.4",
-    "Right_Distance":"32.4"
+    "Distance":"32.4"
   },
   {
     "Direction":"2",
@@ -2246,8 +2097,7 @@
     "Bus Number":"61",
     "Description":"Signature Pk Condo",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"32.8",
-    "Right_Distance":"32.8"
+    "Distance":"32.8"
   },
   {
     "Direction":"2",
@@ -2261,8 +2111,7 @@
     "Bus Number":"61",
     "Description":"Opp The Hillford",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"33.1",
-    "Right_Distance":"33.1"
+    "Distance":"33.1"
   },
   {
     "Direction":"2",
@@ -2276,8 +2125,7 @@
     "Bus Number":"61",
     "Description":"Bef Bt Batok East Ave 6",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"33.5",
-    "Right_Distance":"33.5"
+    "Distance":"33.5"
   },
   {
     "Direction":"2",
@@ -2291,8 +2139,7 @@
     "Bus Number":"61",
     "Description":"Park Natura",
     "RoadName":"Bt Batok East Ave 6",
-    "Distance":"33.8",
-    "Right_Distance":"33.8"
+    "Distance":"33.8"
   },
   {
     "Direction":"2",
@@ -2306,8 +2153,7 @@
     "Bus Number":"61",
     "Description":"Blk 288C",
     "RoadName":"Bt Batok East Ave 6",
-    "Distance":"34.4",
-    "Right_Distance":"34.4"
+    "Distance":"34.4"
   },
   {
     "Direction":"2",
@@ -2321,8 +2167,7 @@
     "Bus Number":"61",
     "Description":"Keming Pr Sch",
     "RoadName":"Bt Batok East Ave 3",
-    "Distance":"34.8",
-    "Right_Distance":"34.8"
+    "Distance":"34.8"
   },
   {
     "Direction":"2",
@@ -2336,8 +2181,7 @@
     "Bus Number":"61",
     "Description":"Blk 229",
     "RoadName":"Bt Batok East Ave 3",
-    "Distance":"35.2",
-    "Right_Distance":"35.2"
+    "Distance":"35.2"
   },
   {
     "Direction":"2",
@@ -2351,8 +2195,7 @@
     "Bus Number":"61",
     "Description":"Bt Batok Int",
     "RoadName":"Bt Batok Ctrl",
-    "Distance":"35.7",
-    "Right_Distance":"35.7"
+    "Distance":"35.7"
   },
   {
     "Direction":"2",
@@ -2366,8 +2209,7 @@
     "Bus Number":"151",
     "Description":"Kent Ridge Ter",
     "RoadName":"Clementi Rd",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -2381,8 +2223,7 @@
     "Bus Number":"151",
     "Description":"Aft Architecture Dr",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"0.6",
-    "Right_Distance":"0.6"
+    "Distance":"0.6"
   },
   {
     "Direction":"2",
@@ -2396,8 +2237,7 @@
     "Bus Number":"151",
     "Description":"Information Technology",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"0.8",
-    "Right_Distance":"0.8"
+    "Distance":"0.8"
   },
   {
     "Direction":"2",
@@ -2411,8 +2251,7 @@
     "Bus Number":"151",
     "Description":"Opp Yusof Ishak Hse",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"2",
@@ -2426,8 +2265,7 @@
     "Bus Number":"151",
     "Description":"NUS Raffles Hall",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"1.5",
-    "Right_Distance":"1.5"
+    "Distance":"1.5"
   },
   {
     "Direction":"2",
@@ -2441,8 +2279,7 @@
     "Bus Number":"151",
     "Description":"Aft Clementi Ave 1",
     "RoadName":"Clementi Rd",
-    "Distance":"2.6",
-    "Right_Distance":"2.6"
+    "Distance":"2.6"
   },
   {
     "Direction":"2",
@@ -2456,8 +2293,7 @@
     "Bus Number":"151",
     "Description":"Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"3.2",
-    "Right_Distance":"3.2"
+    "Distance":"3.2"
   },
   {
     "Direction":"2",
@@ -2471,8 +2307,7 @@
     "Bus Number":"151",
     "Description":"Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"3.6",
-    "Right_Distance":"3.6"
+    "Distance":"3.6"
   },
   {
     "Direction":"2",
@@ -2486,8 +2321,7 @@
     "Bus Number":"151",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"4",
-    "Right_Distance":"4"
+    "Distance":"4"
   },
   {
     "Direction":"2",
@@ -2501,8 +2335,7 @@
     "Bus Number":"151",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"4.3",
-    "Right_Distance":"4.3"
+    "Distance":"4.3"
   },
   {
     "Direction":"2",
@@ -2516,8 +2349,7 @@
     "Bus Number":"151",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"4.8",
-    "Right_Distance":"4.8"
+    "Distance":"4.8"
   },
   {
     "Direction":"2",
@@ -2531,8 +2363,7 @@
     "Bus Number":"151",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"5.2",
-    "Right_Distance":"5.2"
+    "Distance":"5.2"
   },
   {
     "Direction":"2",
@@ -2546,8 +2377,7 @@
     "Bus Number":"151",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"5.6",
-    "Right_Distance":"5.6"
+    "Distance":"5.6"
   },
   {
     "Direction":"2",
@@ -2561,8 +2391,7 @@
     "Bus Number":"151",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"2",
@@ -2576,8 +2405,7 @@
     "Bus Number":"151",
     "Description":"Opp King Albert Pk Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"6.6",
-    "Right_Distance":"6.6"
+    "Distance":"6.6"
   },
   {
     "Direction":"2",
@@ -2591,8 +2419,7 @@
     "Bus Number":"151",
     "Description":"Hua Guan Gdns",
     "RoadName":"Dunearn Rd",
-    "Distance":"6.8",
-    "Right_Distance":"6.8"
+    "Distance":"6.8"
   },
   {
     "Direction":"2",
@@ -2606,8 +2433,7 @@
     "Bus Number":"151",
     "Description":"Opp The Nexus",
     "RoadName":"Dunearn Rd",
-    "Distance":"7.2",
-    "Right_Distance":"7.2"
+    "Distance":"7.2"
   },
   {
     "Direction":"2",
@@ -2621,8 +2447,7 @@
     "Bus Number":"151",
     "Description":"Aft Swiss Club Rd",
     "RoadName":"Dunearn Rd",
-    "Distance":"7.7",
-    "Right_Distance":"7.7"
+    "Distance":"7.7"
   },
   {
     "Direction":"2",
@@ -2636,8 +2461,7 @@
     "Bus Number":"151",
     "Description":"Opp Sixth Ave Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"8.2",
-    "Right_Distance":"8.2"
+    "Distance":"8.2"
   },
   {
     "Direction":"2",
@@ -2651,8 +2475,7 @@
     "Bus Number":"151",
     "Description":"Aft Jln Naga Sari",
     "RoadName":"Dunearn Rd",
-    "Distance":"8.6",
-    "Right_Distance":"8.6"
+    "Distance":"8.6"
   },
   {
     "Direction":"2",
@@ -2666,8 +2489,7 @@
     "Bus Number":"151",
     "Description":"Natl JC",
     "RoadName":"Dunearn Rd",
-    "Distance":"9",
-    "Right_Distance":"9"
+    "Distance":"9"
   },
   {
     "Direction":"2",
@@ -2681,8 +2503,7 @@
     "Bus Number":"151",
     "Description":"Opp Tan Kah Kee Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"9.6",
-    "Right_Distance":"9.6"
+    "Distance":"9.6"
   },
   {
     "Direction":"2",
@@ -2696,8 +2517,7 @@
     "Bus Number":"151",
     "Description":"Opp Coronation Plaza",
     "RoadName":"Dunearn Rd",
-    "Distance":"10",
-    "Right_Distance":"10"
+    "Distance":"10"
   },
   {
     "Direction":"2",
@@ -2711,8 +2531,7 @@
     "Bus Number":"151",
     "Description":"Opp Botanic Gdns Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"10.7",
-    "Right_Distance":"10.7"
+    "Distance":"10.7"
   },
   {
     "Direction":"2",
@@ -2726,8 +2545,7 @@
     "Bus Number":"151",
     "Description":"Aft Kheam Hock Rd",
     "RoadName":"Dunearn Rd",
-    "Distance":"11.2",
-    "Right_Distance":"11.2"
+    "Distance":"11.2"
   },
   {
     "Direction":"2",
@@ -2741,8 +2559,7 @@
     "Bus Number":"151",
     "Description":"Aft Dunkirk Ave",
     "RoadName":"Dunearn Rd",
-    "Distance":"11.6",
-    "Right_Distance":"11.6"
+    "Distance":"11.6"
   },
   {
     "Direction":"2",
@@ -2756,8 +2573,7 @@
     "Bus Number":"151",
     "Description":"Raffles Town Club",
     "RoadName":"Whitley Rd",
-    "Distance":"11.9",
-    "Right_Distance":"11.9"
+    "Distance":"11.9"
   },
   {
     "Direction":"2",
@@ -2771,8 +2587,7 @@
     "Bus Number":"151",
     "Description":"Opp Catholic JC",
     "RoadName":"PIE",
-    "Distance":"13.4",
-    "Right_Distance":"13.4"
+    "Distance":"13.4"
   },
   {
     "Direction":"2",
@@ -2786,8 +2601,7 @@
     "Bus Number":"151",
     "Description":"Bef Thomson Flyover",
     "RoadName":"PIE",
-    "Distance":"13.8",
-    "Right_Distance":"13.8"
+    "Distance":"13.8"
   },
   {
     "Direction":"2",
@@ -2801,8 +2615,7 @@
     "Bus Number":"151",
     "Description":"Trellis Twrs",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"14.6",
-    "Right_Distance":"14.6"
+    "Distance":"14.6"
   },
   {
     "Direction":"2",
@@ -2816,8 +2629,7 @@
     "Bus Number":"151",
     "Description":"Aft Blk 195",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"16.5",
-    "Right_Distance":"16.5"
+    "Distance":"16.5"
   },
   {
     "Direction":"2",
@@ -2831,8 +2643,7 @@
     "Bus Number":"151",
     "Description":"St. Andrew'S Village",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"17.2",
-    "Right_Distance":"17.2"
+    "Distance":"17.2"
   },
   {
     "Direction":"2",
@@ -2846,8 +2657,7 @@
     "Bus Number":"151",
     "Description":"Aft Tai Thong Cres",
     "RoadName":"MacPherson Rd",
-    "Distance":"17.7",
-    "Right_Distance":"17.7"
+    "Distance":"17.7"
   },
   {
     "Direction":"2",
@@ -2861,8 +2671,7 @@
     "Bus Number":"151",
     "Description":"Bef Jln Wangi",
     "RoadName":"MacPherson Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"2",
@@ -2876,8 +2685,7 @@
     "Bus Number":"151",
     "Description":"Opp Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"18.5",
-    "Right_Distance":"18.5"
+    "Distance":"18.5"
   },
   {
     "Direction":"2",
@@ -2891,8 +2699,7 @@
     "Bus Number":"151",
     "Description":"Aft Jln Muhibbah",
     "RoadName":"MacPherson Rd",
-    "Distance":"19",
-    "Right_Distance":"19"
+    "Distance":"19"
   },
   {
     "Direction":"2",
@@ -2906,8 +2713,7 @@
     "Bus Number":"151",
     "Description":"Bef Davidson Rd",
     "RoadName":"MacPherson Rd",
-    "Distance":"19.4",
-    "Right_Distance":"19.4"
+    "Distance":"19.4"
   },
   {
     "Direction":"2",
@@ -2921,8 +2727,7 @@
     "Bus Number":"151",
     "Description":"Grantral Mall Macpherson",
     "RoadName":"MacPherson Rd",
-    "Distance":"19.7",
-    "Right_Distance":"19.7"
+    "Distance":"19.7"
   },
   {
     "Direction":"2",
@@ -2936,8 +2741,7 @@
     "Bus Number":"151",
     "Description":"Aft Paya Lebar Rd",
     "RoadName":"Airport Rd",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"2",
@@ -2951,8 +2755,7 @@
     "Bus Number":"151",
     "Description":"Opp Scdf Hq",
     "RoadName":"Airport Rd",
-    "Distance":"20.3",
-    "Right_Distance":"20.3"
+    "Distance":"20.3"
   },
   {
     "Direction":"2",
@@ -2966,8 +2769,7 @@
     "Bus Number":"151",
     "Description":"Opp Comfort Test Ctr",
     "RoadName":"Airport Rd",
-    "Distance":"20.7",
-    "Right_Distance":"20.7"
+    "Distance":"20.7"
   },
   {
     "Direction":"2",
@@ -2981,8 +2783,7 @@
     "Bus Number":"151",
     "Description":"Aft Airport Rd",
     "RoadName":"Hougang Ave 3",
-    "Distance":"21",
-    "Right_Distance":"21"
+    "Distance":"21"
   },
   {
     "Direction":"2",
@@ -2996,8 +2797,7 @@
     "Bus Number":"151",
     "Description":"Bef Kim Chuan Rd",
     "RoadName":"Hougang Ave 3",
-    "Distance":"21.4",
-    "Right_Distance":"21.4"
+    "Distance":"21.4"
   },
   {
     "Direction":"2",
@@ -3011,8 +2811,7 @@
     "Bus Number":"151",
     "Description":"Opp SBST Hougang Depot",
     "RoadName":"Hougang Ave 3",
-    "Distance":"21.8",
-    "Right_Distance":"21.8"
+    "Distance":"21.8"
   },
   {
     "Direction":"2",
@@ -3026,8 +2825,7 @@
     "Bus Number":"151",
     "Description":"OPP S'PORE GIRLS' HME",
     "RoadName":"Hougang Ave 3",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"2",
@@ -3041,8 +2839,7 @@
     "Bus Number":"151",
     "Description":"Blk 172",
     "RoadName":"Hougang Ave 3",
-    "Distance":"22.6",
-    "Right_Distance":"22.6"
+    "Distance":"22.6"
   },
   {
     "Direction":"2",
@@ -3056,8 +2853,7 @@
     "Bus Number":"151",
     "Description":"Blk 106",
     "RoadName":"Hougang Ave 3",
-    "Distance":"22.9",
-    "Right_Distance":"22.9"
+    "Distance":"22.9"
   },
   {
     "Direction":"2",
@@ -3071,8 +2867,7 @@
     "Bus Number":"151",
     "Description":"Blk 241",
     "RoadName":"Hougang Ave 3",
-    "Distance":"23.3",
-    "Right_Distance":"23.3"
+    "Distance":"23.3"
   },
   {
     "Direction":"2",
@@ -3086,8 +2881,7 @@
     "Bus Number":"151",
     "Description":"Blk 248",
     "RoadName":"Hougang Ave 3",
-    "Distance":"23.7",
-    "Right_Distance":"23.7"
+    "Distance":"23.7"
   },
   {
     "Direction":"2",
@@ -3101,8 +2895,7 @@
     "Bus Number":"151",
     "Description":"Aft Hougang Ave 3",
     "RoadName":"Tampines Rd",
-    "Distance":"24",
-    "Right_Distance":"24"
+    "Distance":"24"
   },
   {
     "Direction":"2",
@@ -3116,8 +2909,7 @@
     "Bus Number":"151",
     "Description":"Blk 316",
     "RoadName":"Hougang Ave 7",
-    "Distance":"24.5",
-    "Right_Distance":"24.5"
+    "Distance":"24.5"
   },
   {
     "Direction":"2",
@@ -3131,8 +2923,7 @@
     "Bus Number":"151",
     "Description":"Blk 308",
     "RoadName":"Hougang Ave 5",
-    "Distance":"24.9",
-    "Right_Distance":"24.9"
+    "Distance":"24.9"
   },
   {
     "Direction":"2",
@@ -3146,8 +2937,7 @@
     "Bus Number":"151",
     "Description":"Hougang Ctrl Int",
     "RoadName":"Hougang Ctrl",
-    "Distance":"25.7",
-    "Right_Distance":"25.7"
+    "Distance":"25.7"
   },
   {
     "Direction":"1",
@@ -3161,8 +2951,7 @@
     "Bus Number":"75",
     "Description":"Gali Batu Ter",
     "RoadName":"Jln Gali Batu",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -3176,8 +2965,7 @@
     "Bus Number":"75",
     "Description":"Aft KJE Slip Rd",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.2",
-    "Right_Distance":"0.2"
+    "Distance":"0.2"
   },
   {
     "Direction":"1",
@@ -3191,8 +2979,7 @@
     "Bus Number":"75",
     "Description":"Blk 632 CP",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.4",
-    "Right_Distance":"0.4"
+    "Distance":"0.4"
   },
   {
     "Direction":"1",
@@ -3206,8 +2993,7 @@
     "Bus Number":"75",
     "Description":"Opp Junction 10",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.9",
-    "Right_Distance":"0.9"
+    "Distance":"0.9"
   },
   {
     "Direction":"1",
@@ -3221,8 +3007,7 @@
     "Bus Number":"75",
     "Description":"Bt Panjang Stn\/Blk 604",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"1",
@@ -3236,8 +3021,7 @@
     "Bus Number":"75",
     "Description":"Blk 180",
     "RoadName":"Jelebu Rd",
-    "Distance":"1.5",
-    "Right_Distance":"1.5"
+    "Distance":"1.5"
   },
   {
     "Direction":"1",
@@ -3251,8 +3035,7 @@
     "Bus Number":"75",
     "Description":"Aft Petir Stn",
     "RoadName":"Petir Rd",
-    "Distance":"1.9",
-    "Right_Distance":"1.9"
+    "Distance":"1.9"
   },
   {
     "Direction":"1",
@@ -3266,8 +3049,7 @@
     "Bus Number":"75",
     "Description":"Blk 127",
     "RoadName":"Petir Rd",
-    "Distance":"2.2",
-    "Right_Distance":"2.2"
+    "Distance":"2.2"
   },
   {
     "Direction":"1",
@@ -3281,8 +3063,7 @@
     "Bus Number":"75",
     "Description":"Opp Bt Panjang Pr Sch",
     "RoadName":"Cashew Rd",
-    "Distance":"2.8",
-    "Right_Distance":"2.8"
+    "Distance":"2.8"
   },
   {
     "Direction":"1",
@@ -3296,8 +3077,7 @@
     "Bus Number":"75",
     "Description":"Cashew Pk Condo",
     "RoadName":"Cashew Rd",
-    "Distance":"3.2",
-    "Right_Distance":"3.2"
+    "Distance":"3.2"
   },
   {
     "Direction":"1",
@@ -3311,8 +3091,7 @@
     "Bus Number":"75",
     "Description":"Assumption Pathway Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"3.7",
-    "Right_Distance":"3.7"
+    "Distance":"3.7"
   },
   {
     "Direction":"1",
@@ -3326,8 +3105,7 @@
     "Bus Number":"75",
     "Description":"Aft Assumption Eng Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"4",
-    "Right_Distance":"4"
+    "Distance":"4"
   },
   {
     "Direction":"1",
@@ -3341,8 +3119,7 @@
     "Bus Number":"75",
     "Description":"HILLVIEW STN EXIT A",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"4.5",
-    "Right_Distance":"4.5"
+    "Distance":"4.5"
   },
   {
     "Direction":"1",
@@ -3356,8 +3133,7 @@
     "Bus Number":"75",
     "Description":"The Rail Mall",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"1",
@@ -3371,8 +3147,7 @@
     "Bus Number":"75",
     "Description":"Opp Hume Pk Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"1",
@@ -3386,8 +3161,7 @@
     "Bus Number":"75",
     "Description":"Opp The Hillside",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"5.8",
-    "Right_Distance":"5.8"
+    "Distance":"5.8"
   },
   {
     "Direction":"1",
@@ -3401,8 +3175,7 @@
     "Bus Number":"75",
     "Description":"Springdale Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"6.3",
-    "Right_Distance":"6.3"
+    "Distance":"6.3"
   },
   {
     "Direction":"1",
@@ -3416,8 +3189,7 @@
     "Bus Number":"75",
     "Description":"Southaven II",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"6.6",
-    "Right_Distance":"6.6"
+    "Distance":"6.6"
   },
   {
     "Direction":"1",
@@ -3431,8 +3203,7 @@
     "Bus Number":"75",
     "Description":"Beauty World Stn Exit A",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"7.3",
-    "Right_Distance":"7.3"
+    "Distance":"7.3"
   },
   {
     "Direction":"1",
@@ -3446,8 +3217,7 @@
     "Bus Number":"75",
     "Description":"Opp Pei Hwa Presby Pr Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"7.6",
-    "Right_Distance":"7.6"
+    "Distance":"7.6"
   },
   {
     "Direction":"1",
@@ -3461,8 +3231,7 @@
     "Bus Number":"75",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"8.1",
-    "Right_Distance":"8.1"
+    "Distance":"8.1"
   },
   {
     "Direction":"1",
@@ -3476,8 +3245,7 @@
     "Bus Number":"75",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"8.7",
-    "Right_Distance":"8.7"
+    "Distance":"8.7"
   },
   {
     "Direction":"1",
@@ -3491,8 +3259,7 @@
     "Bus Number":"75",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"9.1",
-    "Right_Distance":"9.1"
+    "Distance":"9.1"
   },
   {
     "Direction":"1",
@@ -3506,8 +3273,7 @@
     "Bus Number":"75",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"9.3",
-    "Right_Distance":"9.3"
+    "Distance":"9.3"
   },
   {
     "Direction":"1",
@@ -3521,8 +3287,7 @@
     "Bus Number":"75",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"9.8",
-    "Right_Distance":"9.8"
+    "Distance":"9.8"
   },
   {
     "Direction":"1",
@@ -3536,8 +3301,7 @@
     "Bus Number":"75",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"10.1",
-    "Right_Distance":"10.1"
+    "Distance":"10.1"
   },
   {
     "Direction":"1",
@@ -3551,8 +3315,7 @@
     "Bus Number":"75",
     "Description":"Police KINS Trg Camp",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"10.4",
-    "Right_Distance":"10.4"
+    "Distance":"10.4"
   },
   {
     "Direction":"1",
@@ -3566,8 +3329,7 @@
     "Bus Number":"75",
     "Description":"Opp Pine Gr Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"10.6",
-    "Right_Distance":"10.6"
+    "Distance":"10.6"
   },
   {
     "Direction":"1",
@@ -3581,8 +3343,7 @@
     "Bus Number":"75",
     "Description":"Opp Pandan Valley",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"10.9",
-    "Right_Distance":"10.9"
+    "Distance":"10.9"
   },
   {
     "Direction":"1",
@@ -3596,8 +3357,7 @@
     "Bus Number":"75",
     "Description":"Opp Pandan Valley Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"11.3",
-    "Right_Distance":"11.3"
+    "Distance":"11.3"
   },
   {
     "Direction":"1",
@@ -3611,8 +3371,7 @@
     "Bus Number":"75",
     "Description":"Opp Moonbeam Wk",
     "RoadName":"Holland Rd",
-    "Distance":"11.6",
-    "Right_Distance":"11.6"
+    "Distance":"11.6"
   },
   {
     "Direction":"1",
@@ -3626,8 +3385,7 @@
     "Bus Number":"75",
     "Description":"Opp Cold Storage Jelita",
     "RoadName":"Holland Rd",
-    "Distance":"12",
-    "Right_Distance":"12"
+    "Distance":"12"
   },
   {
     "Direction":"1",
@@ -3641,8 +3399,7 @@
     "Bus Number":"75",
     "Description":"Opp Tan Boon Chong Ave",
     "RoadName":"Holland Rd",
-    "Distance":"12.4",
-    "Right_Distance":"12.4"
+    "Distance":"12.4"
   },
   {
     "Direction":"1",
@@ -3656,8 +3413,7 @@
     "Bus Number":"75",
     "Description":"Aft Coronation Rd West",
     "RoadName":"Holland Rd",
-    "Distance":"12.7",
-    "Right_Distance":"12.7"
+    "Distance":"12.7"
   },
   {
     "Direction":"1",
@@ -3671,8 +3427,7 @@
     "Bus Number":"75",
     "Description":"Opp Holland Village",
     "RoadName":"Holland Rd",
-    "Distance":"13.2",
-    "Right_Distance":"13.2"
+    "Distance":"13.2"
   },
   {
     "Direction":"1",
@@ -3686,8 +3441,7 @@
     "Bus Number":"75",
     "Description":"Fairlodge",
     "RoadName":"Holland Rd",
-    "Distance":"14.1",
-    "Right_Distance":"14.1"
+    "Distance":"14.1"
   },
   {
     "Direction":"1",
@@ -3701,8 +3455,7 @@
     "Bus Number":"75",
     "Description":"Sommerville Pk",
     "RoadName":"Holland Rd",
-    "Distance":"14.5",
-    "Right_Distance":"14.5"
+    "Distance":"14.5"
   },
   {
     "Direction":"1",
@@ -3716,8 +3469,7 @@
     "Bus Number":"75",
     "Description":"Great Eastern Mansions",
     "RoadName":"Holland Rd",
-    "Distance":"14.7",
-    "Right_Distance":"14.7"
+    "Distance":"14.7"
   },
   {
     "Direction":"1",
@@ -3731,8 +3483,7 @@
     "Bus Number":"75",
     "Description":"Opp Peirce Rd",
     "RoadName":"Holland Rd",
-    "Distance":"15.1",
-    "Right_Distance":"15.1"
+    "Distance":"15.1"
   },
   {
     "Direction":"1",
@@ -3746,8 +3497,7 @@
     "Bus Number":"75",
     "Description":"Bef Tyersall Ave",
     "RoadName":"Holland Rd",
-    "Distance":"15.5",
-    "Right_Distance":"15.5"
+    "Distance":"15.5"
   },
   {
     "Direction":"1",
@@ -3761,8 +3511,7 @@
     "Bus Number":"75",
     "Description":"NAPIER STN EXIT 1",
     "RoadName":"Napier Rd",
-    "Distance":"16.1",
-    "Right_Distance":"16.1"
+    "Distance":"16.1"
   },
   {
     "Direction":"1",
@@ -3776,8 +3525,7 @@
     "Bus Number":"75",
     "Description":"ORCHARD BLVD STN EXIT 1",
     "RoadName":"Grange Rd",
-    "Distance":"16.7",
-    "Right_Distance":"16.7"
+    "Distance":"16.7"
   },
   {
     "Direction":"1",
@@ -3791,8 +3539,7 @@
     "Bus Number":"75",
     "Description":"Bef One Tree Hill",
     "RoadName":"Grange Rd",
-    "Distance":"17.1",
-    "Right_Distance":"17.1"
+    "Distance":"17.1"
   },
   {
     "Direction":"1",
@@ -3806,8 +3553,7 @@
     "Bus Number":"75",
     "Description":"Cliveden At Grange",
     "RoadName":"Grange Rd",
-    "Distance":"17.4",
-    "Right_Distance":"17.4"
+    "Distance":"17.4"
   },
   {
     "Direction":"1",
@@ -3821,8 +3567,7 @@
     "Bus Number":"75",
     "Description":"Grange 80 Condo",
     "RoadName":"Grange Rd",
-    "Distance":"17.6",
-    "Right_Distance":"17.6"
+    "Distance":"17.6"
   },
   {
     "Direction":"1",
@@ -3836,8 +3581,7 @@
     "Bus Number":"75",
     "Description":"Bef Zion Full Gospel Ch",
     "RoadName":"Irwell Bank Rd",
-    "Distance":"17.9",
-    "Right_Distance":"17.9"
+    "Distance":"17.9"
   },
   {
     "Direction":"1",
@@ -3851,8 +3595,7 @@
     "Bus Number":"75",
     "Description":"Great World Stn Exit 3",
     "RoadName":"Kim Seng Rd",
-    "Distance":"18.4",
-    "Right_Distance":"18.4"
+    "Distance":"18.4"
   },
   {
     "Direction":"1",
@@ -3866,8 +3609,7 @@
     "Bus Number":"75",
     "Description":"Grand Copthorne Hotel",
     "RoadName":"Kim Seng Rd",
-    "Distance":"18.9",
-    "Right_Distance":"18.9"
+    "Distance":"18.9"
   },
   {
     "Direction":"1",
@@ -3881,8 +3623,7 @@
     "Bus Number":"75",
     "Description":"Aft Furama RiverFront",
     "RoadName":"Outram Rd",
-    "Distance":"19.4",
-    "Right_Distance":"19.4"
+    "Distance":"19.4"
   },
   {
     "Direction":"1",
@@ -3896,8 +3637,7 @@
     "Bus Number":"75",
     "Description":"Blk 55",
     "RoadName":"Tiong Bahru Rd",
-    "Distance":"19.8",
-    "Right_Distance":"19.8"
+    "Distance":"19.8"
   },
   {
     "Direction":"1",
@@ -3911,8 +3651,7 @@
     "Bus Number":"75",
     "Description":"Blk 18",
     "RoadName":"Tiong Bahru Rd",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"1",
@@ -3926,8 +3665,7 @@
     "Bus Number":"75",
     "Description":"Blk 126 CP",
     "RoadName":"Kim Tian Rd",
-    "Distance":"20.8",
-    "Right_Distance":"20.8"
+    "Distance":"20.8"
   },
   {
     "Direction":"1",
@@ -3941,8 +3679,7 @@
     "Bus Number":"75",
     "Description":"Blk 111",
     "RoadName":"Jln Bt Merah",
-    "Distance":"21.3",
-    "Right_Distance":"21.3"
+    "Distance":"21.3"
   },
   {
     "Direction":"1",
@@ -3956,8 +3693,7 @@
     "Bus Number":"75",
     "Description":"Blk 104",
     "RoadName":"Jln Bt Merah",
-    "Distance":"21.5",
-    "Right_Distance":"21.5"
+    "Distance":"21.5"
   },
   {
     "Direction":"1",
@@ -3971,8 +3707,7 @@
     "Bus Number":"75",
     "Description":"Opp Blk 120",
     "RoadName":"Jln Bt Merah",
-    "Distance":"21.8",
-    "Right_Distance":"21.8"
+    "Distance":"21.8"
   },
   {
     "Direction":"1",
@@ -3986,8 +3721,7 @@
     "Bus Number":"75",
     "Description":"Bt Merah Int",
     "RoadName":"Bt Merah Ctrl",
-    "Distance":"22.5",
-    "Right_Distance":"22.5"
+    "Distance":"22.5"
   },
   {
     "Direction":"2",
@@ -4001,8 +3735,7 @@
     "Bus Number":"74",
     "Description":"Buona Vista Ter",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -4016,8 +3749,7 @@
     "Bus Number":"74",
     "Description":"Blk 10A",
     "RoadName":"Holland Dr",
-    "Distance":"0.3",
-    "Right_Distance":"0.3"
+    "Distance":"0.3"
   },
   {
     "Direction":"2",
@@ -4031,8 +3763,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 43",
     "RoadName":"C'wealth Ave",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"2",
@@ -4046,8 +3777,7 @@
     "Bus Number":"74",
     "Description":"Buona Vista Stn Exit D",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"1",
-    "Right_Distance":"1"
+    "Distance":"1"
   },
   {
     "Direction":"2",
@@ -4061,8 +3791,7 @@
     "Bus Number":"74",
     "Description":"Essec Business Sch",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"1.6",
-    "Right_Distance":"1.6"
+    "Distance":"1.6"
   },
   {
     "Direction":"2",
@@ -4076,8 +3805,7 @@
     "Bus Number":"74",
     "Description":"Opp Fairfield Meth Pr Sch",
     "RoadName":"Dover Rd",
-    "Distance":"2.1",
-    "Right_Distance":"2.1"
+    "Distance":"2.1"
   },
   {
     "Direction":"2",
@@ -4091,8 +3819,7 @@
     "Bus Number":"74",
     "Description":"Acs Independent",
     "RoadName":"Dover Rd",
-    "Distance":"2.6",
-    "Right_Distance":"2.6"
+    "Distance":"2.6"
   },
   {
     "Direction":"2",
@@ -4106,8 +3833,7 @@
     "Bus Number":"74",
     "Description":"S'pore Poly",
     "RoadName":"Dover Ave",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"2",
@@ -4121,8 +3847,7 @@
     "Bus Number":"74",
     "Description":"SP SMA",
     "RoadName":"C'wealth Ave West",
-    "Distance":"3.5",
-    "Right_Distance":"3.5"
+    "Distance":"3.5"
   },
   {
     "Direction":"2",
@@ -4136,8 +3861,7 @@
     "Bus Number":"74",
     "Description":"Dover Stn Exit A",
     "RoadName":"C'wealth Ave West",
-    "Distance":"3.9",
-    "Right_Distance":"3.9"
+    "Distance":"3.9"
   },
   {
     "Direction":"2",
@@ -4151,8 +3875,7 @@
     "Bus Number":"74",
     "Description":"Opp Sch of Science & Tech",
     "RoadName":"C'wealth Ave West",
-    "Distance":"4.3",
-    "Right_Distance":"4.3"
+    "Distance":"4.3"
   },
   {
     "Direction":"2",
@@ -4166,8 +3889,7 @@
     "Bus Number":"74",
     "Description":"Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"5",
-    "Right_Distance":"5"
+    "Distance":"5"
   },
   {
     "Direction":"2",
@@ -4181,8 +3903,7 @@
     "Bus Number":"74",
     "Description":"Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"2",
@@ -4196,8 +3917,7 @@
     "Bus Number":"74",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"5.8",
-    "Right_Distance":"5.8"
+    "Distance":"5.8"
   },
   {
     "Direction":"2",
@@ -4211,8 +3931,7 @@
     "Bus Number":"74",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"6.1",
-    "Right_Distance":"6.1"
+    "Distance":"6.1"
   },
   {
     "Direction":"2",
@@ -4226,8 +3945,7 @@
     "Bus Number":"74",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"6.6",
-    "Right_Distance":"6.6"
+    "Distance":"6.6"
   },
   {
     "Direction":"2",
@@ -4241,8 +3959,7 @@
     "Bus Number":"74",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"7",
-    "Right_Distance":"7"
+    "Distance":"7"
   },
   {
     "Direction":"2",
@@ -4256,8 +3973,7 @@
     "Bus Number":"74",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"7.4",
-    "Right_Distance":"7.4"
+    "Distance":"7.4"
   },
   {
     "Direction":"2",
@@ -4271,8 +3987,7 @@
     "Bus Number":"74",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"7.8",
-    "Right_Distance":"7.8"
+    "Distance":"7.8"
   },
   {
     "Direction":"2",
@@ -4286,8 +4001,7 @@
     "Bus Number":"74",
     "Description":"Opp King Albert Pk Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"8.4",
-    "Right_Distance":"8.4"
+    "Distance":"8.4"
   },
   {
     "Direction":"2",
@@ -4301,8 +4015,7 @@
     "Bus Number":"74",
     "Description":"Hua Guan Gdns",
     "RoadName":"Dunearn Rd",
-    "Distance":"8.6",
-    "Right_Distance":"8.6"
+    "Distance":"8.6"
   },
   {
     "Direction":"2",
@@ -4316,8 +4029,7 @@
     "Bus Number":"74",
     "Description":"Opp The Nexus",
     "RoadName":"Dunearn Rd",
-    "Distance":"9",
-    "Right_Distance":"9"
+    "Distance":"9"
   },
   {
     "Direction":"2",
@@ -4331,8 +4043,7 @@
     "Bus Number":"74",
     "Description":"Aft Swiss Club Rd",
     "RoadName":"Dunearn Rd",
-    "Distance":"9.5",
-    "Right_Distance":"9.5"
+    "Distance":"9.5"
   },
   {
     "Direction":"2",
@@ -4346,8 +4057,7 @@
     "Bus Number":"74",
     "Description":"Opp Sixth Ave Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"10",
-    "Right_Distance":"10"
+    "Distance":"10"
   },
   {
     "Direction":"2",
@@ -4361,8 +4071,7 @@
     "Bus Number":"74",
     "Description":"Aft Jln Naga Sari",
     "RoadName":"Dunearn Rd",
-    "Distance":"10.4",
-    "Right_Distance":"10.4"
+    "Distance":"10.4"
   },
   {
     "Direction":"2",
@@ -4376,8 +4085,7 @@
     "Bus Number":"74",
     "Description":"Natl JC",
     "RoadName":"Dunearn Rd",
-    "Distance":"10.8",
-    "Right_Distance":"10.8"
+    "Distance":"10.8"
   },
   {
     "Direction":"2",
@@ -4391,8 +4099,7 @@
     "Bus Number":"74",
     "Description":"Opp Tan Kah Kee Stn",
     "RoadName":"Dunearn Rd",
-    "Distance":"11.4",
-    "Right_Distance":"11.4"
+    "Distance":"11.4"
   },
   {
     "Direction":"2",
@@ -4406,8 +4113,7 @@
     "Bus Number":"74",
     "Description":"Opp Coronation Plaza",
     "RoadName":"Dunearn Rd",
-    "Distance":"11.8",
-    "Right_Distance":"11.8"
+    "Distance":"11.8"
   },
   {
     "Direction":"2",
@@ -4421,8 +4127,7 @@
     "Bus Number":"74",
     "Description":"S'Pore Bible Coll",
     "RoadName":"Adam Rd",
-    "Distance":"12.3",
-    "Right_Distance":"12.3"
+    "Distance":"12.3"
   },
   {
     "Direction":"2",
@@ -4436,8 +4141,7 @@
     "Bus Number":"74",
     "Description":"Opp The Japanese Assn",
     "RoadName":"Adam Rd",
-    "Distance":"12.8",
-    "Right_Distance":"12.8"
+    "Distance":"12.8"
   },
   {
     "Direction":"2",
@@ -4451,8 +4155,7 @@
     "Bus Number":"74",
     "Description":"AFT KHEAM HOCK RD",
     "RoadName":"Lornie Highway",
-    "Distance":"13.6",
-    "Right_Distance":"13.6"
+    "Distance":"13.6"
   },
   {
     "Direction":"2",
@@ -4466,8 +4169,7 @@
     "Bus Number":"74",
     "Description":"Opp Andrew Rd",
     "RoadName":"Lornie Rd",
-    "Distance":"15.3",
-    "Right_Distance":"15.3"
+    "Distance":"15.3"
   },
   {
     "Direction":"2",
@@ -4481,8 +4183,7 @@
     "Bus Number":"74",
     "Description":"MacRitchie Resvr",
     "RoadName":"Thomson Rd",
-    "Distance":"15.7",
-    "Right_Distance":"15.7"
+    "Distance":"15.7"
   },
   {
     "Direction":"2",
@@ -4496,8 +4197,7 @@
     "Bus Number":"74",
     "Description":"ST. THERESA'S HME",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"16.2",
-    "Right_Distance":"16.2"
+    "Distance":"16.2"
   },
   {
     "Direction":"2",
@@ -4511,8 +4211,7 @@
     "Bus Number":"74",
     "Description":"Marymount Stn",
     "RoadName":"Marymount Rd",
-    "Distance":"16.9",
-    "Right_Distance":"16.9"
+    "Distance":"16.9"
   },
   {
     "Direction":"2",
@@ -4526,8 +4225,7 @@
     "Bus Number":"74",
     "Description":"Aft Jadescape",
     "RoadName":"Marymount Rd",
-    "Distance":"17.4",
-    "Right_Distance":"17.4"
+    "Distance":"17.4"
   },
   {
     "Direction":"2",
@@ -4541,8 +4239,7 @@
     "Bus Number":"74",
     "Description":"Opp Whitley Sec Sch",
     "RoadName":"Marymount Rd",
-    "Distance":"17.7",
-    "Right_Distance":"17.7"
+    "Distance":"17.7"
   },
   {
     "Direction":"2",
@@ -4556,8 +4253,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 263A CP",
     "RoadName":"Marymount Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"2",
@@ -4571,8 +4267,7 @@
     "Bus Number":"74",
     "Description":"Marymount CC",
     "RoadName":"Marymount Rd",
-    "Distance":"18.4",
-    "Right_Distance":"18.4"
+    "Distance":"18.4"
   },
   {
     "Direction":"2",
@@ -4586,8 +4281,7 @@
     "Bus Number":"74",
     "Description":"Blk 207",
     "RoadName":"Ang Mo Kio Ave 6",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"2",
@@ -4601,8 +4295,7 @@
     "Bus Number":"74",
     "Description":"Blk 700B",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"19.3",
-    "Right_Distance":"19.3"
+    "Distance":"19.3"
   },
   {
     "Direction":"2",
@@ -4616,8 +4309,7 @@
     "Bus Number":"74",
     "Description":"Aft Ang Mo Kio Stn Exit A",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"19.8",
-    "Right_Distance":"19.8"
+    "Distance":"19.8"
   },
   {
     "Direction":"2",
@@ -4631,8 +4323,7 @@
     "Bus Number":"74",
     "Description":"Blk 586",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"2",
@@ -4646,8 +4337,7 @@
     "Bus Number":"74",
     "Description":"Blk 570",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"20.4",
-    "Right_Distance":"20.4"
+    "Distance":"20.4"
   },
   {
     "Direction":"2",
@@ -4661,8 +4351,7 @@
     "Bus Number":"74",
     "Description":"Blk 564",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"20.7",
-    "Right_Distance":"20.7"
+    "Distance":"20.7"
   },
   {
     "Direction":"2",
@@ -4676,8 +4365,7 @@
     "Bus Number":"74",
     "Description":"Blk 5022",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"21.2",
-    "Right_Distance":"21.2"
+    "Distance":"21.2"
   },
   {
     "Direction":"2",
@@ -4691,8 +4379,7 @@
     "Bus Number":"74",
     "Description":"Daikin S'pore",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"21.5",
-    "Right_Distance":"21.5"
+    "Distance":"21.5"
   },
   {
     "Direction":"2",
@@ -4706,8 +4393,7 @@
     "Bus Number":"74",
     "Description":"Blk 554",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"22.1",
-    "Right_Distance":"22.1"
+    "Distance":"22.1"
   },
   {
     "Direction":"2",
@@ -4721,8 +4407,7 @@
     "Bus Number":"74",
     "Description":"Blk 516",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"22.5",
-    "Right_Distance":"22.5"
+    "Distance":"22.5"
   },
   {
     "Direction":"2",
@@ -4736,8 +4421,7 @@
     "Bus Number":"74",
     "Description":"Blk 634",
     "RoadName":"Hougang Ave 2",
-    "Distance":"23",
-    "Right_Distance":"23"
+    "Distance":"23"
   },
   {
     "Direction":"2",
@@ -4751,8 +4435,7 @@
     "Bus Number":"74",
     "Description":"Blk 639",
     "RoadName":"Hougang Ave 8",
-    "Distance":"23.4",
-    "Right_Distance":"23.4"
+    "Distance":"23.4"
   },
   {
     "Direction":"2",
@@ -4766,8 +4449,7 @@
     "Bus Number":"74",
     "Description":"Xinmin Pr Sch",
     "RoadName":"Hougang Ave 8",
-    "Distance":"23.7",
-    "Right_Distance":"23.7"
+    "Distance":"23.7"
   },
   {
     "Direction":"2",
@@ -4781,8 +4463,7 @@
     "Bus Number":"74",
     "Description":"Blk 679",
     "RoadName":"Hougang Ave 8",
-    "Distance":"24.1",
-    "Right_Distance":"24.1"
+    "Distance":"24.1"
   },
   {
     "Direction":"2",
@@ -4796,8 +4477,7 @@
     "Bus Number":"74",
     "Description":"Bef Blk 683",
     "RoadName":"Hougang Ave 8",
-    "Distance":"24.4",
-    "Right_Distance":"24.4"
+    "Distance":"24.4"
   },
   {
     "Direction":"2",
@@ -4811,8 +4491,7 @@
     "Bus Number":"74",
     "Description":"Opp Montfort Sch",
     "RoadName":"Hougang Ave 8",
-    "Distance":"24.7",
-    "Right_Distance":"24.7"
+    "Distance":"24.7"
   },
   {
     "Direction":"2",
@@ -4826,8 +4505,7 @@
     "Bus Number":"74",
     "Description":"Blk 535",
     "RoadName":"Hougang Ave 8",
-    "Distance":"25",
-    "Right_Distance":"25"
+    "Distance":"25"
   },
   {
     "Direction":"2",
@@ -4841,8 +4519,7 @@
     "Bus Number":"74",
     "Description":"Blk 436",
     "RoadName":"Hougang Ave 8",
-    "Distance":"25.4",
-    "Right_Distance":"25.4"
+    "Distance":"25.4"
   },
   {
     "Direction":"2",
@@ -4856,8 +4533,7 @@
     "Bus Number":"74",
     "Description":"Punggol Pk",
     "RoadName":"Hougang Ave 8",
-    "Distance":"25.9",
-    "Right_Distance":"25.9"
+    "Distance":"25.9"
   },
   {
     "Direction":"2",
@@ -4871,8 +4547,7 @@
     "Bus Number":"74",
     "Description":"Blk 355",
     "RoadName":"Upp S'goon Rd",
-    "Distance":"26.4",
-    "Right_Distance":"26.4"
+    "Distance":"26.4"
   },
   {
     "Direction":"2",
@@ -4886,8 +4561,7 @@
     "Bus Number":"74",
     "Description":"Opp The Midtown",
     "RoadName":"Upp S'goon Rd",
-    "Distance":"26.7",
-    "Right_Distance":"26.7"
+    "Distance":"26.7"
   },
   {
     "Direction":"2",
@@ -4901,8 +4575,7 @@
     "Bus Number":"74",
     "Description":"Hougang Ctrl Int",
     "RoadName":"Hougang Ctrl",
-    "Distance":"27.4",
-    "Right_Distance":"27.4"
+    "Distance":"27.4"
   },
   {
     "Direction":"2",
@@ -4916,8 +4589,7 @@
     "Bus Number":"75",
     "Description":"Bt Merah Int",
     "RoadName":"Bt Merah Ctrl",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -4931,8 +4603,7 @@
     "Bus Number":"75",
     "Description":"Blk 119",
     "RoadName":"Jln Bt Merah",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"2",
@@ -4946,8 +4617,7 @@
     "Bus Number":"75",
     "Description":"Blk 201",
     "RoadName":"Jln Bt Merah",
-    "Distance":"1.4",
-    "Right_Distance":"1.4"
+    "Distance":"1.4"
   },
   {
     "Direction":"2",
@@ -4961,8 +4631,7 @@
     "Bus Number":"75",
     "Description":"Blk 121",
     "RoadName":"Kim Tian Rd",
-    "Distance":"1.8",
-    "Right_Distance":"1.8"
+    "Distance":"1.8"
   },
   {
     "Direction":"2",
@@ -4976,8 +4645,7 @@
     "Bus Number":"75",
     "Description":"Blk 1",
     "RoadName":"Tiong Bahru Rd",
-    "Distance":"2.6",
-    "Right_Distance":"2.6"
+    "Distance":"2.6"
   },
   {
     "Direction":"2",
@@ -4991,8 +4659,7 @@
     "Bus Number":"75",
     "Description":"HAVELOCK STN EXIT 2",
     "RoadName":"Zion Rd",
-    "Distance":"2.8",
-    "Right_Distance":"2.8"
+    "Distance":"2.8"
   },
   {
     "Direction":"2",
@@ -5006,8 +4673,7 @@
     "Bus Number":"75",
     "Description":"HAVELOCK STN EXIT 3",
     "RoadName":"Zion Rd",
-    "Distance":"3",
-    "Right_Distance":"3"
+    "Distance":"3"
   },
   {
     "Direction":"2",
@@ -5021,8 +4687,7 @@
     "Bus Number":"75",
     "Description":"Aft Blk 87",
     "RoadName":"Zion Rd",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"2",
@@ -5036,8 +4701,7 @@
     "Bus Number":"75",
     "Description":"Opp Great World City",
     "RoadName":"Zion Rd",
-    "Distance":"3.7",
-    "Right_Distance":"3.7"
+    "Distance":"3.7"
   },
   {
     "Direction":"2",
@@ -5051,8 +4715,7 @@
     "Bus Number":"75",
     "Description":"Aft Zion Full Gospel Ch",
     "RoadName":"Hoot Kiam Rd",
-    "Distance":"4.1",
-    "Right_Distance":"4.1"
+    "Distance":"4.1"
   },
   {
     "Direction":"2",
@@ -5066,8 +4729,7 @@
     "Bus Number":"75",
     "Description":"Gramercy Pk",
     "RoadName":"Grange Rd",
-    "Distance":"4.6",
-    "Right_Distance":"4.6"
+    "Distance":"4.6"
   },
   {
     "Direction":"2",
@@ -5081,8 +4743,7 @@
     "Bus Number":"75",
     "Description":"Aft One Tree Hill",
     "RoadName":"Grange Rd",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"2",
@@ -5096,8 +4757,7 @@
     "Bus Number":"75",
     "Description":"OPP ORCHARD BLVD STN",
     "RoadName":"Grange Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"2",
@@ -5111,8 +4771,7 @@
     "Bus Number":"75",
     "Description":"British Council",
     "RoadName":"Napier Rd",
-    "Distance":"5.7",
-    "Right_Distance":"5.7"
+    "Distance":"5.7"
   },
   {
     "Direction":"2",
@@ -5126,8 +4785,7 @@
     "Bus Number":"75",
     "Description":"NAPIER STN EXIT 2",
     "RoadName":"Napier Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"2",
@@ -5141,8 +4799,7 @@
     "Bus Number":"75",
     "Description":"Aft Min Of Foreign Affairs",
     "RoadName":"Holland Rd",
-    "Distance":"6.6",
-    "Right_Distance":"6.6"
+    "Distance":"6.6"
   },
   {
     "Direction":"2",
@@ -5156,8 +4813,7 @@
     "Bus Number":"75",
     "Description":"CSC Dempsey Clubhse",
     "RoadName":"Holland Rd",
-    "Distance":"6.9",
-    "Right_Distance":"6.9"
+    "Distance":"6.9"
   },
   {
     "Direction":"2",
@@ -5171,8 +4827,7 @@
     "Bus Number":"75",
     "Description":"Aft Peirce Rd",
     "RoadName":"Holland Rd",
-    "Distance":"7.2",
-    "Right_Distance":"7.2"
+    "Distance":"7.2"
   },
   {
     "Direction":"2",
@@ -5186,8 +4841,7 @@
     "Bus Number":"75",
     "Description":"Lien Twrs",
     "RoadName":"Holland Rd",
-    "Distance":"7.7",
-    "Right_Distance":"7.7"
+    "Distance":"7.7"
   },
   {
     "Direction":"2",
@@ -5201,8 +4855,7 @@
     "Bus Number":"75",
     "Description":"Aft Hyll on Holland",
     "RoadName":"Holland Rd",
-    "Distance":"8.2",
-    "Right_Distance":"8.2"
+    "Distance":"8.2"
   },
   {
     "Direction":"2",
@@ -5216,8 +4869,7 @@
     "Bus Number":"75",
     "Description":"Holland Village",
     "RoadName":"Holland Rd",
-    "Distance":"9",
-    "Right_Distance":"9"
+    "Distance":"9"
   },
   {
     "Direction":"2",
@@ -5231,8 +4883,7 @@
     "Bus Number":"75",
     "Description":"Aft East Sussex Lane",
     "RoadName":"Holland Rd",
-    "Distance":"9.6",
-    "Right_Distance":"9.6"
+    "Distance":"9.6"
   },
   {
     "Direction":"2",
@@ -5246,8 +4897,7 @@
     "Bus Number":"75",
     "Description":"Aft Tan Boon Chong Ave",
     "RoadName":"Holland Rd",
-    "Distance":"9.9",
-    "Right_Distance":"9.9"
+    "Distance":"9.9"
   },
   {
     "Direction":"2",
@@ -5261,8 +4911,7 @@
     "Bus Number":"75",
     "Description":"Cold Storage Jelita",
     "RoadName":"Holland Rd",
-    "Distance":"10.3",
-    "Right_Distance":"10.3"
+    "Distance":"10.3"
   },
   {
     "Direction":"2",
@@ -5276,8 +4925,7 @@
     "Bus Number":"75",
     "Description":"Bef Moonbeam Wk",
     "RoadName":"Holland Rd",
-    "Distance":"10.7",
-    "Right_Distance":"10.7"
+    "Distance":"10.7"
   },
   {
     "Direction":"2",
@@ -5291,8 +4939,7 @@
     "Bus Number":"75",
     "Description":"Pandan Valley Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"11.1",
-    "Right_Distance":"11.1"
+    "Distance":"11.1"
   },
   {
     "Direction":"2",
@@ -5306,8 +4953,7 @@
     "Bus Number":"75",
     "Description":"Aft Pandan Valley",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"11.5",
-    "Right_Distance":"11.5"
+    "Distance":"11.5"
   },
   {
     "Direction":"2",
@@ -5321,8 +4967,7 @@
     "Bus Number":"75",
     "Description":"Pine Gr Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"11.8",
-    "Right_Distance":"11.8"
+    "Distance":"11.8"
   },
   {
     "Direction":"2",
@@ -5336,8 +4981,7 @@
     "Bus Number":"75",
     "Description":"Bef Clementi Rd",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"12",
-    "Right_Distance":"12"
+    "Distance":"12"
   },
   {
     "Direction":"2",
@@ -5351,8 +4995,7 @@
     "Bus Number":"75",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"12.5",
-    "Right_Distance":"12.5"
+    "Distance":"12.5"
   },
   {
     "Direction":"2",
@@ -5366,8 +5009,7 @@
     "Bus Number":"75",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"12.8",
-    "Right_Distance":"12.8"
+    "Distance":"12.8"
   },
   {
     "Direction":"2",
@@ -5381,8 +5023,7 @@
     "Bus Number":"75",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"13.3",
-    "Right_Distance":"13.3"
+    "Distance":"13.3"
   },
   {
     "Direction":"2",
@@ -5396,8 +5037,7 @@
     "Bus Number":"75",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"13.7",
-    "Right_Distance":"13.7"
+    "Distance":"13.7"
   },
   {
     "Direction":"2",
@@ -5411,8 +5051,7 @@
     "Bus Number":"75",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"14.1",
-    "Right_Distance":"14.1"
+    "Distance":"14.1"
   },
   {
     "Direction":"2",
@@ -5426,8 +5065,7 @@
     "Bus Number":"75",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"14.5",
-    "Right_Distance":"14.5"
+    "Distance":"14.5"
   },
   {
     "Direction":"2",
@@ -5441,8 +5079,7 @@
     "Bus Number":"75",
     "Description":"Pei Hwa Presby Pr Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"14.9",
-    "Right_Distance":"14.9"
+    "Distance":"14.9"
   },
   {
     "Direction":"2",
@@ -5456,8 +5093,7 @@
     "Bus Number":"75",
     "Description":"Beauty World Stn Exit B",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"15.4",
-    "Right_Distance":"15.4"
+    "Distance":"15.4"
   },
   {
     "Direction":"2",
@@ -5471,8 +5107,7 @@
     "Bus Number":"75",
     "Description":"WOH HUP BLDG",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"15.9",
-    "Right_Distance":"15.9"
+    "Distance":"15.9"
   },
   {
     "Direction":"2",
@@ -5486,8 +5121,7 @@
     "Bus Number":"75",
     "Description":"Bt Regency",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"16.1",
-    "Right_Distance":"16.1"
+    "Distance":"16.1"
   },
   {
     "Direction":"2",
@@ -5501,8 +5135,7 @@
     "Bus Number":"75",
     "Description":"Aft Old Jurong Rd",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"16.6",
-    "Right_Distance":"16.6"
+    "Distance":"16.6"
   },
   {
     "Direction":"2",
@@ -5516,8 +5149,7 @@
     "Bus Number":"75",
     "Description":"Hume Pk Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"17.1",
-    "Right_Distance":"17.1"
+    "Distance":"17.1"
   },
   {
     "Direction":"2",
@@ -5531,8 +5163,7 @@
     "Bus Number":"75",
     "Description":"Opp The Rail Mall",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"17.7",
-    "Right_Distance":"17.7"
+    "Distance":"17.7"
   },
   {
     "Direction":"2",
@@ -5546,8 +5177,7 @@
     "Bus Number":"75",
     "Description":"Hillview Stn",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"18",
-    "Right_Distance":"18"
+    "Distance":"18"
   },
   {
     "Direction":"2",
@@ -5561,8 +5191,7 @@
     "Bus Number":"75",
     "Description":"Opp Dairy Farm Rd",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"18.2",
-    "Right_Distance":"18.2"
+    "Distance":"18.2"
   },
   {
     "Direction":"2",
@@ -5576,8 +5205,7 @@
     "Bus Number":"75",
     "Description":"Opp Assumption Eng Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"18.4",
-    "Right_Distance":"18.4"
+    "Distance":"18.4"
   },
   {
     "Direction":"2",
@@ -5591,8 +5219,7 @@
     "Bus Number":"75",
     "Description":"Aft Cashew Terr",
     "RoadName":"Cashew Rd",
-    "Distance":"19.1",
-    "Right_Distance":"19.1"
+    "Distance":"19.1"
   },
   {
     "Direction":"2",
@@ -5606,8 +5233,7 @@
     "Bus Number":"75",
     "Description":"Bt Panjang Pr Sch",
     "RoadName":"Cashew Rd",
-    "Distance":"19.6",
-    "Right_Distance":"19.6"
+    "Distance":"19.6"
   },
   {
     "Direction":"2",
@@ -5621,8 +5247,7 @@
     "Bus Number":"75",
     "Description":"Bet Blks 139\/140",
     "RoadName":"Petir Rd",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"2",
@@ -5636,8 +5261,7 @@
     "Bus Number":"75",
     "Description":"Opp Petir Stn",
     "RoadName":"Petir Rd",
-    "Distance":"20.4",
-    "Right_Distance":"20.4"
+    "Distance":"20.4"
   },
   {
     "Direction":"2",
@@ -5651,8 +5275,7 @@
     "Bus Number":"75",
     "Description":"Opp Blk 180",
     "RoadName":"Jelebu Rd",
-    "Distance":"20.8",
-    "Right_Distance":"20.8"
+    "Distance":"20.8"
   },
   {
     "Direction":"2",
@@ -5666,8 +5289,7 @@
     "Bus Number":"75",
     "Description":"Blk 183",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"21.1",
-    "Right_Distance":"21.1"
+    "Distance":"21.1"
   },
   {
     "Direction":"2",
@@ -5681,8 +5303,7 @@
     "Bus Number":"75",
     "Description":"Junction 10",
     "RoadName":"Woodlands Rd",
-    "Distance":"21.5",
-    "Right_Distance":"21.5"
+    "Distance":"21.5"
   },
   {
     "Direction":"2",
@@ -5696,8 +5317,7 @@
     "Bus Number":"75",
     "Description":"Opp Blk 632 CP",
     "RoadName":"Woodlands Rd",
-    "Distance":"22",
-    "Right_Distance":"22"
+    "Distance":"22"
   },
   {
     "Direction":"2",
@@ -5711,8 +5331,7 @@
     "Bus Number":"75",
     "Description":"OPP BLK 635A",
     "RoadName":"Woodlands Rd",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"1",
@@ -5726,8 +5345,7 @@
     "Bus Number":"74",
     "Description":"Hougang Ctrl Int",
     "RoadName":"Hougang Ctrl",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -5741,8 +5359,7 @@
     "Bus Number":"74",
     "Description":"The Midtown",
     "RoadName":"Upp S'goon Rd",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"1",
@@ -5756,8 +5373,7 @@
     "Bus Number":"74",
     "Description":"Blk 465A",
     "RoadName":"Upp S'goon Rd",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"1",
@@ -5771,8 +5387,7 @@
     "Bus Number":"74",
     "Description":"Opp Punggol Pk",
     "RoadName":"Hougang Ave 8",
-    "Distance":"1.6",
-    "Right_Distance":"1.6"
+    "Distance":"1.6"
   },
   {
     "Direction":"1",
@@ -5786,8 +5401,7 @@
     "Bus Number":"74",
     "Description":"Blk 434",
     "RoadName":"Hougang Ave 8",
-    "Distance":"2.1",
-    "Right_Distance":"2.1"
+    "Distance":"2.1"
   },
   {
     "Direction":"1",
@@ -5801,8 +5415,7 @@
     "Bus Number":"74",
     "Description":"Blk 532",
     "RoadName":"Hougang Ave 8",
-    "Distance":"2.4",
-    "Right_Distance":"2.4"
+    "Distance":"2.4"
   },
   {
     "Direction":"1",
@@ -5816,8 +5429,7 @@
     "Bus Number":"74",
     "Description":"Montfort Sch",
     "RoadName":"Hougang Ave 8",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"1",
@@ -5831,8 +5443,7 @@
     "Bus Number":"74",
     "Description":"Blk 502",
     "RoadName":"Hougang Ave 8",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"1",
@@ -5846,8 +5457,7 @@
     "Bus Number":"74",
     "Description":"Blk 608",
     "RoadName":"Hougang Ave 8",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"1",
@@ -5861,8 +5471,7 @@
     "Bus Number":"74",
     "Description":"Opp Xinmin Pr Sch",
     "RoadName":"Hougang Ave 8",
-    "Distance":"3.8",
-    "Right_Distance":"3.8"
+    "Distance":"3.8"
   },
   {
     "Direction":"1",
@@ -5876,8 +5485,7 @@
     "Bus Number":"74",
     "Description":"Blk 632",
     "RoadName":"Hougang Ave 8",
-    "Distance":"4.1",
-    "Right_Distance":"4.1"
+    "Distance":"4.1"
   },
   {
     "Direction":"1",
@@ -5891,8 +5499,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 634",
     "RoadName":"Hougang Ave 2",
-    "Distance":"4.4",
-    "Right_Distance":"4.4"
+    "Distance":"4.4"
   },
   {
     "Direction":"1",
@@ -5906,8 +5513,7 @@
     "Bus Number":"74",
     "Description":"Blk 151",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"1",
@@ -5921,8 +5527,7 @@
     "Bus Number":"74",
     "Description":"Blk 101",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"1",
@@ -5936,8 +5541,7 @@
     "Bus Number":"74",
     "Description":"Opp Daikin S'pore",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"1",
@@ -5951,8 +5555,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 5022",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"6.3",
-    "Right_Distance":"6.3"
+    "Distance":"6.3"
   },
   {
     "Direction":"1",
@@ -5966,8 +5569,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 565",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"6.9",
-    "Right_Distance":"6.9"
+    "Distance":"6.9"
   },
   {
     "Direction":"1",
@@ -5981,8 +5583,7 @@
     "Bus Number":"74",
     "Description":"Blk 452",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"7.2",
-    "Right_Distance":"7.2"
+    "Distance":"7.2"
   },
   {
     "Direction":"1",
@@ -5996,8 +5597,7 @@
     "Bus Number":"74",
     "Description":"Blk 427",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"7.5",
-    "Right_Distance":"7.5"
+    "Distance":"7.5"
   },
   {
     "Direction":"1",
@@ -6011,8 +5611,7 @@
     "Bus Number":"74",
     "Description":"Opp Ang Mo Kio Stn",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"7.8",
-    "Right_Distance":"7.8"
+    "Distance":"7.8"
   },
   {
     "Direction":"1",
@@ -6026,8 +5625,7 @@
     "Bus Number":"74",
     "Description":"Blk 324",
     "RoadName":"Ang Mo Kio Ave 3",
-    "Distance":"8.3",
-    "Right_Distance":"8.3"
+    "Distance":"8.3"
   },
   {
     "Direction":"1",
@@ -6041,8 +5639,7 @@
     "Bus Number":"74",
     "Description":"Blk 307A",
     "RoadName":"Ang Mo Kio Ave 6",
-    "Distance":"8.8",
-    "Right_Distance":"8.8"
+    "Distance":"8.8"
   },
   {
     "Direction":"1",
@@ -6056,8 +5653,7 @@
     "Bus Number":"74",
     "Description":"Blk 254",
     "RoadName":"Marymount Rd",
-    "Distance":"9.3",
-    "Right_Distance":"9.3"
+    "Distance":"9.3"
   },
   {
     "Direction":"1",
@@ -6071,8 +5667,7 @@
     "Bus Number":"74",
     "Description":"Blk 260",
     "RoadName":"Marymount Rd",
-    "Distance":"9.6",
-    "Right_Distance":"9.6"
+    "Distance":"9.6"
   },
   {
     "Direction":"1",
@@ -6086,8 +5681,7 @@
     "Bus Number":"74",
     "Description":"Whitley Sec Sch",
     "RoadName":"Marymount Rd",
-    "Distance":"10.1",
-    "Right_Distance":"10.1"
+    "Distance":"10.1"
   },
   {
     "Direction":"1",
@@ -6101,8 +5695,7 @@
     "Bus Number":"74",
     "Description":"Marymount View",
     "RoadName":"Marymount Rd",
-    "Distance":"10.4",
-    "Right_Distance":"10.4"
+    "Distance":"10.4"
   },
   {
     "Direction":"1",
@@ -6116,8 +5709,7 @@
     "Bus Number":"74",
     "Description":"OPP ST. THERESA'S HME",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"11.3",
-    "Right_Distance":"11.3"
+    "Distance":"11.3"
   },
   {
     "Direction":"1",
@@ -6131,8 +5723,7 @@
     "Bus Number":"74",
     "Description":"Opp MacRitchie Resvr",
     "RoadName":"Thomson Rd",
-    "Distance":"11.9",
-    "Right_Distance":"11.9"
+    "Distance":"11.9"
   },
   {
     "Direction":"1",
@@ -6146,8 +5737,7 @@
     "Bus Number":"74",
     "Description":"Bef Andrew Rd",
     "RoadName":"Lornie Rd",
-    "Distance":"12.4",
-    "Right_Distance":"12.4"
+    "Distance":"12.4"
   },
   {
     "Direction":"1",
@@ -6161,8 +5751,7 @@
     "Bus Number":"74",
     "Description":"Bef Kheam Hock Rd",
     "RoadName":"Lornie Highway",
-    "Distance":"14",
-    "Right_Distance":"14"
+    "Distance":"14"
   },
   {
     "Direction":"1",
@@ -6176,8 +5765,7 @@
     "Bus Number":"74",
     "Description":"Aft The Japanese Assn",
     "RoadName":"Adam Rd",
-    "Distance":"14.8",
-    "Right_Distance":"14.8"
+    "Distance":"14.8"
   },
   {
     "Direction":"1",
@@ -6191,8 +5779,7 @@
     "Bus Number":"74",
     "Description":"Opp S'Pore Bible Coll",
     "RoadName":"Adam Rd",
-    "Distance":"15.3",
-    "Right_Distance":"15.3"
+    "Distance":"15.3"
   },
   {
     "Direction":"1",
@@ -6206,8 +5793,7 @@
     "Bus Number":"74",
     "Description":"Bef Crown Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.7",
-    "Right_Distance":"15.7"
+    "Distance":"15.7"
   },
   {
     "Direction":"1",
@@ -6221,8 +5807,7 @@
     "Bus Number":"74",
     "Description":"Coronation Plaza",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.9",
-    "Right_Distance":"15.9"
+    "Distance":"15.9"
   },
   {
     "Direction":"1",
@@ -6236,8 +5821,7 @@
     "Bus Number":"74",
     "Description":"Tan Kah Kee Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.3",
-    "Right_Distance":"16.3"
+    "Distance":"16.3"
   },
   {
     "Direction":"1",
@@ -6251,8 +5835,7 @@
     "Bus Number":"74",
     "Description":"Chinese High Sch",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.5",
-    "Right_Distance":"16.5"
+    "Distance":"16.5"
   },
   {
     "Direction":"1",
@@ -6266,8 +5849,7 @@
     "Bus Number":"74",
     "Description":"Opp Natl JC",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.9",
-    "Right_Distance":"16.9"
+    "Distance":"16.9"
   },
   {
     "Direction":"1",
@@ -6281,8 +5863,7 @@
     "Bus Number":"74",
     "Description":"Sixth Ave Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.5",
-    "Right_Distance":"17.5"
+    "Distance":"17.5"
   },
   {
     "Direction":"1",
@@ -6296,8 +5877,7 @@
     "Bus Number":"74",
     "Description":"Sixth Ave Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.8",
-    "Right_Distance":"17.8"
+    "Distance":"17.8"
   },
   {
     "Direction":"1",
@@ -6311,8 +5891,7 @@
     "Bus Number":"74",
     "Description":"Aft Maple Ave",
     "RoadName":"Bt Timah Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"1",
@@ -6326,8 +5905,7 @@
     "Bus Number":"74",
     "Description":"The Tessarina",
     "RoadName":"Bt Timah Rd",
-    "Distance":"18.4",
-    "Right_Distance":"18.4"
+    "Distance":"18.4"
   },
   {
     "Direction":"1",
@@ -6341,8 +5919,7 @@
     "Bus Number":"74",
     "Description":"The Nexus",
     "RoadName":"Bt Timah Rd",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"1",
@@ -6356,8 +5933,7 @@
     "Bus Number":"74",
     "Description":"King Albert Pk Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"19.3",
-    "Right_Distance":"19.3"
+    "Distance":"19.3"
   },
   {
     "Direction":"1",
@@ -6371,8 +5947,7 @@
     "Bus Number":"74",
     "Description":"King Albert Pk",
     "RoadName":"Bt Timah Rd",
-    "Distance":"19.6",
-    "Right_Distance":"19.6"
+    "Distance":"19.6"
   },
   {
     "Direction":"1",
@@ -6386,8 +5961,7 @@
     "Bus Number":"74",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"19.9",
-    "Right_Distance":"19.9"
+    "Distance":"19.9"
   },
   {
     "Direction":"1",
@@ -6401,8 +5975,7 @@
     "Bus Number":"74",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"20.5",
-    "Right_Distance":"20.5"
+    "Distance":"20.5"
   },
   {
     "Direction":"1",
@@ -6416,8 +5989,7 @@
     "Bus Number":"74",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"20.9",
-    "Right_Distance":"20.9"
+    "Distance":"20.9"
   },
   {
     "Direction":"1",
@@ -6431,8 +6003,7 @@
     "Bus Number":"74",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"21.1",
-    "Right_Distance":"21.1"
+    "Distance":"21.1"
   },
   {
     "Direction":"1",
@@ -6446,8 +6017,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"21.6",
-    "Right_Distance":"21.6"
+    "Distance":"21.6"
   },
   {
     "Direction":"1",
@@ -6461,8 +6031,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"21.9",
-    "Right_Distance":"21.9"
+    "Distance":"21.9"
   },
   {
     "Direction":"1",
@@ -6476,8 +6045,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"22.4",
-    "Right_Distance":"22.4"
+    "Distance":"22.4"
   },
   {
     "Direction":"1",
@@ -6491,8 +6059,7 @@
     "Bus Number":"74",
     "Description":"Opp Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"22.6",
-    "Right_Distance":"22.6"
+    "Distance":"22.6"
   },
   {
     "Direction":"1",
@@ -6506,8 +6073,7 @@
     "Bus Number":"74",
     "Description":"Sch of Science & Tech",
     "RoadName":"C'wealth Ave West",
-    "Distance":"23.1",
-    "Right_Distance":"23.1"
+    "Distance":"23.1"
   },
   {
     "Direction":"1",
@@ -6521,8 +6087,7 @@
     "Bus Number":"74",
     "Description":"Dover Stn Exit B",
     "RoadName":"C'wealth Ave West",
-    "Distance":"23.6",
-    "Right_Distance":"23.6"
+    "Distance":"23.6"
   },
   {
     "Direction":"1",
@@ -6536,8 +6101,7 @@
     "Bus Number":"74",
     "Description":"Opp SP SMA",
     "RoadName":"C'wealth Ave West",
-    "Distance":"24.1",
-    "Right_Distance":"24.1"
+    "Distance":"24.1"
   },
   {
     "Direction":"1",
@@ -6551,8 +6115,7 @@
     "Bus Number":"74",
     "Description":"Opp S'pore Poly",
     "RoadName":"Dover Ave",
-    "Distance":"24.5",
-    "Right_Distance":"24.5"
+    "Distance":"24.5"
   },
   {
     "Direction":"1",
@@ -6566,8 +6129,7 @@
     "Bus Number":"74",
     "Description":"Opp Acs Independent",
     "RoadName":"Dover Rd",
-    "Distance":"24.8",
-    "Right_Distance":"24.8"
+    "Distance":"24.8"
   },
   {
     "Direction":"1",
@@ -6581,8 +6143,7 @@
     "Bus Number":"74",
     "Description":"Opp ACS Boarding Sch",
     "RoadName":"Dover Rd",
-    "Distance":"25.1",
-    "Right_Distance":"25.1"
+    "Distance":"25.1"
   },
   {
     "Direction":"1",
@@ -6596,8 +6157,7 @@
     "Bus Number":"74",
     "Description":"Fairfield Meth Pr Sch",
     "RoadName":"Dover Rd",
-    "Distance":"25.4",
-    "Right_Distance":"25.4"
+    "Distance":"25.4"
   },
   {
     "Direction":"1",
@@ -6611,8 +6171,7 @@
     "Bus Number":"74",
     "Description":"Aft Anglo-Chinese JC",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"26.1",
-    "Right_Distance":"26.1"
+    "Distance":"26.1"
   },
   {
     "Direction":"1",
@@ -6626,8 +6185,7 @@
     "Bus Number":"74",
     "Description":"Buona Vista Stn Exit C",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"26.5",
-    "Right_Distance":"26.5"
+    "Distance":"26.5"
   },
   {
     "Direction":"1",
@@ -6641,8 +6199,7 @@
     "Bus Number":"74",
     "Description":"Blk 43",
     "RoadName":"C'wealth Ave",
-    "Distance":"26.8",
-    "Right_Distance":"26.8"
+    "Distance":"26.8"
   },
   {
     "Direction":"1",
@@ -6656,8 +6213,7 @@
     "Bus Number":"74",
     "Description":"Buona Vista CC",
     "RoadName":"Holland Dr",
-    "Distance":"27.3",
-    "Right_Distance":"27.3"
+    "Distance":"27.3"
   },
   {
     "Direction":"1",
@@ -6671,8 +6227,7 @@
     "Bus Number":"74",
     "Description":"Buona Vista Ter",
     "RoadName":"Nth Buona Vista Rd",
-    "Distance":"27.5",
-    "Right_Distance":"27.5"
+    "Distance":"27.5"
   },
   {
     "Direction":"1",
@@ -6686,8 +6241,7 @@
     "Bus Number":"52",
     "Description":"Bishan Int",
     "RoadName":"Bishan St 13",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -6701,8 +6255,7 @@
     "Bus Number":"52",
     "Description":"BLK 115",
     "RoadName":"Bishan St 11",
-    "Distance":"0.6",
-    "Right_Distance":"0.6"
+    "Distance":"0.6"
   },
   {
     "Direction":"1",
@@ -6716,8 +6269,7 @@
     "Bus Number":"52",
     "Description":"OPP BISHAN STN",
     "RoadName":"Bishan Rd",
-    "Distance":"1",
-    "Right_Distance":"1"
+    "Distance":"1"
   },
   {
     "Direction":"1",
@@ -6731,8 +6283,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 203",
     "RoadName":"Bishan St 22",
-    "Distance":"1.5",
-    "Right_Distance":"1.5"
+    "Distance":"1.5"
   },
   {
     "Direction":"1",
@@ -6746,8 +6297,7 @@
     "Bus Number":"52",
     "Description":"Bishan Nth Shop Mall",
     "RoadName":"Bishan St 22",
-    "Distance":"2",
-    "Right_Distance":"2"
+    "Distance":"2"
   },
   {
     "Direction":"1",
@@ -6761,8 +6311,7 @@
     "Bus Number":"52",
     "Description":"Blk 257",
     "RoadName":"Bishan St 22",
-    "Distance":"2.3",
-    "Right_Distance":"2.3"
+    "Distance":"2.3"
   },
   {
     "Direction":"1",
@@ -6776,8 +6325,7 @@
     "Bus Number":"52",
     "Description":"Opp Eunoia JC",
     "RoadName":"Sin Ming Ave",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"1",
@@ -6791,8 +6339,7 @@
     "Bus Number":"52",
     "Description":"Bef Bright Hill Tp",
     "RoadName":"Sin Ming Ave",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"1",
@@ -6806,8 +6353,7 @@
     "Bus Number":"52",
     "Description":"Bright Hill Stn Exit 2",
     "RoadName":"Sin Ming Ave",
-    "Distance":"3.5",
-    "Right_Distance":"3.5"
+    "Distance":"3.5"
   },
   {
     "Direction":"1",
@@ -6821,8 +6367,7 @@
     "Bus Number":"52",
     "Description":"Ai Tong Sch",
     "RoadName":"Sin Ming Ave",
-    "Distance":"3.9",
-    "Right_Distance":"3.9"
+    "Distance":"3.9"
   },
   {
     "Direction":"1",
@@ -6836,8 +6381,7 @@
     "Bus Number":"52",
     "Description":"Blk 454",
     "RoadName":"Sin Ming Ave",
-    "Distance":"4.2",
-    "Right_Distance":"4.2"
+    "Distance":"4.2"
   },
   {
     "Direction":"1",
@@ -6851,8 +6395,7 @@
     "Bus Number":"52",
     "Description":"Aft Windsor Pk Rd",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"4.5",
-    "Right_Distance":"4.5"
+    "Distance":"4.5"
   },
   {
     "Direction":"1",
@@ -6866,8 +6409,7 @@
     "Bus Number":"52",
     "Description":"Upp Thomson Stn Exit 2",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"1",
@@ -6881,8 +6423,7 @@
     "Bus Number":"52",
     "Description":"Bef Jln Todak",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"5.3",
-    "Right_Distance":"5.3"
+    "Distance":"5.3"
   },
   {
     "Direction":"1",
@@ -6896,8 +6437,7 @@
     "Bus Number":"52",
     "Description":"Thomson CC",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"5.6",
-    "Right_Distance":"5.6"
+    "Distance":"5.6"
   },
   {
     "Direction":"1",
@@ -6911,8 +6451,7 @@
     "Bus Number":"52",
     "Description":"Shunfu Est",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"5.9",
-    "Right_Distance":"5.9"
+    "Distance":"5.9"
   },
   {
     "Direction":"1",
@@ -6926,8 +6465,7 @@
     "Bus Number":"52",
     "Description":"OPP ST. THERESA'S HME",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"6.3",
-    "Right_Distance":"6.3"
+    "Distance":"6.3"
   },
   {
     "Direction":"1",
@@ -6941,8 +6479,7 @@
     "Bus Number":"52",
     "Description":"Opp MacRitchie Resvr",
     "RoadName":"Thomson Rd",
-    "Distance":"6.9",
-    "Right_Distance":"6.9"
+    "Distance":"6.9"
   },
   {
     "Direction":"1",
@@ -6956,8 +6493,7 @@
     "Bus Number":"52",
     "Description":"Bef Andrew Rd",
     "RoadName":"Lornie Rd",
-    "Distance":"7.4",
-    "Right_Distance":"7.4"
+    "Distance":"7.4"
   },
   {
     "Direction":"1",
@@ -6971,8 +6507,7 @@
     "Bus Number":"52",
     "Description":"Bef Kheam Hock Rd",
     "RoadName":"Lornie Highway",
-    "Distance":"9",
-    "Right_Distance":"9"
+    "Distance":"9"
   },
   {
     "Direction":"1",
@@ -6986,8 +6521,7 @@
     "Bus Number":"52",
     "Description":"Opp Bt Timah Plaza",
     "RoadName":"Jln Anak Bt",
-    "Distance":"15.3",
-    "Right_Distance":"15.3"
+    "Distance":"15.3"
   },
   {
     "Direction":"1",
@@ -7001,8 +6535,7 @@
     "Bus Number":"52",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"15.8",
-    "Right_Distance":"15.8"
+    "Distance":"15.8"
   },
   {
     "Direction":"1",
@@ -7016,8 +6549,7 @@
     "Bus Number":"52",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"16.4",
-    "Right_Distance":"16.4"
+    "Distance":"16.4"
   },
   {
     "Direction":"1",
@@ -7031,8 +6563,7 @@
     "Bus Number":"52",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"16.8",
-    "Right_Distance":"16.8"
+    "Distance":"16.8"
   },
   {
     "Direction":"1",
@@ -7046,8 +6577,7 @@
     "Bus Number":"52",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"17",
-    "Right_Distance":"17"
+    "Distance":"17"
   },
   {
     "Direction":"1",
@@ -7061,8 +6591,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"17.5",
-    "Right_Distance":"17.5"
+    "Distance":"17.5"
   },
   {
     "Direction":"1",
@@ -7076,8 +6605,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"17.8",
-    "Right_Distance":"17.8"
+    "Distance":"17.8"
   },
   {
     "Direction":"1",
@@ -7091,8 +6619,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"18.3",
-    "Right_Distance":"18.3"
+    "Distance":"18.3"
   },
   {
     "Direction":"1",
@@ -7106,8 +6633,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"18.5",
-    "Right_Distance":"18.5"
+    "Distance":"18.5"
   },
   {
     "Direction":"1",
@@ -7121,8 +6647,7 @@
     "Bus Number":"52",
     "Description":"Blk 410",
     "RoadName":"C'wealth Ave West",
-    "Distance":"19.2",
-    "Right_Distance":"19.2"
+    "Distance":"19.2"
   },
   {
     "Direction":"1",
@@ -7136,8 +6661,7 @@
     "Bus Number":"52",
     "Description":"Blk 455",
     "RoadName":"C'wealth Ave West",
-    "Distance":"19.5",
-    "Right_Distance":"19.5"
+    "Distance":"19.5"
   },
   {
     "Direction":"1",
@@ -7151,8 +6675,7 @@
     "Bus Number":"52",
     "Description":"Clementi Stn Exit A",
     "RoadName":"C'wealth Ave West",
-    "Distance":"19.9",
-    "Right_Distance":"19.9"
+    "Distance":"19.9"
   },
   {
     "Direction":"1",
@@ -7166,8 +6689,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 317",
     "RoadName":"C'wealth Ave West",
-    "Distance":"20.2",
-    "Right_Distance":"20.2"
+    "Distance":"20.2"
   },
   {
     "Direction":"1",
@@ -7181,8 +6703,7 @@
     "Bus Number":"52",
     "Description":"Nan Hua Pr Sch",
     "RoadName":"C'wealth Ave West",
-    "Distance":"20.5",
-    "Right_Distance":"20.5"
+    "Distance":"20.5"
   },
   {
     "Direction":"1",
@@ -7196,8 +6717,7 @@
     "Bus Number":"52",
     "Description":"BEF TOH TUCK AVE",
     "RoadName":"C'wealth Ave West",
-    "Distance":"21.1",
-    "Right_Distance":"21.1"
+    "Distance":"21.1"
   },
   {
     "Direction":"1",
@@ -7211,8 +6731,7 @@
     "Bus Number":"52",
     "Description":"OPP 8 @TRADEHUB 21",
     "RoadName":"Boon Lay Way",
-    "Distance":"21.6",
-    "Right_Distance":"21.6"
+    "Distance":"21.6"
   },
   {
     "Direction":"1",
@@ -7226,8 +6745,7 @@
     "Bus Number":"52",
     "Description":"Bef The Synergy",
     "RoadName":"Boon Lay Way",
-    "Distance":"22.1",
-    "Right_Distance":"22.1"
+    "Distance":"22.1"
   },
   {
     "Direction":"1",
@@ -7241,8 +6759,7 @@
     "Bus Number":"52",
     "Description":"The Synergy",
     "RoadName":"Boon Lay Way",
-    "Distance":"22.5",
-    "Right_Distance":"22.5"
+    "Distance":"22.5"
   },
   {
     "Direction":"1",
@@ -7256,8 +6773,7 @@
     "Bus Number":"52",
     "Description":"IMM Bldg",
     "RoadName":"Toh Guan Rd",
-    "Distance":"23.1",
-    "Right_Distance":"23.1"
+    "Distance":"23.1"
   },
   {
     "Direction":"1",
@@ -7271,8 +6787,7 @@
     "Bus Number":"52",
     "Description":"Blk 286A",
     "RoadName":"Toh Guan Rd",
-    "Distance":"23.8",
-    "Right_Distance":"23.8"
+    "Distance":"23.8"
   },
   {
     "Direction":"1",
@@ -7286,8 +6801,7 @@
     "Bus Number":"52",
     "Description":"Blk 288E",
     "RoadName":"Toh Guan Rd",
-    "Distance":"24.1",
-    "Right_Distance":"24.1"
+    "Distance":"24.1"
   },
   {
     "Direction":"1",
@@ -7301,8 +6815,7 @@
     "Bus Number":"52",
     "Description":"Blk 207",
     "RoadName":"Jurong East Ctrl",
-    "Distance":"24.5",
-    "Right_Distance":"24.5"
+    "Distance":"24.5"
   },
   {
     "Direction":"1",
@@ -7316,8 +6829,7 @@
     "Bus Number":"52",
     "Description":"Bef Seventh-Day Advent Ch",
     "RoadName":"Jurong East Ctrl",
-    "Distance":"24.8",
-    "Right_Distance":"24.8"
+    "Distance":"24.8"
   },
   {
     "Direction":"1",
@@ -7331,8 +6843,7 @@
     "Bus Number":"52",
     "Description":"Bef Jurong East Stn",
     "RoadName":"Jurong Gateway Rd",
-    "Distance":"25.2",
-    "Right_Distance":"25.2"
+    "Distance":"25.2"
   },
   {
     "Direction":"1",
@@ -7346,8 +6857,7 @@
     "Bus Number":"52",
     "Description":"Jurong East Int",
     "RoadName":"Jurong Gateway Rd",
-    "Distance":"25.4",
-    "Right_Distance":"25.4"
+    "Distance":"25.4"
   },
   {
     "Direction":"1",
@@ -7361,8 +6871,7 @@
     "Bus Number":"151",
     "Description":"Hougang Ctrl Int",
     "RoadName":"Hougang Ctrl",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -7376,8 +6885,7 @@
     "Bus Number":"151",
     "Description":"Blk 327",
     "RoadName":"Hougang Ave 5",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"1",
@@ -7391,8 +6899,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 316",
     "RoadName":"Hougang Ave 7",
-    "Distance":"1.2",
-    "Right_Distance":"1.2"
+    "Distance":"1.2"
   },
   {
     "Direction":"1",
@@ -7406,8 +6913,7 @@
     "Bus Number":"151",
     "Description":"Aft Defu Ave 1",
     "RoadName":"Tampines Rd",
-    "Distance":"1.7",
-    "Right_Distance":"1.7"
+    "Distance":"1.7"
   },
   {
     "Direction":"1",
@@ -7421,8 +6927,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 248",
     "RoadName":"Hougang Ave 3",
-    "Distance":"2",
-    "Right_Distance":"2"
+    "Distance":"2"
   },
   {
     "Direction":"1",
@@ -7436,8 +6941,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 241",
     "RoadName":"Hougang Ave 3",
-    "Distance":"2.3",
-    "Right_Distance":"2.3"
+    "Distance":"2.3"
   },
   {
     "Direction":"1",
@@ -7451,8 +6955,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 106",
     "RoadName":"Hougang Ave 3",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"1",
@@ -7466,8 +6969,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 169",
     "RoadName":"Hougang Ave 3",
-    "Distance":"3",
-    "Right_Distance":"3"
+    "Distance":"3"
   },
   {
     "Direction":"1",
@@ -7481,8 +6983,7 @@
     "Bus Number":"151",
     "Description":"BEF S'PORE GIRLS' HME",
     "RoadName":"Hougang Ave 3",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"1",
@@ -7496,8 +6997,7 @@
     "Bus Number":"151",
     "Description":"SBST Hougang Depot",
     "RoadName":"Hougang Ave 3",
-    "Distance":"3.7",
-    "Right_Distance":"3.7"
+    "Distance":"3.7"
   },
   {
     "Direction":"1",
@@ -7511,8 +7011,7 @@
     "Bus Number":"151",
     "Description":"Aft Kim Chuan Rd",
     "RoadName":"Hougang Ave 3",
-    "Distance":"4.1",
-    "Right_Distance":"4.1"
+    "Distance":"4.1"
   },
   {
     "Direction":"1",
@@ -7526,8 +7025,7 @@
     "Bus Number":"151",
     "Description":"Comfort Test Ctr",
     "RoadName":"Airport Rd",
-    "Distance":"4.9",
-    "Right_Distance":"4.9"
+    "Distance":"4.9"
   },
   {
     "Direction":"1",
@@ -7541,8 +7039,7 @@
     "Bus Number":"151",
     "Description":"Aft Scdf Hq",
     "RoadName":"Airport Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"1",
@@ -7556,8 +7053,7 @@
     "Bus Number":"151",
     "Description":"Sky Green Condo",
     "RoadName":"MacPherson Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"1",
@@ -7571,8 +7067,7 @@
     "Bus Number":"151",
     "Description":"Aft Jln Belangkas",
     "RoadName":"MacPherson Rd",
-    "Distance":"6.4",
-    "Right_Distance":"6.4"
+    "Distance":"6.4"
   },
   {
     "Direction":"1",
@@ -7586,8 +7081,7 @@
     "Bus Number":"151",
     "Description":"Opp Jln Muhibbah",
     "RoadName":"MacPherson Rd",
-    "Distance":"6.7",
-    "Right_Distance":"6.7"
+    "Distance":"6.7"
   },
   {
     "Direction":"1",
@@ -7601,8 +7095,7 @@
     "Bus Number":"151",
     "Description":"Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"7",
-    "Right_Distance":"7"
+    "Distance":"7"
   },
   {
     "Direction":"1",
@@ -7616,8 +7109,7 @@
     "Bus Number":"151",
     "Description":"Gulab Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"7.4",
-    "Right_Distance":"7.4"
+    "Distance":"7.4"
   },
   {
     "Direction":"1",
@@ -7631,8 +7123,7 @@
     "Bus Number":"151",
     "Description":"Bef Siemens Ctr",
     "RoadName":"MacPherson Rd",
-    "Distance":"7.8",
-    "Right_Distance":"7.8"
+    "Distance":"7.8"
   },
   {
     "Direction":"1",
@@ -7646,8 +7137,7 @@
     "Bus Number":"151",
     "Description":"Opp St. Andrew'S Village",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"8.4",
-    "Right_Distance":"8.4"
+    "Distance":"8.4"
   },
   {
     "Direction":"1",
@@ -7661,8 +7151,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 195",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"9.1",
-    "Right_Distance":"9.1"
+    "Distance":"9.1"
   },
   {
     "Direction":"1",
@@ -7676,8 +7165,7 @@
     "Bus Number":"151",
     "Description":"Opp Trellis Twrs",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"11",
-    "Right_Distance":"11"
+    "Distance":"11"
   },
   {
     "Direction":"1",
@@ -7691,8 +7179,7 @@
     "Bus Number":"151",
     "Description":"Catholic JC",
     "RoadName":"Whitley Rd",
-    "Distance":"12.2",
-    "Right_Distance":"12.2"
+    "Distance":"12.2"
   },
   {
     "Direction":"1",
@@ -7706,8 +7193,7 @@
     "Bus Number":"151",
     "Description":"St. Joseph'S Instn",
     "RoadName":"Whitley Rd",
-    "Distance":"13.1",
-    "Right_Distance":"13.1"
+    "Distance":"13.1"
   },
   {
     "Direction":"1",
@@ -7721,8 +7207,7 @@
     "Bus Number":"151",
     "Description":"BEF STEVENS STN EXIT 4",
     "RoadName":"Whitley Rd",
-    "Distance":"13.4",
-    "Right_Distance":"13.4"
+    "Distance":"13.4"
   },
   {
     "Direction":"1",
@@ -7736,8 +7221,7 @@
     "Bus Number":"151",
     "Description":"Bef Lewis Rd",
     "RoadName":"Bt Timah Rd",
-    "Distance":"13.9",
-    "Right_Distance":"13.9"
+    "Distance":"13.9"
   },
   {
     "Direction":"1",
@@ -7751,8 +7235,7 @@
     "Bus Number":"151",
     "Description":"NUS Bt Timah Campus",
     "RoadName":"Bt Timah Rd",
-    "Distance":"14.4",
-    "Right_Distance":"14.4"
+    "Distance":"14.4"
   },
   {
     "Direction":"1",
@@ -7766,8 +7249,7 @@
     "Bus Number":"151",
     "Description":"Botanic Gdns Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"14.8",
-    "Right_Distance":"14.8"
+    "Distance":"14.8"
   },
   {
     "Direction":"1",
@@ -7781,8 +7263,7 @@
     "Bus Number":"151",
     "Description":"Bef Crown Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.2",
-    "Right_Distance":"15.2"
+    "Distance":"15.2"
   },
   {
     "Direction":"1",
@@ -7796,8 +7277,7 @@
     "Bus Number":"151",
     "Description":"Coronation Plaza",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.4",
-    "Right_Distance":"15.4"
+    "Distance":"15.4"
   },
   {
     "Direction":"1",
@@ -7811,8 +7291,7 @@
     "Bus Number":"151",
     "Description":"Tan Kah Kee Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.8",
-    "Right_Distance":"15.8"
+    "Distance":"15.8"
   },
   {
     "Direction":"1",
@@ -7826,8 +7305,7 @@
     "Bus Number":"151",
     "Description":"Chinese High Sch",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16",
-    "Right_Distance":"16"
+    "Distance":"16"
   },
   {
     "Direction":"1",
@@ -7841,8 +7319,7 @@
     "Bus Number":"151",
     "Description":"Opp Natl JC",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.4",
-    "Right_Distance":"16.4"
+    "Distance":"16.4"
   },
   {
     "Direction":"1",
@@ -7856,8 +7333,7 @@
     "Bus Number":"151",
     "Description":"Sixth Ave Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17",
-    "Right_Distance":"17"
+    "Distance":"17"
   },
   {
     "Direction":"1",
@@ -7871,8 +7347,7 @@
     "Bus Number":"151",
     "Description":"Sixth Ave Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.3",
-    "Right_Distance":"17.3"
+    "Distance":"17.3"
   },
   {
     "Direction":"1",
@@ -7886,8 +7361,7 @@
     "Bus Number":"151",
     "Description":"Aft Maple Ave",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.6",
-    "Right_Distance":"17.6"
+    "Distance":"17.6"
   },
   {
     "Direction":"1",
@@ -7901,8 +7375,7 @@
     "Bus Number":"151",
     "Description":"The Tessarina",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.9",
-    "Right_Distance":"17.9"
+    "Distance":"17.9"
   },
   {
     "Direction":"1",
@@ -7916,8 +7389,7 @@
     "Bus Number":"151",
     "Description":"The Nexus",
     "RoadName":"Bt Timah Rd",
-    "Distance":"18.3",
-    "Right_Distance":"18.3"
+    "Distance":"18.3"
   },
   {
     "Direction":"1",
@@ -7931,8 +7403,7 @@
     "Bus Number":"151",
     "Description":"King Albert Pk Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"1",
@@ -7946,8 +7417,7 @@
     "Bus Number":"151",
     "Description":"King Albert Pk",
     "RoadName":"Bt Timah Rd",
-    "Distance":"19.1",
-    "Right_Distance":"19.1"
+    "Distance":"19.1"
   },
   {
     "Direction":"1",
@@ -7961,8 +7431,7 @@
     "Bus Number":"151",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"19.4",
-    "Right_Distance":"19.4"
+    "Distance":"19.4"
   },
   {
     "Direction":"1",
@@ -7976,8 +7445,7 @@
     "Bus Number":"151",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"20",
-    "Right_Distance":"20"
+    "Distance":"20"
   },
   {
     "Direction":"1",
@@ -7991,8 +7459,7 @@
     "Bus Number":"151",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"20.4",
-    "Right_Distance":"20.4"
+    "Distance":"20.4"
   },
   {
     "Direction":"1",
@@ -8006,8 +7473,7 @@
     "Bus Number":"151",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"20.6",
-    "Right_Distance":"20.6"
+    "Distance":"20.6"
   },
   {
     "Direction":"1",
@@ -8021,8 +7487,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"21.1",
-    "Right_Distance":"21.1"
+    "Distance":"21.1"
   },
   {
     "Direction":"1",
@@ -8036,8 +7501,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"21.4",
-    "Right_Distance":"21.4"
+    "Distance":"21.4"
   },
   {
     "Direction":"1",
@@ -8051,8 +7515,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"21.9",
-    "Right_Distance":"21.9"
+    "Distance":"21.9"
   },
   {
     "Direction":"1",
@@ -8066,8 +7529,7 @@
     "Bus Number":"151",
     "Description":"Opp Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"22.1",
-    "Right_Distance":"22.1"
+    "Distance":"22.1"
   },
   {
     "Direction":"1",
@@ -8081,8 +7543,7 @@
     "Bus Number":"151",
     "Description":"YALE-NUS COLLEGE",
     "RoadName":"Clementi Rd",
-    "Distance":"22.9",
-    "Right_Distance":"22.9"
+    "Distance":"22.9"
   },
   {
     "Direction":"1",
@@ -8096,8 +7557,7 @@
     "Bus Number":"151",
     "Description":"Nus Museums",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"24",
-    "Right_Distance":"24"
+    "Distance":"24"
   },
   {
     "Direction":"1",
@@ -8111,8 +7571,7 @@
     "Bus Number":"151",
     "Description":"Yusof Ishak Hse",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"24.3",
-    "Right_Distance":"24.3"
+    "Distance":"24.3"
   },
   {
     "Direction":"1",
@@ -8126,8 +7585,7 @@
     "Bus Number":"151",
     "Description":"Ctrl Lib",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"24.7",
-    "Right_Distance":"24.7"
+    "Distance":"24.7"
   },
   {
     "Direction":"1",
@@ -8141,8 +7599,7 @@
     "Bus Number":"151",
     "Description":"Aft Kent Ridge Dr",
     "RoadName":"Kent Ridge Cres",
-    "Distance":"24.9",
-    "Right_Distance":"24.9"
+    "Distance":"24.9"
   },
   {
     "Direction":"1",
@@ -8156,8 +7613,7 @@
     "Bus Number":"151",
     "Description":"Kent Ridge Ter",
     "RoadName":"Clementi Rd",
-    "Distance":"25.2",
-    "Right_Distance":"25.2"
+    "Distance":"25.2"
   },
   {
     "Direction":"1",
@@ -8171,8 +7627,7 @@
     "Bus Number":"61",
     "Description":"Bt Batok Int",
     "RoadName":"Bt Batok Ctrl",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -8186,8 +7641,7 @@
     "Bus Number":"61",
     "Description":"Blk 231",
     "RoadName":"Bt Batok East Ave 3",
-    "Distance":"0.6",
-    "Right_Distance":"0.6"
+    "Distance":"0.6"
   },
   {
     "Direction":"1",
@@ -8201,8 +7655,7 @@
     "Bus Number":"61",
     "Description":"Blk 283",
     "RoadName":"Bt Batok East Ave 3",
-    "Distance":"1",
-    "Right_Distance":"1"
+    "Distance":"1"
   },
   {
     "Direction":"1",
@@ -8216,8 +7669,7 @@
     "Bus Number":"61",
     "Description":"Ch Of St. Mary",
     "RoadName":"Bt Batok East Ave 6",
-    "Distance":"1.4",
-    "Right_Distance":"1.4"
+    "Distance":"1.4"
   },
   {
     "Direction":"1",
@@ -8231,8 +7683,7 @@
     "Bus Number":"61",
     "Description":"Autobacs",
     "RoadName":"Bt Batok East Ave 6",
-    "Distance":"1.9",
-    "Right_Distance":"1.9"
+    "Distance":"1.9"
   },
   {
     "Direction":"1",
@@ -8246,8 +7697,7 @@
     "Bus Number":"61",
     "Description":"Aft Bt Batok East Ave 6",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"2.4",
-    "Right_Distance":"2.4"
+    "Distance":"2.4"
   },
   {
     "Direction":"1",
@@ -8261,8 +7711,7 @@
     "Bus Number":"61",
     "Description":"The Hillford",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"1",
@@ -8276,8 +7725,7 @@
     "Bus Number":"61",
     "Description":"Aft Chun Tin Rd",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"3",
-    "Right_Distance":"3"
+    "Distance":"3"
   },
   {
     "Direction":"1",
@@ -8291,8 +7739,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 19",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"1",
@@ -8306,8 +7753,7 @@
     "Bus Number":"61",
     "Description":"Opp Beauty World Stn",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"3.6",
-    "Right_Distance":"3.6"
+    "Distance":"3.6"
   },
   {
     "Direction":"1",
@@ -8321,8 +7767,7 @@
     "Bus Number":"61",
     "Description":"Aft Upp Bt Timah Rd",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"3.9",
-    "Right_Distance":"3.9"
+    "Distance":"3.9"
   },
   {
     "Direction":"1",
@@ -8336,8 +7781,7 @@
     "Bus Number":"61",
     "Description":"Opp Bt Timah Plaza",
     "RoadName":"Jln Anak Bt",
-    "Distance":"4.3",
-    "Right_Distance":"4.3"
+    "Distance":"4.3"
   },
   {
     "Direction":"1",
@@ -8351,8 +7795,7 @@
     "Bus Number":"61",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"4.8",
-    "Right_Distance":"4.8"
+    "Distance":"4.8"
   },
   {
     "Direction":"1",
@@ -8366,8 +7809,7 @@
     "Bus Number":"61",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"1",
@@ -8381,8 +7823,7 @@
     "Bus Number":"61",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"5.8",
-    "Right_Distance":"5.8"
+    "Distance":"5.8"
   },
   {
     "Direction":"1",
@@ -8396,8 +7837,7 @@
     "Bus Number":"61",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"1",
@@ -8411,8 +7851,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"6.5",
-    "Right_Distance":"6.5"
+    "Distance":"6.5"
   },
   {
     "Direction":"1",
@@ -8426,8 +7865,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"6.8",
-    "Right_Distance":"6.8"
+    "Distance":"6.8"
   },
   {
     "Direction":"1",
@@ -8441,8 +7879,7 @@
     "Bus Number":"61",
     "Description":"Police KINS Trg Camp",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"7.1",
-    "Right_Distance":"7.1"
+    "Distance":"7.1"
   },
   {
     "Direction":"1",
@@ -8456,8 +7893,7 @@
     "Bus Number":"61",
     "Description":"Opp Pine Gr Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"7.3",
-    "Right_Distance":"7.3"
+    "Distance":"7.3"
   },
   {
     "Direction":"1",
@@ -8471,8 +7907,7 @@
     "Bus Number":"61",
     "Description":"Opp Pandan Valley",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"7.6",
-    "Right_Distance":"7.6"
+    "Distance":"7.6"
   },
   {
     "Direction":"1",
@@ -8486,8 +7921,7 @@
     "Bus Number":"61",
     "Description":"Opp Pandan Valley Condo",
     "RoadName":"Ulu Pandan Rd",
-    "Distance":"8",
-    "Right_Distance":"8"
+    "Distance":"8"
   },
   {
     "Direction":"1",
@@ -8501,8 +7935,7 @@
     "Bus Number":"61",
     "Description":"Opp Moonbeam Wk",
     "RoadName":"Holland Rd",
-    "Distance":"8.3",
-    "Right_Distance":"8.3"
+    "Distance":"8.3"
   },
   {
     "Direction":"1",
@@ -8516,8 +7949,7 @@
     "Bus Number":"61",
     "Description":"Opp Cold Storage Jelita",
     "RoadName":"Holland Rd",
-    "Distance":"8.7",
-    "Right_Distance":"8.7"
+    "Distance":"8.7"
   },
   {
     "Direction":"1",
@@ -8531,8 +7963,7 @@
     "Bus Number":"61",
     "Description":"Opp Tan Boon Chong Ave",
     "RoadName":"Holland Rd",
-    "Distance":"9.1",
-    "Right_Distance":"9.1"
+    "Distance":"9.1"
   },
   {
     "Direction":"1",
@@ -8546,8 +7977,7 @@
     "Bus Number":"61",
     "Description":"Aft Coronation Rd West",
     "RoadName":"Holland Rd",
-    "Distance":"9.4",
-    "Right_Distance":"9.4"
+    "Distance":"9.4"
   },
   {
     "Direction":"1",
@@ -8561,8 +7991,7 @@
     "Bus Number":"61",
     "Description":"Opp Holland Village",
     "RoadName":"Holland Rd",
-    "Distance":"9.9",
-    "Right_Distance":"9.9"
+    "Distance":"9.9"
   },
   {
     "Direction":"1",
@@ -8576,8 +8005,7 @@
     "Bus Number":"61",
     "Description":"Holland V Stn Exit A",
     "RoadName":"Holland Ave",
-    "Distance":"10.2",
-    "Right_Distance":"10.2"
+    "Distance":"10.2"
   },
   {
     "Direction":"1",
@@ -8591,8 +8019,7 @@
     "Bus Number":"61",
     "Description":"Blk 9",
     "RoadName":"Holland Ave",
-    "Distance":"10.7",
-    "Right_Distance":"10.7"
+    "Distance":"10.7"
   },
   {
     "Direction":"1",
@@ -8606,8 +8033,7 @@
     "Bus Number":"61",
     "Description":"Blk 8",
     "RoadName":"C'wealth Ave",
-    "Distance":"10.9",
-    "Right_Distance":"10.9"
+    "Distance":"10.9"
   },
   {
     "Direction":"1",
@@ -8621,8 +8047,7 @@
     "Bus Number":"61",
     "Description":"C'Wealth Stn Exit B\/C",
     "RoadName":"C'wealth Ave",
-    "Distance":"11.5",
-    "Right_Distance":"11.5"
+    "Distance":"11.5"
   },
   {
     "Direction":"1",
@@ -8636,8 +8061,7 @@
     "Bus Number":"61",
     "Description":"C'Wealth Stn Exit A\/D",
     "RoadName":"C'wealth Ave",
-    "Distance":"12.2",
-    "Right_Distance":"12.2"
+    "Distance":"12.2"
   },
   {
     "Direction":"1",
@@ -8651,8 +8075,7 @@
     "Bus Number":"61",
     "Description":"Blk 50",
     "RoadName":"C'wealth Dr",
-    "Distance":"12.7",
-    "Right_Distance":"12.7"
+    "Distance":"12.7"
   },
   {
     "Direction":"1",
@@ -8666,8 +8089,7 @@
     "Bus Number":"61",
     "Description":"Blk 37B",
     "RoadName":"C'wealth Dr",
-    "Distance":"13",
-    "Right_Distance":"13"
+    "Distance":"13"
   },
   {
     "Direction":"1",
@@ -8681,8 +8103,7 @@
     "Bus Number":"61",
     "Description":"Queenstown Polyclinic",
     "RoadName":"Queensway",
-    "Distance":"14.1",
-    "Right_Distance":"14.1"
+    "Distance":"14.1"
   },
   {
     "Direction":"1",
@@ -8696,8 +8117,7 @@
     "Bus Number":"61",
     "Description":"Opp Blessed Sacrament Ch",
     "RoadName":"Queensway",
-    "Distance":"14.5",
-    "Right_Distance":"14.5"
+    "Distance":"14.5"
   },
   {
     "Direction":"1",
@@ -8711,8 +8131,7 @@
     "Bus Number":"61",
     "Description":"Blk 19",
     "RoadName":"Queensway",
-    "Distance":"14.9",
-    "Right_Distance":"14.9"
+    "Distance":"14.9"
   },
   {
     "Direction":"1",
@@ -8726,8 +8145,7 @@
     "Bus Number":"61",
     "Description":"Blk 166\/Aft Mei Chin Rd",
     "RoadName":"Queensway",
-    "Distance":"15.3",
-    "Right_Distance":"15.3"
+    "Distance":"15.3"
   },
   {
     "Direction":"1",
@@ -8741,8 +8159,7 @@
     "Bus Number":"61",
     "Description":"Opp Queensway Shop Ctr",
     "RoadName":"Alexandra Rd",
-    "Distance":"15.9",
-    "Right_Distance":"15.9"
+    "Distance":"15.9"
   },
   {
     "Direction":"1",
@@ -8756,8 +8173,7 @@
     "Bus Number":"61",
     "Description":"Bef Telok Blangah Hill Pk",
     "RoadName":"Alexandra Rd",
-    "Distance":"16.6",
-    "Right_Distance":"16.6"
+    "Distance":"16.6"
   },
   {
     "Direction":"1",
@@ -8771,8 +8187,7 @@
     "Bus Number":"61",
     "Description":"Opp Alexandra Pt",
     "RoadName":"Alexandra Rd",
-    "Distance":"17.1",
-    "Right_Distance":"17.1"
+    "Distance":"17.1"
   },
   {
     "Direction":"1",
@@ -8786,8 +8201,7 @@
     "Bus Number":"61",
     "Description":"Opp Alexandra Retail Ctr",
     "RoadName":"Alexandra Rd",
-    "Distance":"17.4",
-    "Right_Distance":"17.4"
+    "Distance":"17.4"
   },
   {
     "Direction":"1",
@@ -8801,8 +8215,7 @@
     "Bus Number":"61",
     "Description":"Aft Alexandra Rd",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"17.8",
-    "Right_Distance":"17.8"
+    "Distance":"17.8"
   },
   {
     "Direction":"1",
@@ -8816,8 +8229,7 @@
     "Bus Number":"61",
     "Description":"Yeo's Bldg",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"1",
@@ -8831,8 +8243,7 @@
     "Bus Number":"61",
     "Description":"Opp Telok Blangah Stn",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"18.5",
-    "Right_Distance":"18.5"
+    "Distance":"18.5"
   },
   {
     "Direction":"1",
@@ -8846,8 +8257,7 @@
     "Bus Number":"61",
     "Description":"Bef Chr Community Chapel",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"19",
-    "Right_Distance":"19"
+    "Distance":"19"
   },
   {
     "Direction":"1",
@@ -8861,8 +8271,7 @@
     "Bus Number":"61",
     "Description":"Bef Seah Im Rd",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"19.4",
-    "Right_Distance":"19.4"
+    "Distance":"19.4"
   },
   {
     "Direction":"1",
@@ -8876,8 +8285,7 @@
     "Bus Number":"61",
     "Description":"Harbourfront Stn Exit A",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"19.9",
-    "Right_Distance":"19.9"
+    "Distance":"19.9"
   },
   {
     "Direction":"1",
@@ -8891,8 +8299,7 @@
     "Bus Number":"61",
     "Description":"Opp VivoCity",
     "RoadName":"Telok Blangah Rd",
-    "Distance":"20.2",
-    "Right_Distance":"20.2"
+    "Distance":"20.2"
   },
   {
     "Direction":"1",
@@ -8906,8 +8313,7 @@
     "Bus Number":"61",
     "Description":"Bef Mt Faber Lodge",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"20.8",
-    "Right_Distance":"20.8"
+    "Distance":"20.8"
   },
   {
     "Direction":"1",
@@ -8921,8 +8327,7 @@
     "Bus Number":"61",
     "Description":"Opp Keppel DP Blk 519",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"21.4",
-    "Right_Distance":"21.4"
+    "Distance":"21.4"
   },
   {
     "Direction":"1",
@@ -8936,8 +8341,7 @@
     "Bus Number":"61",
     "Description":"Ch of St. Teresa",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"21.7",
-    "Right_Distance":"21.7"
+    "Distance":"21.7"
   },
   {
     "Direction":"1",
@@ -8951,8 +8355,7 @@
     "Bus Number":"61",
     "Description":"Opp Melati Blk 2",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"1",
@@ -8966,8 +8369,7 @@
     "Bus Number":"61",
     "Description":"OPP KAMPONG BAHRU TER",
     "RoadName":"Kg Bahru Rd",
-    "Distance":"22.6",
-    "Right_Distance":"22.6"
+    "Distance":"22.6"
   },
   {
     "Direction":"1",
@@ -8981,8 +8383,7 @@
     "Bus Number":"61",
     "Description":"Aft Hosp Dr",
     "RoadName":"Eu Tong Sen St",
-    "Distance":"23",
-    "Right_Distance":"23"
+    "Distance":"23"
   },
   {
     "Direction":"1",
@@ -8996,8 +8397,7 @@
     "Bus Number":"61",
     "Description":"OUTRAM PK STN EXIT 6\/SGH",
     "RoadName":"Eu Tong Sen St",
-    "Distance":"23.1",
-    "Right_Distance":"23.1"
+    "Distance":"23.1"
   },
   {
     "Direction":"1",
@@ -9011,8 +8411,7 @@
     "Bus Number":"61",
     "Description":"Chinatown Stn Exit C",
     "RoadName":"Eu Tong Sen St",
-    "Distance":"23.9",
-    "Right_Distance":"23.9"
+    "Distance":"23.9"
   },
   {
     "Direction":"1",
@@ -9026,8 +8425,7 @@
     "Bus Number":"61",
     "Description":"Opp Hong Lim Pk",
     "RoadName":"Eu Tong Sen St",
-    "Distance":"24.3",
-    "Right_Distance":"24.3"
+    "Distance":"24.3"
   },
   {
     "Direction":"1",
@@ -9041,8 +8439,7 @@
     "Bus Number":"61",
     "Description":"Clarke Quay Stn Exit E",
     "RoadName":"Eu Tong Sen St",
-    "Distance":"24.6",
-    "Right_Distance":"24.6"
+    "Distance":"24.6"
   },
   {
     "Direction":"1",
@@ -9056,8 +8453,7 @@
     "Bus Number":"61",
     "Description":"Armenian Ch",
     "RoadName":"Hill St",
-    "Distance":"25.1",
-    "Right_Distance":"25.1"
+    "Distance":"25.1"
   },
   {
     "Direction":"1",
@@ -9071,8 +8467,7 @@
     "Bus Number":"61",
     "Description":"Hotel Grand Pacific",
     "RoadName":"Victoria St",
-    "Distance":"25.6",
-    "Right_Distance":"25.6"
+    "Distance":"25.6"
   },
   {
     "Direction":"1",
@@ -9086,8 +8481,7 @@
     "Bus Number":"61",
     "Description":"Bugis Stn Exit A",
     "RoadName":"Victoria St",
-    "Distance":"26.2",
-    "Right_Distance":"26.2"
+    "Distance":"26.2"
   },
   {
     "Direction":"1",
@@ -9101,8 +8495,7 @@
     "Bus Number":"61",
     "Description":"Stamford Pr Sch",
     "RoadName":"Victoria St",
-    "Distance":"26.6",
-    "Right_Distance":"26.6"
+    "Distance":"26.6"
   },
   {
     "Direction":"1",
@@ -9116,8 +8509,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 461",
     "RoadName":"Victoria St",
-    "Distance":"26.9",
-    "Right_Distance":"26.9"
+    "Distance":"26.9"
   },
   {
     "Direction":"1",
@@ -9131,8 +8523,7 @@
     "Bus Number":"61",
     "Description":"Lavender Stn Exit B",
     "RoadName":"Kallang Rd",
-    "Distance":"27.2",
-    "Right_Distance":"27.2"
+    "Distance":"27.2"
   },
   {
     "Direction":"1",
@@ -9146,8 +8537,7 @@
     "Bus Number":"61",
     "Description":"Aft Kallang Rd",
     "RoadName":"Lavender St",
-    "Distance":"27.5",
-    "Right_Distance":"27.5"
+    "Distance":"27.5"
   },
   {
     "Direction":"1",
@@ -9161,8 +8551,7 @@
     "Bus Number":"61",
     "Description":"BENDEMEER STN EXIT A",
     "RoadName":"Kallang Bahru",
-    "Distance":"28.1",
-    "Right_Distance":"28.1"
+    "Distance":"28.1"
   },
   {
     "Direction":"1",
@@ -9176,8 +8565,7 @@
     "Bus Number":"61",
     "Description":"Chubb S'pore",
     "RoadName":"Kallang Bahru",
-    "Distance":"28.7",
-    "Right_Distance":"28.7"
+    "Distance":"28.7"
   },
   {
     "Direction":"1",
@@ -9191,8 +8579,7 @@
     "Bus Number":"61",
     "Description":"BEF GEYLANG BAHRU STN",
     "RoadName":"Kallang Bahru",
-    "Distance":"29.2",
-    "Right_Distance":"29.2"
+    "Distance":"29.2"
   },
   {
     "Direction":"1",
@@ -9206,8 +8593,7 @@
     "Bus Number":"61",
     "Description":"Blk 68",
     "RoadName":"Geylang Bahru",
-    "Distance":"29.5",
-    "Right_Distance":"29.5"
+    "Distance":"29.5"
   },
   {
     "Direction":"1",
@@ -9221,8 +8607,7 @@
     "Bus Number":"61",
     "Description":"Blk 54",
     "RoadName":"Bendemeer Rd",
-    "Distance":"30",
-    "Right_Distance":"30"
+    "Distance":"30"
   },
   {
     "Direction":"1",
@@ -9236,8 +8621,7 @@
     "Bus Number":"61",
     "Description":"St. Michael's Pl",
     "RoadName":"S'goon Rd",
-    "Distance":"31.1",
-    "Right_Distance":"31.1"
+    "Distance":"31.1"
   },
   {
     "Direction":"1",
@@ -9251,8 +8635,7 @@
     "Bus Number":"61",
     "Description":"Aft Tai Thong Cres",
     "RoadName":"MacPherson Rd",
-    "Distance":"31.9",
-    "Right_Distance":"31.9"
+    "Distance":"31.9"
   },
   {
     "Direction":"1",
@@ -9266,8 +8649,7 @@
     "Bus Number":"61",
     "Description":"Bef Jln Wangi",
     "RoadName":"MacPherson Rd",
-    "Distance":"32.3",
-    "Right_Distance":"32.3"
+    "Distance":"32.3"
   },
   {
     "Direction":"1",
@@ -9281,8 +8663,7 @@
     "Bus Number":"61",
     "Description":"Opp Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"32.7",
-    "Right_Distance":"32.7"
+    "Distance":"32.7"
   },
   {
     "Direction":"1",
@@ -9296,8 +8677,7 @@
     "Bus Number":"61",
     "Description":"Aljunied Pk",
     "RoadName":"Aljunied Rd",
-    "Distance":"33.2",
-    "Right_Distance":"33.2"
+    "Distance":"33.2"
   },
   {
     "Direction":"1",
@@ -9311,8 +8691,7 @@
     "Bus Number":"61",
     "Description":"Aft Jln Anggerek",
     "RoadName":"Merpati Rd",
-    "Distance":"33.5",
-    "Right_Distance":"33.5"
+    "Distance":"33.5"
   },
   {
     "Direction":"1",
@@ -9326,8 +8705,7 @@
     "Bus Number":"61",
     "Description":"OPP MATTAR STN EXIT A",
     "RoadName":"Merpati Rd",
-    "Distance":"33.8",
-    "Right_Distance":"33.8"
+    "Distance":"33.8"
   },
   {
     "Direction":"1",
@@ -9341,8 +8719,7 @@
     "Bus Number":"61",
     "Description":"Blk 77",
     "RoadName":"Circuit Rd",
-    "Distance":"34.2",
-    "Right_Distance":"34.2"
+    "Distance":"34.2"
   },
   {
     "Direction":"1",
@@ -9356,8 +8733,7 @@
     "Bus Number":"61",
     "Description":"Blk 36",
     "RoadName":"Circuit Rd",
-    "Distance":"34.4",
-    "Right_Distance":"34.4"
+    "Distance":"34.4"
   },
   {
     "Direction":"1",
@@ -9371,8 +8747,7 @@
     "Bus Number":"61",
     "Description":"OPP BLK 66",
     "RoadName":"Circuit Rd",
-    "Distance":"34.6",
-    "Right_Distance":"34.6"
+    "Distance":"34.6"
   },
   {
     "Direction":"1",
@@ -9386,8 +8761,7 @@
     "Bus Number":"61",
     "Description":"Macpherson Stn Exit A",
     "RoadName":"Circuit Link",
-    "Distance":"34.8",
-    "Right_Distance":"34.8"
+    "Distance":"34.8"
   },
   {
     "Direction":"1",
@@ -9401,8 +8775,7 @@
     "Bus Number":"61",
     "Description":"Blk 3019",
     "RoadName":"Ubi Ave 2",
-    "Distance":"35.1",
-    "Right_Distance":"35.1"
+    "Distance":"35.1"
   },
   {
     "Direction":"1",
@@ -9416,8 +8789,7 @@
     "Bus Number":"61",
     "Description":"Blk 3021",
     "RoadName":"Ubi Ave 2",
-    "Distance":"35.4",
-    "Right_Distance":"35.4"
+    "Distance":"35.4"
   },
   {
     "Direction":"1",
@@ -9431,8 +8803,7 @@
     "Bus Number":"61",
     "Description":"Blk 3023",
     "RoadName":"Ubi Ave 2",
-    "Distance":"35.7",
-    "Right_Distance":"35.7"
+    "Distance":"35.7"
   },
   {
     "Direction":"1",
@@ -9446,8 +8817,7 @@
     "Bus Number":"61",
     "Description":"UBI STN EXIT B",
     "RoadName":"Ubi Ave 2",
-    "Distance":"36",
-    "Right_Distance":"36"
+    "Distance":"36"
   },
   {
     "Direction":"1",
@@ -9461,8 +8831,7 @@
     "Bus Number":"61",
     "Description":"Automobile Megamart",
     "RoadName":"Ubi Ave 2",
-    "Distance":"36.3",
-    "Right_Distance":"36.3"
+    "Distance":"36.3"
   },
   {
     "Direction":"1",
@@ -9476,8 +8845,7 @@
     "Bus Number":"61",
     "Description":"Blk 637",
     "RoadName":"Eunos Link",
-    "Distance":"36.6",
-    "Right_Distance":"36.6"
+    "Distance":"36.6"
   },
   {
     "Direction":"1",
@@ -9491,8 +8859,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 322",
     "RoadName":"Jln Eunos",
-    "Distance":"37",
-    "Right_Distance":"37"
+    "Distance":"37"
   },
   {
     "Direction":"1",
@@ -9506,8 +8873,7 @@
     "Bus Number":"61",
     "Description":"Opp Blk 16",
     "RoadName":"Jln Eunos",
-    "Distance":"37.7",
-    "Right_Distance":"37.7"
+    "Distance":"37.7"
   },
   {
     "Direction":"1",
@@ -9521,8 +8887,7 @@
     "Bus Number":"61",
     "Description":"Opp Eunos Stn",
     "RoadName":"Jln Eunos",
-    "Distance":"37.9",
-    "Right_Distance":"37.9"
+    "Distance":"37.9"
   },
   {
     "Direction":"1",
@@ -9536,8 +8901,7 @@
     "Bus Number":"61",
     "Description":"Aft Lor 106 Changi",
     "RoadName":"Changi Rd",
-    "Distance":"38.6",
-    "Right_Distance":"38.6"
+    "Distance":"38.6"
   },
   {
     "Direction":"1",
@@ -9551,8 +8915,7 @@
     "Bus Number":"61",
     "Description":"Blk 3A",
     "RoadName":"Jln Turi",
-    "Distance":"39.1",
-    "Right_Distance":"39.1"
+    "Distance":"39.1"
   },
   {
     "Direction":"1",
@@ -9566,8 +8929,7 @@
     "Bus Number":"61",
     "Description":"Eunos Int",
     "RoadName":"Eunos Rd 2",
-    "Distance":"39.7",
-    "Right_Distance":"39.7"
+    "Distance":"39.7"
   },
   {
     "Direction":"1",
@@ -9581,8 +8943,7 @@
     "Bus Number":"184",
     "Description":"Gali Batu Ter",
     "RoadName":"Jln Gali Batu",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"1",
@@ -9596,8 +8957,7 @@
     "Bus Number":"184",
     "Description":"Aft KJE Slip Rd",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.2",
-    "Right_Distance":"0.2"
+    "Distance":"0.2"
   },
   {
     "Direction":"1",
@@ -9611,8 +8971,7 @@
     "Bus Number":"184",
     "Description":"Blk 632 CP",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.4",
-    "Right_Distance":"0.4"
+    "Distance":"0.4"
   },
   {
     "Direction":"1",
@@ -9626,8 +8985,7 @@
     "Bus Number":"184",
     "Description":"Opp Junction 10",
     "RoadName":"Woodlands Rd",
-    "Distance":"0.9",
-    "Right_Distance":"0.9"
+    "Distance":"0.9"
   },
   {
     "Direction":"1",
@@ -9641,8 +8999,7 @@
     "Bus Number":"184",
     "Description":"Bt Panjang Stn\/Blk 604",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"1",
@@ -9656,8 +9013,7 @@
     "Bus Number":"184",
     "Description":"Opp Lompang Rd",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"1.5",
-    "Right_Distance":"1.5"
+    "Distance":"1.5"
   },
   {
     "Direction":"1",
@@ -9671,8 +9027,7 @@
     "Bus Number":"184",
     "Description":"Zhenghua Pr Sch",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"2",
-    "Right_Distance":"2"
+    "Distance":"2"
   },
   {
     "Direction":"1",
@@ -9686,8 +9041,7 @@
     "Bus Number":"184",
     "Description":"Bef Pending Stn",
     "RoadName":"Pending Rd",
-    "Distance":"2.4",
-    "Right_Distance":"2.4"
+    "Distance":"2.4"
   },
   {
     "Direction":"1",
@@ -9701,8 +9055,7 @@
     "Bus Number":"184",
     "Description":"Opp Bt Panjang Pr Sch",
     "RoadName":"Cashew Rd",
-    "Distance":"3",
-    "Right_Distance":"3"
+    "Distance":"3"
   },
   {
     "Direction":"1",
@@ -9716,8 +9069,7 @@
     "Bus Number":"184",
     "Description":"Cashew Pk Condo",
     "RoadName":"Cashew Rd",
-    "Distance":"3.4",
-    "Right_Distance":"3.4"
+    "Distance":"3.4"
   },
   {
     "Direction":"1",
@@ -9731,8 +9083,7 @@
     "Bus Number":"184",
     "Description":"Assumption Pathway Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"3.9",
-    "Right_Distance":"3.9"
+    "Distance":"3.9"
   },
   {
     "Direction":"1",
@@ -9746,8 +9097,7 @@
     "Bus Number":"184",
     "Description":"Aft Assumption Eng Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"4.2",
-    "Right_Distance":"4.2"
+    "Distance":"4.2"
   },
   {
     "Direction":"1",
@@ -9761,8 +9111,7 @@
     "Bus Number":"184",
     "Description":"HILLVIEW STN EXIT A",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"4.7",
-    "Right_Distance":"4.7"
+    "Distance":"4.7"
   },
   {
     "Direction":"1",
@@ -9776,8 +9125,7 @@
     "Bus Number":"184",
     "Description":"The Rail Mall",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"5.1",
-    "Right_Distance":"5.1"
+    "Distance":"5.1"
   },
   {
     "Direction":"1",
@@ -9791,8 +9139,7 @@
     "Bus Number":"184",
     "Description":"Opp Hume Pk Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"5.6",
-    "Right_Distance":"5.6"
+    "Distance":"5.6"
   },
   {
     "Direction":"1",
@@ -9806,8 +9153,7 @@
     "Bus Number":"184",
     "Description":"Opp The Hillside",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"1",
@@ -9821,8 +9167,7 @@
     "Bus Number":"184",
     "Description":"Springdale Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"6.5",
-    "Right_Distance":"6.5"
+    "Distance":"6.5"
   },
   {
     "Direction":"1",
@@ -9836,8 +9181,7 @@
     "Bus Number":"184",
     "Description":"Southaven II",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"6.8",
-    "Right_Distance":"6.8"
+    "Distance":"6.8"
   },
   {
     "Direction":"1",
@@ -9851,8 +9195,7 @@
     "Bus Number":"184",
     "Description":"Opp Beauty World Ctr",
     "RoadName":"Jln Anak Bt",
-    "Distance":"7.4",
-    "Right_Distance":"7.4"
+    "Distance":"7.4"
   },
   {
     "Direction":"1",
@@ -9866,8 +9209,7 @@
     "Bus Number":"184",
     "Description":"Opp Bt Timah Plaza",
     "RoadName":"Jln Anak Bt",
-    "Distance":"7.9",
-    "Right_Distance":"7.9"
+    "Distance":"7.9"
   },
   {
     "Direction":"1",
@@ -9881,8 +9223,7 @@
     "Bus Number":"184",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"8.4",
-    "Right_Distance":"8.4"
+    "Distance":"8.4"
   },
   {
     "Direction":"1",
@@ -9896,8 +9237,7 @@
     "Bus Number":"184",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"9",
-    "Right_Distance":"9"
+    "Distance":"9"
   },
   {
     "Direction":"1",
@@ -9911,8 +9251,7 @@
     "Bus Number":"184",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"9.4",
-    "Right_Distance":"9.4"
+    "Distance":"9.4"
   },
   {
     "Direction":"1",
@@ -9926,8 +9265,7 @@
     "Bus Number":"184",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"9.6",
-    "Right_Distance":"9.6"
+    "Distance":"9.6"
   },
   {
     "Direction":"1",
@@ -9941,8 +9279,7 @@
     "Bus Number":"184",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"10.1",
-    "Right_Distance":"10.1"
+    "Distance":"10.1"
   },
   {
     "Direction":"1",
@@ -9956,8 +9293,7 @@
     "Bus Number":"184",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"10.4",
-    "Right_Distance":"10.4"
+    "Distance":"10.4"
   },
   {
     "Direction":"1",
@@ -9971,8 +9307,7 @@
     "Bus Number":"184",
     "Description":"Blk 335",
     "RoadName":"Clementi Ave 5",
-    "Distance":"11.4",
-    "Right_Distance":"11.4"
+    "Distance":"11.4"
   },
   {
     "Direction":"1",
@@ -9986,8 +9321,7 @@
     "Bus Number":"184",
     "Description":"Clementi Stn Exit B",
     "RoadName":"C'wealth Ave West",
-    "Distance":"11.9",
-    "Right_Distance":"11.9"
+    "Distance":"11.9"
   },
   {
     "Direction":"1",
@@ -10001,8 +9335,7 @@
     "Bus Number":"184",
     "Description":"Blk 329",
     "RoadName":"C'wealth Ave West",
-    "Distance":"12.2",
-    "Right_Distance":"12.2"
+    "Distance":"12.2"
   },
   {
     "Direction":"1",
@@ -10016,8 +9349,7 @@
     "Bus Number":"184",
     "Description":"Blk 334",
     "RoadName":"Clementi Ave 2",
-    "Distance":"12.7",
-    "Right_Distance":"12.7"
+    "Distance":"12.7"
   },
   {
     "Direction":"1",
@@ -10031,8 +9363,7 @@
     "Bus Number":"184",
     "Description":"Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"13.2",
-    "Right_Distance":"13.2"
+    "Distance":"13.2"
   },
   {
     "Direction":"1",
@@ -10046,8 +9377,7 @@
     "Bus Number":"184",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"13.6",
-    "Right_Distance":"13.6"
+    "Distance":"13.6"
   },
   {
     "Direction":"1",
@@ -10061,8 +9391,7 @@
     "Bus Number":"184",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"13.9",
-    "Right_Distance":"13.9"
+    "Distance":"13.9"
   },
   {
     "Direction":"1",
@@ -10076,8 +9405,7 @@
     "Bus Number":"184",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"14.4",
-    "Right_Distance":"14.4"
+    "Distance":"14.4"
   },
   {
     "Direction":"1",
@@ -10091,8 +9419,7 @@
     "Bus Number":"184",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"14.8",
-    "Right_Distance":"14.8"
+    "Distance":"14.8"
   },
   {
     "Direction":"1",
@@ -10106,8 +9433,7 @@
     "Bus Number":"184",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"15.2",
-    "Right_Distance":"15.2"
+    "Distance":"15.2"
   },
   {
     "Direction":"1",
@@ -10121,8 +9447,7 @@
     "Bus Number":"184",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"15.6",
-    "Right_Distance":"15.6"
+    "Distance":"15.6"
   },
   {
     "Direction":"1",
@@ -10136,8 +9461,7 @@
     "Bus Number":"184",
     "Description":"Pei Hwa Presby Pr Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"16",
-    "Right_Distance":"16"
+    "Distance":"16"
   },
   {
     "Direction":"1",
@@ -10151,8 +9475,7 @@
     "Bus Number":"184",
     "Description":"Beauty World Stn Exit B",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"16.5",
-    "Right_Distance":"16.5"
+    "Distance":"16.5"
   },
   {
     "Direction":"1",
@@ -10166,8 +9489,7 @@
     "Bus Number":"184",
     "Description":"WOH HUP BLDG",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"17",
-    "Right_Distance":"17"
+    "Distance":"17"
   },
   {
     "Direction":"1",
@@ -10181,8 +9503,7 @@
     "Bus Number":"184",
     "Description":"Bt Regency",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"17.2",
-    "Right_Distance":"17.2"
+    "Distance":"17.2"
   },
   {
     "Direction":"1",
@@ -10196,8 +9517,7 @@
     "Bus Number":"184",
     "Description":"Aft Old Jurong Rd",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"17.7",
-    "Right_Distance":"17.7"
+    "Distance":"17.7"
   },
   {
     "Direction":"1",
@@ -10211,8 +9531,7 @@
     "Bus Number":"184",
     "Description":"Hume Pk Condo",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"18.2",
-    "Right_Distance":"18.2"
+    "Distance":"18.2"
   },
   {
     "Direction":"1",
@@ -10226,8 +9545,7 @@
     "Bus Number":"184",
     "Description":"Opp The Rail Mall",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"1",
@@ -10241,8 +9559,7 @@
     "Bus Number":"184",
     "Description":"Hillview Stn",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"19.1",
-    "Right_Distance":"19.1"
+    "Distance":"19.1"
   },
   {
     "Direction":"1",
@@ -10256,8 +9573,7 @@
     "Bus Number":"184",
     "Description":"Opp Dairy Farm Rd",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"19.3",
-    "Right_Distance":"19.3"
+    "Distance":"19.3"
   },
   {
     "Direction":"1",
@@ -10271,8 +9587,7 @@
     "Bus Number":"184",
     "Description":"Opp Assumption Eng Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"19.5",
-    "Right_Distance":"19.5"
+    "Distance":"19.5"
   },
   {
     "Direction":"1",
@@ -10286,8 +9601,7 @@
     "Bus Number":"184",
     "Description":"Aft Cashew Terr",
     "RoadName":"Cashew Rd",
-    "Distance":"20.2",
-    "Right_Distance":"20.2"
+    "Distance":"20.2"
   },
   {
     "Direction":"1",
@@ -10301,8 +9615,7 @@
     "Bus Number":"184",
     "Description":"Bt Panjang Pr Sch",
     "RoadName":"Cashew Rd",
-    "Distance":"20.7",
-    "Right_Distance":"20.7"
+    "Distance":"20.7"
   },
   {
     "Direction":"1",
@@ -10316,8 +9629,7 @@
     "Bus Number":"184",
     "Description":"Opp Pending Stn",
     "RoadName":"Pending Rd",
-    "Distance":"21.2",
-    "Right_Distance":"21.2"
+    "Distance":"21.2"
   },
   {
     "Direction":"1",
@@ -10331,8 +9643,7 @@
     "Bus Number":"184",
     "Description":"Opp Zhenghua Pr Sch",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"21.6",
-    "Right_Distance":"21.6"
+    "Distance":"21.6"
   },
   {
     "Direction":"1",
@@ -10346,8 +9657,7 @@
     "Bus Number":"184",
     "Description":"Blk 174",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"22",
-    "Right_Distance":"22"
+    "Distance":"22"
   },
   {
     "Direction":"1",
@@ -10361,8 +9671,7 @@
     "Bus Number":"184",
     "Description":"Blk 183",
     "RoadName":"Bt Panjang Rd",
-    "Distance":"22.4",
-    "Right_Distance":"22.4"
+    "Distance":"22.4"
   },
   {
     "Direction":"1",
@@ -10376,8 +9685,7 @@
     "Bus Number":"184",
     "Description":"Junction 10",
     "RoadName":"Woodlands Rd",
-    "Distance":"22.8",
-    "Right_Distance":"22.8"
+    "Distance":"22.8"
   },
   {
     "Direction":"1",
@@ -10391,8 +9699,7 @@
     "Bus Number":"184",
     "Description":"Opp Blk 632 CP",
     "RoadName":"Woodlands Rd",
-    "Distance":"23.3",
-    "Right_Distance":"23.3"
+    "Distance":"23.3"
   },
   {
     "Direction":"1",
@@ -10406,8 +9713,7 @@
     "Bus Number":"184",
     "Description":"OPP BLK 635A",
     "RoadName":"Woodlands Rd",
-    "Distance":"23.5",
-    "Right_Distance":"23.5"
+    "Distance":"23.5"
   },
   {
     "Direction":"1",
@@ -10421,8 +9727,7 @@
     "Bus Number":"184",
     "Description":"Gali Batu Ter",
     "RoadName":"Jln Gali Batu",
-    "Distance":"23.7",
-    "Right_Distance":"23.7"
+    "Distance":"23.7"
   },
   {
     "Direction":"2",
@@ -10436,8 +9741,7 @@
     "Bus Number":"154",
     "Description":"Eunos Int",
     "RoadName":"Eunos Rd 2",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -10451,8 +9755,7 @@
     "Bus Number":"154",
     "Description":"Kg Ubi CC",
     "RoadName":"Jln Ubi",
-    "Distance":"0.4",
-    "Right_Distance":"0.4"
+    "Distance":"0.4"
   },
   {
     "Direction":"2",
@@ -10466,8 +9769,7 @@
     "Bus Number":"154",
     "Description":"Joo Chiat Cplx",
     "RoadName":"Changi Rd",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"2",
@@ -10481,8 +9783,7 @@
     "Bus Number":"154",
     "Description":"Blk 14 Mkt\/FC",
     "RoadName":"Geylang Rd",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"2",
@@ -10496,8 +9797,7 @@
     "Bus Number":"154",
     "Description":"Paya Lebar Stn Exit D",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"1.6",
-    "Right_Distance":"1.6"
+    "Distance":"1.6"
   },
   {
     "Direction":"2",
@@ -10511,8 +9811,7 @@
     "Bus Number":"154",
     "Description":"Paya Lebar Stn Exit C",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"1.9",
-    "Right_Distance":"1.9"
+    "Distance":"1.9"
   },
   {
     "Direction":"2",
@@ -10526,8 +9825,7 @@
     "Bus Number":"154",
     "Description":"Opp CISCO Ctr",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"2.2",
-    "Right_Distance":"2.2"
+    "Distance":"2.2"
   },
   {
     "Direction":"2",
@@ -10541,8 +9839,7 @@
     "Bus Number":"154",
     "Description":"Macpherson Stn Exit C",
     "RoadName":"Paya Lebar Rd",
-    "Distance":"2.7",
-    "Right_Distance":"2.7"
+    "Distance":"2.7"
   },
   {
     "Direction":"2",
@@ -10556,8 +9853,7 @@
     "Bus Number":"154",
     "Description":"Opp Macpherson Stn Exit A",
     "RoadName":"Circuit Link",
-    "Distance":"2.9",
-    "Right_Distance":"2.9"
+    "Distance":"2.9"
   },
   {
     "Direction":"2",
@@ -10571,8 +9867,7 @@
     "Bus Number":"154",
     "Description":"OPP MACPHERSON STN EXIT D",
     "RoadName":"Circuit Rd",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"2",
@@ -10586,8 +9881,7 @@
     "Bus Number":"154",
     "Description":"Blk 90",
     "RoadName":"Pipit Rd",
-    "Distance":"3.5",
-    "Right_Distance":"3.5"
+    "Distance":"3.5"
   },
   {
     "Direction":"2",
@@ -10601,8 +9895,7 @@
     "Bus Number":"154",
     "Description":"Blk 79 FC",
     "RoadName":"Circuit Rd",
-    "Distance":"4",
-    "Right_Distance":"4"
+    "Distance":"4"
   },
   {
     "Direction":"2",
@@ -10616,8 +9909,7 @@
     "Bus Number":"154",
     "Description":"OPP MATTAR STN EXIT B",
     "RoadName":"Mattar Rd",
-    "Distance":"4.4",
-    "Right_Distance":"4.4"
+    "Distance":"4.4"
   },
   {
     "Direction":"2",
@@ -10631,8 +9923,7 @@
     "Bus Number":"154",
     "Description":"Aft Grace Baptist Ch",
     "RoadName":"Mattar Rd",
-    "Distance":"4.7",
-    "Right_Distance":"4.7"
+    "Distance":"4.7"
   },
   {
     "Direction":"2",
@@ -10646,8 +9937,7 @@
     "Bus Number":"154",
     "Description":"Opp Canossa Catholic Pr",
     "RoadName":"Aljunied Rd",
-    "Distance":"5",
-    "Right_Distance":"5"
+    "Distance":"5"
   },
   {
     "Direction":"2",
@@ -10661,8 +9951,7 @@
     "Bus Number":"154",
     "Description":"Opp Aljunied Pk",
     "RoadName":"Aljunied Rd",
-    "Distance":"5.3",
-    "Right_Distance":"5.3"
+    "Distance":"5.3"
   },
   {
     "Direction":"2",
@@ -10676,8 +9965,7 @@
     "Bus Number":"154",
     "Description":"Cencon Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"5.7",
-    "Right_Distance":"5.7"
+    "Distance":"5.7"
   },
   {
     "Direction":"2",
@@ -10691,8 +9979,7 @@
     "Bus Number":"154",
     "Description":"Gulab Bldg",
     "RoadName":"MacPherson Rd",
-    "Distance":"6.1",
-    "Right_Distance":"6.1"
+    "Distance":"6.1"
   },
   {
     "Direction":"2",
@@ -10706,8 +9993,7 @@
     "Bus Number":"154",
     "Description":"Bef Siemens Ctr",
     "RoadName":"MacPherson Rd",
-    "Distance":"6.5",
-    "Right_Distance":"6.5"
+    "Distance":"6.5"
   },
   {
     "Direction":"2",
@@ -10721,8 +10007,7 @@
     "Bus Number":"154",
     "Description":"Opp St. Andrew'S Village",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"7.1",
-    "Right_Distance":"7.1"
+    "Distance":"7.1"
   },
   {
     "Direction":"2",
@@ -10736,8 +10021,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 195",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"7.8",
-    "Right_Distance":"7.8"
+    "Distance":"7.8"
   },
   {
     "Direction":"2",
@@ -10751,8 +10035,7 @@
     "Bus Number":"154",
     "Description":"Opp Trellis Twrs",
     "RoadName":"Jln Toa Payoh",
-    "Distance":"9.7",
-    "Right_Distance":"9.7"
+    "Distance":"9.7"
   },
   {
     "Direction":"2",
@@ -10766,8 +10049,7 @@
     "Bus Number":"154",
     "Description":"Catholic JC",
     "RoadName":"Whitley Rd",
-    "Distance":"10.9",
-    "Right_Distance":"10.9"
+    "Distance":"10.9"
   },
   {
     "Direction":"2",
@@ -10781,8 +10063,7 @@
     "Bus Number":"154",
     "Description":"St. Joseph'S Instn",
     "RoadName":"Whitley Rd",
-    "Distance":"11.8",
-    "Right_Distance":"11.8"
+    "Distance":"11.8"
   },
   {
     "Direction":"2",
@@ -10796,8 +10077,7 @@
     "Bus Number":"154",
     "Description":"BEF STEVENS STN EXIT 4",
     "RoadName":"Whitley Rd",
-    "Distance":"12.1",
-    "Right_Distance":"12.1"
+    "Distance":"12.1"
   },
   {
     "Direction":"2",
@@ -10811,8 +10091,7 @@
     "Bus Number":"154",
     "Description":"Bef Lewis Rd",
     "RoadName":"Bt Timah Rd",
-    "Distance":"12.6",
-    "Right_Distance":"12.6"
+    "Distance":"12.6"
   },
   {
     "Direction":"2",
@@ -10826,8 +10105,7 @@
     "Bus Number":"154",
     "Description":"NUS Bt Timah Campus",
     "RoadName":"Bt Timah Rd",
-    "Distance":"13.1",
-    "Right_Distance":"13.1"
+    "Distance":"13.1"
   },
   {
     "Direction":"2",
@@ -10841,8 +10119,7 @@
     "Bus Number":"154",
     "Description":"Botanic Gdns Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"13.5",
-    "Right_Distance":"13.5"
+    "Distance":"13.5"
   },
   {
     "Direction":"2",
@@ -10856,8 +10133,7 @@
     "Bus Number":"154",
     "Description":"Bef Crown Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"13.9",
-    "Right_Distance":"13.9"
+    "Distance":"13.9"
   },
   {
     "Direction":"2",
@@ -10871,8 +10147,7 @@
     "Bus Number":"154",
     "Description":"Coronation Plaza",
     "RoadName":"Bt Timah Rd",
-    "Distance":"14.1",
-    "Right_Distance":"14.1"
+    "Distance":"14.1"
   },
   {
     "Direction":"2",
@@ -10886,8 +10161,7 @@
     "Bus Number":"154",
     "Description":"Tan Kah Kee Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"14.5",
-    "Right_Distance":"14.5"
+    "Distance":"14.5"
   },
   {
     "Direction":"2",
@@ -10901,8 +10175,7 @@
     "Bus Number":"154",
     "Description":"Chinese High Sch",
     "RoadName":"Bt Timah Rd",
-    "Distance":"14.7",
-    "Right_Distance":"14.7"
+    "Distance":"14.7"
   },
   {
     "Direction":"2",
@@ -10916,8 +10189,7 @@
     "Bus Number":"154",
     "Description":"Opp Natl JC",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.1",
-    "Right_Distance":"15.1"
+    "Distance":"15.1"
   },
   {
     "Direction":"2",
@@ -10931,8 +10203,7 @@
     "Bus Number":"154",
     "Description":"Sixth Ave Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"15.7",
-    "Right_Distance":"15.7"
+    "Distance":"15.7"
   },
   {
     "Direction":"2",
@@ -10946,8 +10217,7 @@
     "Bus Number":"154",
     "Description":"Sixth Ave Ctr",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16",
-    "Right_Distance":"16"
+    "Distance":"16"
   },
   {
     "Direction":"2",
@@ -10961,8 +10231,7 @@
     "Bus Number":"154",
     "Description":"Aft Maple Ave",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.3",
-    "Right_Distance":"16.3"
+    "Distance":"16.3"
   },
   {
     "Direction":"2",
@@ -10976,8 +10245,7 @@
     "Bus Number":"154",
     "Description":"The Tessarina",
     "RoadName":"Bt Timah Rd",
-    "Distance":"16.6",
-    "Right_Distance":"16.6"
+    "Distance":"16.6"
   },
   {
     "Direction":"2",
@@ -10991,8 +10259,7 @@
     "Bus Number":"154",
     "Description":"The Nexus",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17",
-    "Right_Distance":"17"
+    "Distance":"17"
   },
   {
     "Direction":"2",
@@ -11006,8 +10273,7 @@
     "Bus Number":"154",
     "Description":"King Albert Pk Stn",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.5",
-    "Right_Distance":"17.5"
+    "Distance":"17.5"
   },
   {
     "Direction":"2",
@@ -11021,8 +10287,7 @@
     "Bus Number":"154",
     "Description":"King Albert Pk",
     "RoadName":"Bt Timah Rd",
-    "Distance":"17.8",
-    "Right_Distance":"17.8"
+    "Distance":"17.8"
   },
   {
     "Direction":"2",
@@ -11036,8 +10301,7 @@
     "Bus Number":"154",
     "Description":"Aft Bt Timah Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"18.1",
-    "Right_Distance":"18.1"
+    "Distance":"18.1"
   },
   {
     "Direction":"2",
@@ -11051,8 +10315,7 @@
     "Bus Number":"154",
     "Description":"Opp Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"18.7",
-    "Right_Distance":"18.7"
+    "Distance":"18.7"
   },
   {
     "Direction":"2",
@@ -11066,8 +10329,7 @@
     "Bus Number":"154",
     "Description":"Opp SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"19.1",
-    "Right_Distance":"19.1"
+    "Distance":"19.1"
   },
   {
     "Direction":"2",
@@ -11081,8 +10343,7 @@
     "Bus Number":"154",
     "Description":"Opp Maju Camp",
     "RoadName":"Clementi Rd",
-    "Distance":"19.3",
-    "Right_Distance":"19.3"
+    "Distance":"19.3"
   },
   {
     "Direction":"2",
@@ -11096,8 +10357,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"19.8",
-    "Right_Distance":"19.8"
+    "Distance":"19.8"
   },
   {
     "Direction":"2",
@@ -11111,8 +10371,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 109A",
     "RoadName":"Clementi Rd",
-    "Distance":"20.1",
-    "Right_Distance":"20.1"
+    "Distance":"20.1"
   },
   {
     "Direction":"2",
@@ -11126,8 +10385,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"20.6",
-    "Right_Distance":"20.6"
+    "Distance":"20.6"
   },
   {
     "Direction":"2",
@@ -11141,8 +10399,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"20.8",
-    "Right_Distance":"20.8"
+    "Distance":"20.8"
   },
   {
     "Direction":"2",
@@ -11156,8 +10413,7 @@
     "Bus Number":"154",
     "Description":"Blk 410",
     "RoadName":"C'wealth Ave West",
-    "Distance":"21.5",
-    "Right_Distance":"21.5"
+    "Distance":"21.5"
   },
   {
     "Direction":"2",
@@ -11171,8 +10427,7 @@
     "Bus Number":"154",
     "Description":"Blk 455",
     "RoadName":"C'wealth Ave West",
-    "Distance":"21.8",
-    "Right_Distance":"21.8"
+    "Distance":"21.8"
   },
   {
     "Direction":"2",
@@ -11186,8 +10441,7 @@
     "Bus Number":"154",
     "Description":"Clementi Stn Exit A",
     "RoadName":"C'wealth Ave West",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"2",
@@ -11201,8 +10455,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 317",
     "RoadName":"C'wealth Ave West",
-    "Distance":"22.5",
-    "Right_Distance":"22.5"
+    "Distance":"22.5"
   },
   {
     "Direction":"2",
@@ -11216,8 +10469,7 @@
     "Bus Number":"154",
     "Description":"Opp Regent Pk",
     "RoadName":"Clementi Ave 6",
-    "Distance":"22.8",
-    "Right_Distance":"22.8"
+    "Distance":"22.8"
   },
   {
     "Direction":"2",
@@ -11231,8 +10483,7 @@
     "Bus Number":"154",
     "Description":"NEWEST",
     "RoadName":"AYE",
-    "Distance":"23.9",
-    "Right_Distance":"23.9"
+    "Distance":"23.9"
   },
   {
     "Direction":"2",
@@ -11246,8 +10497,7 @@
     "Bus Number":"154",
     "Description":"The Infiniti",
     "RoadName":"AYE",
-    "Distance":"24.4",
-    "Right_Distance":"24.4"
+    "Distance":"24.4"
   },
   {
     "Direction":"2",
@@ -11261,8 +10511,7 @@
     "Bus Number":"154",
     "Description":"Cycle & Carriage",
     "RoadName":"AYE",
-    "Distance":"25.2",
-    "Right_Distance":"25.2"
+    "Distance":"25.2"
   },
   {
     "Direction":"2",
@@ -11276,8 +10525,7 @@
     "Bus Number":"154",
     "Description":"Aft Jurong Town Hall Rd",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"25.7",
-    "Right_Distance":"25.7"
+    "Distance":"25.7"
   },
   {
     "Direction":"2",
@@ -11291,8 +10539,7 @@
     "Bus Number":"154",
     "Description":"Carrier S'pore",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"26.3",
-    "Right_Distance":"26.3"
+    "Distance":"26.3"
   },
   {
     "Direction":"2",
@@ -11306,8 +10553,7 @@
     "Bus Number":"154",
     "Description":"Aft Jurong Lake",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"27.5",
-    "Right_Distance":"27.5"
+    "Distance":"27.5"
   },
   {
     "Direction":"2",
@@ -11321,8 +10567,7 @@
     "Bus Number":"154",
     "Description":"Bef Jurong Port Rd",
     "RoadName":"Jln Ahmad Ibrahim",
-    "Distance":"28",
-    "Right_Distance":"28"
+    "Distance":"28"
   },
   {
     "Direction":"2",
@@ -11336,8 +10581,7 @@
     "Bus Number":"154",
     "Description":"OPP CORP PL",
     "RoadName":"Corporation Rd",
-    "Distance":"28.8",
-    "Right_Distance":"28.8"
+    "Distance":"28.8"
   },
   {
     "Direction":"2",
@@ -11351,8 +10595,7 @@
     "Bus Number":"154",
     "Description":"Blk 151",
     "RoadName":"Yung Ho Rd",
-    "Distance":"29.1",
-    "Right_Distance":"29.1"
+    "Distance":"29.1"
   },
   {
     "Direction":"2",
@@ -11366,8 +10609,7 @@
     "Bus Number":"154",
     "Description":"AFT CORP DR",
     "RoadName":"Yung Ho Rd",
-    "Distance":"29.4",
-    "Right_Distance":"29.4"
+    "Distance":"29.4"
   },
   {
     "Direction":"2",
@@ -11381,8 +10623,7 @@
     "Bus Number":"154",
     "Description":"Blk 138B",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"29.7",
-    "Right_Distance":"29.7"
+    "Distance":"29.7"
   },
   {
     "Direction":"2",
@@ -11396,8 +10637,7 @@
     "Bus Number":"154",
     "Description":"Jurong Sec Sch",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"30",
-    "Right_Distance":"30"
+    "Distance":"30"
   },
   {
     "Direction":"2",
@@ -11411,8 +10651,7 @@
     "Bus Number":"154",
     "Description":"Blk 115",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"30.3",
-    "Right_Distance":"30.3"
+    "Distance":"30.3"
   },
   {
     "Direction":"2",
@@ -11426,8 +10665,7 @@
     "Bus Number":"154",
     "Description":"Bef Blk 322",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"30.6",
-    "Right_Distance":"30.6"
+    "Distance":"30.6"
   },
   {
     "Direction":"2",
@@ -11441,8 +10679,7 @@
     "Bus Number":"154",
     "Description":"Opp Chinese Gdn",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"30.9",
-    "Right_Distance":"30.9"
+    "Distance":"30.9"
   },
   {
     "Direction":"2",
@@ -11456,8 +10693,7 @@
     "Bus Number":"154",
     "Description":"Yuan Ching Sec Sch",
     "RoadName":"Yuan Ching Rd",
-    "Distance":"31.4",
-    "Right_Distance":"31.4"
+    "Distance":"31.4"
   },
   {
     "Direction":"2",
@@ -11471,8 +10707,7 @@
     "Bus Number":"154",
     "Description":"Lakeside Stn",
     "RoadName":"Boon Lay Way",
-    "Distance":"31.9",
-    "Right_Distance":"31.9"
+    "Distance":"31.9"
   },
   {
     "Direction":"2",
@@ -11486,8 +10721,7 @@
     "Bus Number":"154",
     "Description":"Opp Blk 200",
     "RoadName":"Boon Lay Way",
-    "Distance":"32.6",
-    "Right_Distance":"32.6"
+    "Distance":"32.6"
   },
   {
     "Direction":"2",
@@ -11501,8 +10735,7 @@
     "Bus Number":"154",
     "Description":"OPP SUMMERDALE",
     "RoadName":"Boon Lay Way",
-    "Distance":"32.9",
-    "Right_Distance":"32.9"
+    "Distance":"32.9"
   },
   {
     "Direction":"2",
@@ -11516,8 +10749,7 @@
     "Bus Number":"154",
     "Description":"Boon Lay Int",
     "RoadName":"Jurong West Ctrl 3",
-    "Distance":"33.8",
-    "Right_Distance":"33.8"
+    "Distance":"33.8"
   },
   {
     "Direction":"2",
@@ -11531,8 +10763,7 @@
     "Bus Number":"52",
     "Description":"Jurong East Int",
     "RoadName":"Jurong Gateway Rd",
-    "Distance":"0",
-    "Right_Distance":"0"
+    "Distance":"0"
   },
   {
     "Direction":"2",
@@ -11546,8 +10777,7 @@
     "Bus Number":"52",
     "Description":"Seventh-Day Advent Ch",
     "RoadName":"Jurong East Ctrl",
-    "Distance":"0.7",
-    "Right_Distance":"0.7"
+    "Distance":"0.7"
   },
   {
     "Direction":"2",
@@ -11561,8 +10791,7 @@
     "Bus Number":"52",
     "Description":"Blk 209",
     "RoadName":"Jurong East Ctrl",
-    "Distance":"1.1",
-    "Right_Distance":"1.1"
+    "Distance":"1.1"
   },
   {
     "Direction":"2",
@@ -11576,8 +10805,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 288D",
     "RoadName":"Toh Guan Rd",
-    "Distance":"1.6",
-    "Right_Distance":"1.6"
+    "Distance":"1.6"
   },
   {
     "Direction":"2",
@@ -11591,8 +10819,7 @@
     "Bus Number":"52",
     "Description":"Blk 284",
     "RoadName":"Toh Guan Rd",
-    "Distance":"1.9",
-    "Right_Distance":"1.9"
+    "Distance":"1.9"
   },
   {
     "Direction":"2",
@@ -11606,8 +10833,7 @@
     "Bus Number":"52",
     "Description":"Opp IMM Bldg",
     "RoadName":"Toh Guan Rd",
-    "Distance":"2.5",
-    "Right_Distance":"2.5"
+    "Distance":"2.5"
   },
   {
     "Direction":"2",
@@ -11621,8 +10847,7 @@
     "Bus Number":"52",
     "Description":"Opp The Synergy",
     "RoadName":"Boon Lay Way",
-    "Distance":"3.1",
-    "Right_Distance":"3.1"
+    "Distance":"3.1"
   },
   {
     "Direction":"2",
@@ -11636,8 +10861,7 @@
     "Bus Number":"52",
     "Description":"Aft Boon Lay Sub Stn",
     "RoadName":"Boon Lay Way",
-    "Distance":"3.5",
-    "Right_Distance":"3.5"
+    "Distance":"3.5"
   },
   {
     "Direction":"2",
@@ -11651,8 +10875,7 @@
     "Bus Number":"52",
     "Description":"8 @ TRADEHUB 21",
     "RoadName":"Boon Lay Way",
-    "Distance":"3.8",
-    "Right_Distance":"3.8"
+    "Distance":"3.8"
   },
   {
     "Direction":"2",
@@ -11666,8 +10889,7 @@
     "Bus Number":"52",
     "Description":"Aft Toh Tuck Ave",
     "RoadName":"C'wealth Ave West",
-    "Distance":"4.4",
-    "Right_Distance":"4.4"
+    "Distance":"4.4"
   },
   {
     "Direction":"2",
@@ -11681,8 +10903,7 @@
     "Bus Number":"52",
     "Description":"Aft Clementi Fire Stn",
     "RoadName":"C'wealth Ave West",
-    "Distance":"5",
-    "Right_Distance":"5"
+    "Distance":"5"
   },
   {
     "Direction":"2",
@@ -11696,8 +10917,7 @@
     "Bus Number":"52",
     "Description":"Blk 317",
     "RoadName":"C'wealth Ave West",
-    "Distance":"5.4",
-    "Right_Distance":"5.4"
+    "Distance":"5.4"
   },
   {
     "Direction":"2",
@@ -11711,8 +10931,7 @@
     "Bus Number":"52",
     "Description":"Clementi Stn Exit B",
     "RoadName":"C'wealth Ave West",
-    "Distance":"5.7",
-    "Right_Distance":"5.7"
+    "Distance":"5.7"
   },
   {
     "Direction":"2",
@@ -11726,8 +10945,7 @@
     "Bus Number":"52",
     "Description":"Blk 329",
     "RoadName":"C'wealth Ave West",
-    "Distance":"6",
-    "Right_Distance":"6"
+    "Distance":"6"
   },
   {
     "Direction":"2",
@@ -11741,8 +10959,7 @@
     "Bus Number":"52",
     "Description":"Blk 365",
     "RoadName":"C'wealth Ave West",
-    "Distance":"6.4",
-    "Right_Distance":"6.4"
+    "Distance":"6.4"
   },
   {
     "Direction":"2",
@@ -11756,8 +10973,7 @@
     "Bus Number":"52",
     "Description":"Blk 352",
     "RoadName":"Clementi Rd",
-    "Distance":"6.9",
-    "Right_Distance":"6.9"
+    "Distance":"6.9"
   },
   {
     "Direction":"2",
@@ -11771,8 +10987,7 @@
     "Bus Number":"52",
     "Description":"Blk 343",
     "RoadName":"Clementi Rd",
-    "Distance":"7.3",
-    "Right_Distance":"7.3"
+    "Distance":"7.3"
   },
   {
     "Direction":"2",
@@ -11786,8 +11001,7 @@
     "Bus Number":"52",
     "Description":"Blk 109",
     "RoadName":"Clementi Rd",
-    "Distance":"7.7",
-    "Right_Distance":"7.7"
+    "Distance":"7.7"
   },
   {
     "Direction":"2",
@@ -11801,8 +11015,7 @@
     "Bus Number":"52",
     "Description":"Blk 116",
     "RoadName":"Clementi Rd",
-    "Distance":"8",
-    "Right_Distance":"8"
+    "Distance":"8"
   },
   {
     "Direction":"2",
@@ -11816,8 +11029,7 @@
     "Bus Number":"52",
     "Description":"Clementi N'hood Pk",
     "RoadName":"Clementi Rd",
-    "Distance":"8.5",
-    "Right_Distance":"8.5"
+    "Distance":"8.5"
   },
   {
     "Direction":"2",
@@ -11831,8 +11043,7 @@
     "Bus Number":"52",
     "Description":"SIM Campus",
     "RoadName":"Clementi Rd",
-    "Distance":"8.9",
-    "Right_Distance":"8.9"
+    "Distance":"8.9"
   },
   {
     "Direction":"2",
@@ -11846,8 +11057,7 @@
     "Bus Number":"52",
     "Description":"Ngee Ann Poly",
     "RoadName":"Clementi Rd",
-    "Distance":"9.3",
-    "Right_Distance":"9.3"
+    "Distance":"9.3"
   },
   {
     "Direction":"2",
@@ -11861,8 +11071,7 @@
     "Bus Number":"52",
     "Description":"Bef Dunearn Rd",
     "RoadName":"Clementi Rd",
-    "Distance":"9.7",
-    "Right_Distance":"9.7"
+    "Distance":"9.7"
   },
   {
     "Direction":"2",
@@ -11876,8 +11085,7 @@
     "Bus Number":"52",
     "Description":"Pei Hwa Presby Pr Sch",
     "RoadName":"Upp Bt Timah Rd",
-    "Distance":"10.1",
-    "Right_Distance":"10.1"
+    "Distance":"10.1"
   },
   {
     "Direction":"2",
@@ -11891,8 +11099,7 @@
     "Bus Number":"52",
     "Description":"Aft Upp Bt Timah Rd",
     "RoadName":"Jln Jurong Kechil",
-    "Distance":"10.4",
-    "Right_Distance":"10.4"
+    "Distance":"10.4"
   },
   {
     "Direction":"2",
@@ -11906,8 +11113,7 @@
     "Bus Number":"52",
     "Description":"AFT KHEAM HOCK RD",
     "RoadName":"Lornie Highway",
-    "Distance":"16.2",
-    "Right_Distance":"16.2"
+    "Distance":"16.2"
   },
   {
     "Direction":"2",
@@ -11921,8 +11127,7 @@
     "Bus Number":"52",
     "Description":"Opp Andrew Rd",
     "RoadName":"Lornie Rd",
-    "Distance":"17.9",
-    "Right_Distance":"17.9"
+    "Distance":"17.9"
   },
   {
     "Direction":"2",
@@ -11936,8 +11141,7 @@
     "Bus Number":"52",
     "Description":"MacRitchie Resvr",
     "RoadName":"Thomson Rd",
-    "Distance":"18.3",
-    "Right_Distance":"18.3"
+    "Distance":"18.3"
   },
   {
     "Direction":"2",
@@ -11951,8 +11155,7 @@
     "Bus Number":"52",
     "Description":"ST. THERESA'S HME",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"18.8",
-    "Right_Distance":"18.8"
+    "Distance":"18.8"
   },
   {
     "Direction":"2",
@@ -11966,8 +11169,7 @@
     "Bus Number":"52",
     "Description":"Lakeview Estate",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"19.4",
-    "Right_Distance":"19.4"
+    "Distance":"19.4"
   },
   {
     "Direction":"2",
@@ -11981,8 +11183,7 @@
     "Bus Number":"52",
     "Description":"Bef Thomson Ridge",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"19.8",
-    "Right_Distance":"19.8"
+    "Distance":"19.8"
   },
   {
     "Direction":"2",
@@ -11996,8 +11197,7 @@
     "Bus Number":"52",
     "Description":"Upp Thomson Stn Exit 5",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"20",
-    "Right_Distance":"20"
+    "Distance":"20"
   },
   {
     "Direction":"2",
@@ -12011,8 +11211,7 @@
     "Bus Number":"52",
     "Description":"Bef Windsor Pk Rd",
     "RoadName":"Upp Thomson Rd",
-    "Distance":"20.6",
-    "Right_Distance":"20.6"
+    "Distance":"20.6"
   },
   {
     "Direction":"2",
@@ -12026,8 +11225,7 @@
     "Bus Number":"52",
     "Description":"Opp Blk 454",
     "RoadName":"Sin Ming Ave",
-    "Distance":"21",
-    "Right_Distance":"21"
+    "Distance":"21"
   },
   {
     "Direction":"2",
@@ -12041,8 +11239,7 @@
     "Bus Number":"52",
     "Description":"Opp Ai Tong Sch",
     "RoadName":"Sin Ming Ave",
-    "Distance":"21.4",
-    "Right_Distance":"21.4"
+    "Distance":"21.4"
   },
   {
     "Direction":"2",
@@ -12056,8 +11253,7 @@
     "Bus Number":"52",
     "Description":"Bright Hill Stn Exit 1",
     "RoadName":"Sin Ming Ave",
-    "Distance":"21.8",
-    "Right_Distance":"21.8"
+    "Distance":"21.8"
   },
   {
     "Direction":"2",
@@ -12071,8 +11267,7 @@
     "Bus Number":"52",
     "Description":"Opp Bright Hill Tp",
     "RoadName":"Sin Ming Ave",
-    "Distance":"22.2",
-    "Right_Distance":"22.2"
+    "Distance":"22.2"
   },
   {
     "Direction":"2",
@@ -12086,8 +11281,7 @@
     "Bus Number":"52",
     "Description":"Eunoia JC",
     "RoadName":"Sin Ming Ave",
-    "Distance":"22.7",
-    "Right_Distance":"22.7"
+    "Distance":"22.7"
   },
   {
     "Direction":"2",
@@ -12101,8 +11295,7 @@
     "Bus Number":"52",
     "Description":"Blk 245",
     "RoadName":"Bishan St 22",
-    "Distance":"23.1",
-    "Right_Distance":"23.1"
+    "Distance":"23.1"
   },
   {
     "Direction":"2",
@@ -12116,8 +11309,7 @@
     "Bus Number":"52",
     "Description":"Opp Bishan Nth Shop Mall",
     "RoadName":"Bishan St 22",
-    "Distance":"23.4",
-    "Right_Distance":"23.4"
+    "Distance":"23.4"
   },
   {
     "Direction":"2",
@@ -12131,8 +11323,7 @@
     "Bus Number":"52",
     "Description":"Blk 202",
     "RoadName":"Bishan St 22",
-    "Distance":"23.9",
-    "Right_Distance":"23.9"
+    "Distance":"23.9"
   },
   {
     "Direction":"2",
@@ -12146,8 +11337,7 @@
     "Bus Number":"52",
     "Description":"BISHAN STN",
     "RoadName":"Bishan Rd",
-    "Distance":"24.4",
-    "Right_Distance":"24.4"
+    "Distance":"24.4"
   },
   {
     "Direction":"2",
@@ -12161,8 +11351,7 @@
     "Bus Number":"52",
     "Description":"Blk 501",
     "RoadName":"Bishan St 11",
-    "Distance":"24.9",
-    "Right_Distance":"24.9"
+    "Distance":"24.9"
   },
   {
     "Direction":"2",
@@ -12176,7 +11365,6 @@
     "Bus Number":"52",
     "Description":"Bishan Int",
     "RoadName":"Bishan St 13",
-    "Distance":"25.3",
-    "Right_Distance":"25.3"
+    "Distance":"25.3"
   }
 ]
