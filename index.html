@@ -35,9 +35,10 @@
             margin-bottom: 15px;
         }
         .service-number {
-            font-size: 22px;
+            font-size: 32px; 
             color: #2c3e50;
             display: inline-block;
+            text-decoration: none; 
         }
         .operator {
             float: right;
@@ -108,16 +109,6 @@
             color: white;
             font-size: 12px;
         }
-        .refresh-controls {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 15px;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
         .update-time {
             color: #95a5a6;
             font-size: 12px;
@@ -138,16 +129,7 @@
     </div>
     <div id="serviceContainer"></div>
 
-    <div class="refresh-controls">
-        <select id="refreshInterval" onchange="updateRefreshInterval()">
-            <option value="5000" selected>🔄 5 Second Refresh</option>
-            <option value="60000">⏱ 1 Minute Refresh</option>
-            <option value="0">⏸ Pause Updates</option>
-        </select>
-    </div>
-
     <script>
-        // IE Compatibility Polyfills
         if (!Array.prototype.indexOf) {
             Array.prototype.indexOf = function(obj, start) {
                 for (var i = (start || 0); i < this.length; i++) {
@@ -203,8 +185,6 @@
                 default: return '🚌';
             }
         }
-
-        var refreshTimer = null;
 
         function loadData() {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
@@ -279,9 +259,12 @@
                     if (bus.arrival === '-') {
                         progressWidth = '0%';
                         progressColor = '#ff0000';
+                    } else if (bus.arrival === 'Arriving') {
+                        progressWidth = '100%';
+                        progressColor = '#3498db';
                     } else {
                         var arrivalNumber = parseInt(bus.arrival, 10) || 0;
-                        progressWidth = Math.min(100, (60 - arrivalNumber) * 3.33) + '%';
+                        progressWidth = Math.max(0, Math.min(100, ((60 - arrivalNumber) / 60) * 100)) + '%';
                         progressColor = '#3498db';
                     }
 
@@ -326,27 +309,20 @@
                 'Last Updated: ' + now.toLocaleTimeString();
         }
 
-        function updateRefreshInterval() {
-            var interval = parseInt(document.getElementById('refreshInterval').value, 10);
-            if (refreshTimer) clearInterval(refreshTimer);
-            if (interval > 0) refreshTimer = setInterval(loadData, interval);
-        }
-
         function showError(message) {
             var container = document.getElementById('serviceContainer');
             container.innerHTML = '<div class="service-card" style="color: red; text-align: center">' + message + '</div>';
         }
 
-        // Initial Setup
         if (window.attachEvent) {
             window.attachEvent('onload', function() {
                 loadData();
-                updateRefreshInterval();
+                setInterval(loadData, 5000); 
             });
         } else {
             window.onload = function() {
                 loadData();
-                updateRefreshInterval();
+                setInterval(loadData, 5000); 
             };
         }
     </script>
