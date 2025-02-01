@@ -105,53 +105,58 @@
             return null;
         }
 
-        function loadRouteData() {
-            var busNumber = getQueryParam('bus');
-            if (!busNumber) {
-                document.getElementById('routeContainer').innerHTML = 'Bus number not specified';
-                return;
-            }
-
-            var xhr;
-            try {
-                xhr = new XMLHttpRequest();
-            } catch(e) {
-                try {
-                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
-                } catch(e) {
-                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
-                }
-            }
-            
-            xhr.open('GET', 'data/bus_routes.json?_=' + new Date().getTime(), true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        try {
-                            var allRoutes = eval('(' + xhr.responseText + ')');
-                            var filtered = [];
-                            for (var i = 0; i < allRoutes.length; i++) {
-                                if (allRoutes[i]['Bus Number'] === busNumber) {
-                                    filtered.push(allRoutes[i]);
-                                }
-                            }
-                            
-                            if (filtered.length === 0) {
-                                document.getElementById('routeContainer').innerHTML = 'No route found for bus ' + busNumber;
-                                return;
-                            }
-                            
-                            renderRouteDetails(busNumber, filtered);
-                        } catch (e) {
-                            document.getElementById('routeContainer').innerHTML = 'Error parsing route data';
-                        }
-                    } else {
-                        document.getElementById('routeContainer').innerHTML = 'Failed to load route data';
-                    }
-                }
-            };
-            xhr.send();
+   function loadRouteData() {
+        var busNumber = getQueryParam('bus');
+        if (!busNumber) {
+            document.getElementById('routeContainer').innerHTML = 'Bus number not specified';
+            return;
         }
+    
+        // Convert busNumber to number for comparison
+        busNumber = parseInt(busNumber, 10);
+    
+        var xhr;
+        try {
+            xhr = new XMLHttpRequest();
+        } catch(e) {
+            try {
+                xhr = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch(e) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        
+        xhr.open('GET', 'data/bus_routes.json?_=' + new Date().getTime(), true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    try {
+                        var allRoutes = eval('(' + xhr.responseText + ')');
+                        var filtered = [];
+                        
+                        // Type-safe comparison
+                        for (var i = 0; i < allRoutes.length; i++) {
+                            if (parseInt(allRoutes[i]['Bus Number'], 10) === busNumber) {
+                                filtered.push(allRoutes[i]);
+                            }
+                        }
+                        
+                        if (filtered.length === 0) {
+                            document.getElementById('routeContainer').innerHTML = 'No route found for bus ' + busNumber;
+                            return;
+                        }
+                        
+                        renderRouteDetails(busNumber, filtered);
+                    } catch (e) {
+                        document.getElementById('routeContainer').innerHTML = 'Error parsing route data: ' + e.message;
+                    }
+                } else {
+                    document.getElementById('routeContainer').innerHTML = 'Failed to load route data';
+                }
+            }
+        };
+        xhr.send();
+    }
 
         function renderRouteDetails(busNumber, routes) {
             var container = document.getElementById('routeContainer');
