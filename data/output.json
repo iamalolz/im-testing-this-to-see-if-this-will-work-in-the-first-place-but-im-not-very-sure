@@ -227,7 +227,7 @@
     "Bus Number":852,
     "1st Bus Arrival":"4",
     "2nd Bus Arrival":24,
-    "3rd Bus Arrival":"-",
+    "3rd Bus Arrival":"44",
     "1st Bus Load":"Seats Available",
     "1st Bus Feature":"WAB",
     "1st Bus Monitored":0,
@@ -236,10 +236,10 @@
     "2nd Bus Feature":"WAB",
     "2nd Bus Monitored":0,
     "2nd Bus Type":"Single Decker",
-    "3rd Bus Load":"-",
-    "3rd Bus Feature":"-",
+    "3rd Bus Load":"Seats Available",
+    "3rd Bus Feature":"WAB",
     "3rd Bus Monitored":0,
-    "3rd Bus Type":"-"
+    "3rd Bus Type":"Single Decker"
   },
   {
     "BusStopCode":43009,
