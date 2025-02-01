@@ -214,11 +214,11 @@
             };
             xhr.send();
         }
-
+    
         function renderServiceCards(services) {
             var container = document.getElementById('serviceContainer');
             container.innerHTML = '';
-
+    
             for (var i = 0; i < services.length; i++) {
                 var service = services[i];
                 var serviceCard = document.createElement('div');
@@ -236,7 +236,7 @@
                     var arrival = service[arrivalKey] || '-';
                     
                     if (arrival === '' || arrival === '-') continue;
-
+    
                     var loadKey = prefix + ' Bus Load';
                     var monitoredKey = prefix + ' Bus Monitored';
                     var typeKey = prefix + ' Bus Type';
@@ -246,21 +246,21 @@
                         prefix: prefix,
                         arrival: arrival,
                         load: service[loadKey] || '-',
-                        monitored: service[monitoredKey] || '-',
+                        monitored: service[monitoredKey], // Removed || '-'
                         type: service[typeKey] || '-',
                         feature: service[featureKey] || ''
                     });
                 }
-
+    
                 var busEntries = [];
                 for (var b = 0; b < buses.length; b++) {
                     var bus = buses[b];
                     var arrivalText = (bus.arrival === '-' || bus.arrival === 'Arriving') 
                         ? bus.arrival 
                         : bus.arrival + ' min';
-
+    
                     var progressWidth, progressColor;
-
+    
                     if (bus.arrival === '-') {
                         progressWidth = '0%';
                         progressColor = '#ff0000';
@@ -272,13 +272,13 @@
                         progressWidth = Math.max(0, Math.min(100, ((60 - arrivalNumber) / 60) * 100)) + '%';
                         progressColor = '#3498db';
                     }
-
+    
                     var loadClass = getLoadClass(bus.load);
                     var loadText = getLoadText(bus.load);
                     var typeEmoji = getTypeEmoji(bus.type);
-                    var isScheduled = bus.monitored === '0';
+                    var isScheduled = bus.monitored === 0; // Compare to numeric 0
                     var isWheelchairAccessible = bus.feature === 'WAB';
-
+    
                     busEntries.push(
                         '<div class="bus-entry">' +
                             '<div class="arrival-time">' + bus.prefix + ' Bus: ' + arrivalText +
@@ -295,7 +295,7 @@
                         '</div>'
                     );
                 }
-
+    
                 serviceCard.innerHTML = [
                     '<div class="service-header">',
                         '<a href="bus_route.html?bus=' + encodeURIComponent(serviceNumber) + '" class="service-number">Service ' + serviceNumber + '</a>',
@@ -303,7 +303,7 @@
                     '</div>',
                     busEntries.join('')
                 ].join('');
-
+    
                 container.appendChild(serviceCard);
             }
         }
